@@ -1,0 +1,456 @@
+*{
+    margin: 0;  
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Merriweather", serif;
+}
+body{
+    background-color: rgb(0, 0, 0);
+    height: 100%;
+    position: fixed;
+    width: 100%;
+}
+
+/*INICIO INTERFACE HEADER */
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+} 
+.destaque{
+    color: #fff;
+}
+
+.dev{
+    color:#003785;
+}
+
+header{
+    padding: 30px 4%;
+    background-color: rgba(0, 0, 0, 0.801);
+}
+
+/* > SERVE PRA CHMAR A CLASS DIRETAMENTE*/
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a{
+    color: rgba(255, 255, 255, 0.301);
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+header a:hover{
+    color: #fff;
+    transform: scale(1.05);
+  
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
+
+/*Animaçaõ linha branca header*/
+header nav.menu-desktop ul li a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background-color: #ffffff;
+    transition: 0.3s ease;
+}
+
+header nav ul li a:hover::after{
+    width: 100%;
+}
+/*fim animação linha branca*/
+
+header .btn-contato button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    border: 0;
+    border-radius: 40px;
+    cursor: pointer;
+    background-color: #003785;
+    color: #fff;
+    
+}
+header .btn-contato button:hover{
+    box-shadow: 0px 0px 8px #343434;
+}
+/*FIM INTERFACE HEADER*/
+
+
+ /* Estilos do footer */
+ footer {
+
+    background-color: transparent;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer .social-icons {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    position: absolute;
+    top: 93%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+footer .social-icons li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer .social-icons a {
+    color: #ffffff84;
+    font-size: 28px;
+    text-decoration: none;
+}
+
+footer .social-icons a:hover {
+    color: #003785;
+}
+/*Fim estilo footer*/
+
+
+/*MENU-MOBILE.*/
+.mobile-menu-icone{
+    display: none; /* faz com que o icone desapareça*/
+}
+.mobile-menu{
+    display: none;
+}
+.mobile-menu-icone button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.mobile-menu ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+/* FIM MENU MOBILE */
+
+
+/* Inicio form contato*/
+/* Estilo para a mensagem de sucesso */
+#success-message {
+    color: fff;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.hidden {
+    display: none;
+}
+/*FIM MENSAGEM DE SUCESSO*/
+
+.contato {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+}
+
+.centro {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px 45px;
+    background-color: #003785;
+    width: 400px;
+    color: white;
+}
+
+section form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+form label {
+    margin-bottom: 4px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    outline: none;
+    border: 0;
+    margin-bottom: 20px;
+    transition: all 0.5s;
+}
+
+form input:focus, form textarea:focus {
+    border-radius: 16px;
+}
+
+form button {
+    padding: 15px;
+    cursor: pointer;
+    font-size: 17px;
+    background-color: transparent;
+    border: 2px solid whitesmoke;
+    color: whitesmoke;
+    transition: all 1s;
+    margin-bottom: 20px;
+}
+
+form button:hover {
+    background-color: rgb(255, 255, 255);
+    color: #003785;
+    border-radius: 16px;
+}
+
+/* RESPOSIVIDADE */
+@media screen and (max-width: 1100px){
+   
+    /*cabeçalho*/
+    .menu-desktop, .btn-contato{
+        display: none;
+     }
+
+     /*menu mobile*/
+    .mobile-menu{
+        z-index: 1;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        left: 0;
+    }
+
+     .mobile-menu-icone{
+        display: block;
+        margin-left: auto ;
+        align-self: flex-end; /* Faz o ícone se alinhar ao final da linha */
+    }
+
+    .mobile-menu-icone button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+        background-color: rgb(0, 0, 0);
+        top: 0;
+        left: 0;
+        padding: 50px;
+    }
+
+    .open{
+        display: block;
+    }
+    
+    .mobile-menu li {
+        margin: 10px 0; /* Espaçamento entre os botões */
+    }
+
+    .mobile-menu li button {
+
+        border: 2px solid transparent; /* Borda invisível por padrão */
+        padding: 10px 20px;
+        font-size: 18px;
+        color: #ffffff;
+        cursor: pointer;
+        transition: all 0.4s ease;
+        width: 100%; /* Garante que os botões ocupem a largura toda */
+        background-color: transparent;
+    }
+
+    /* Efeito de destaque ao passar o mouse (hover) */
+    .mobile-menu li button:hover {
+        color: #2980b9; /* Cor do texto ao passar o mouse */ 
+    }
+
+    /* Efeito ao clicar (active) */
+    .mobile-menu li button:active {
+        background-color: #2980b9; /* Cor de fundo ao clicar */
+        color: white; /* Cor do texto ao clicar */
+        border: 2px solid #1f78b4; /* Borda mais escura ao clicar */
+    }
+    /*FIM MENU MOBILE*/
+
+
+/* Inicio form contato*/
+/* Estilo para a mensagem de sucesso */
+#success-message {
+    color: fff;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.hidden {
+    display: none;
+}
+/*Fim para mensagem de sucesso*/
+
+.contato {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 70vh;
+}
+
+.centro {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5px 30px;
+    background-color: #003785;
+    width: 350px;
+    color: white;
+    
+}
+
+section form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+form label {
+    margin-bottom: 2px;
+}
+
+form input, form textarea {
+    padding: 2px;
+    outline: none;
+    border: 0;
+    margin-bottom: 15px;
+    transition: all 0.5s;
+}
+
+form input:focus, form textarea:focus {
+    border-radius: 16px;
+}
+
+form button {
+    padding: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    background-color: transparent;
+    border: 2px solid whitesmoke;
+    color: whitesmoke;
+    transition: all 1s;
+    margin-bottom: 20px;
+}
+
+form button:hover {
+    background-color: rgb(255, 255, 255);
+    color: #003785;
+    border-radius: 16px;
+ }
+
+}
+
+@media screen and (max-width: 435px){
+
+    /*cabeçalho*/
+
+    .interface h2{
+        font-size: 17px;
+     }
+
+    .menu-desktop, .btn-contato{
+        display: none;
+     }
+     
+ /* Inicio form contato*/
+/* Estilo para a mensagem de sucesso */
+#success-message {
+    color: fff;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.hidden {
+    display: none;
+}
+/*FIM MENSAGEM DE SUCESSO*/
+
+.contato {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 70vh;
+}
+
+.centro {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5px 30px;
+    background-color: #003785;
+    width: 300px;
+    color: white;
+    
+}
+
+section form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+form label {
+    margin-bottom: 2px;
+}
+
+form input, form textarea {
+    padding: 2px;
+    outline: none;
+    border: 0;
+    margin-bottom: 15px;
+    transition: all 0.5s;
+}
+
+form input:focus, form textarea:focus {
+    border-radius: 16px;
+}
+
+form button {
+    padding: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    background-color: transparent;
+    border: 2px solid whitesmoke;
+    color: whitesmoke;
+    transition: all 1s;
+    margin-bottom: 20px;
+}
+
+form button:hover {
+    background-color: rgb(255, 255, 255);
+    color: #003785;
+    border-radius: 16px;
+}
+/*fim form contato*/
+}
