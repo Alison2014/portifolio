@@ -7,5 +7,10 @@ function menuShow() {
         menuMobile.classList.add('open');
         document.querySelector('.icone').src = "img/close-lg-svgrepo-com.svg"
     }
-}
+    
+    /*CODIGO PARA QUANDO ABRIR O MENU O BODY TRAVAR*/
+    document.body.classList.toggle('menu-aberto');
+    document.querySelector('#menu').classList.toggle('menu-aberto');
+ }
+
 
