@@ -88,10 +88,10 @@
     /*INTERFACE TEXTOS*/
 
     .azul-escuro{
-        height: 400px;
+        height: 450px;
     }
     .azul-claro{
-        height: 400px;
+        height: 450px;
     }
 
     .azul-escuro h1{
@@ -106,7 +106,7 @@
     }
 
     .azul-escuro .button-fale{
-        top: 68%;
+        top: 64%;
         font-size: 14px;
         padding: 10px 40px;
         left: 25px;
