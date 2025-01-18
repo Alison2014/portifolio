@@ -1,0 +1,127 @@
+
+@media screen and (max-width: 999px) {
+    .cabecalho {
+        flex-direction: row; /* Mantém o alinhamento horizontal */
+        align-items: center; /* Alinha os itens ao centro */  
+    }
+    .logo{
+        margin-right: auto;
+        margin-left: 0; /* Ajuste para evitar deslocamento */
+        width: 50px;
+        height: 50px;
+    }
+    .botoes {
+        display: none;
+        
+    }
+    .mobile-menu-icone{
+        display: block;
+        margin-left: auto ;
+        align-self: flex-end; /* Faz o ícone se alinhar ao final da linha */
+
+        
+
+    }
+    .mobile-menu-icone button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        
+    }
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+        
+    }
+    .open{
+        display: block;
+    }
+    
+    .mobile-menu li {
+        margin: 10px 0; /* Espaçamento entre os botões */
+        
+    }
+
+    .mobile-menu li button {
+
+        border: 2px solid transparent; /* Borda invisível por padrão */
+        padding: 10px 20px;
+        font-size: 20px;
+        color: #ffffff;
+        cursor: pointer;
+        transition: all 0.4s ease;
+        width: 100%; /* Garante que os botões ocupem a largura toda */
+    }
+
+    /* Efeito de destaque ao passar o mouse (hover) */
+    .mobile-menu li button:hover {
+        background-color: #3498db; /* Cor de fundo ao passar o mouse */
+        color: white; /* Cor do texto ao passar o mouse */
+        border: 2px solid #2980b9; /* Borda visível ao passar o mouse */
+    }
+
+    /* Efeito ao clicar (active) */
+    .mobile-menu li button:active {
+        background-color: #2980b9; /* Cor de fundo ao clicar */
+        color: white; /* Cor do texto ao clicar */
+        border: 2px solid #1f78b4; /* Borda mais escura ao clicar */
+    }
+
+
+    /*INTERFACE TEXTOS*/
+    .azul-escuro h1{
+        font-size: 30px;
+        word-break: break-word;
+        width: 300px;
+        left: 25px;
+    }
+
+    .azul-escuro h3{
+        display: none;
+    }
+
+    .azul-escuro .button-fale{
+        top: 57%;
+        font-size: 14px;
+        padding: 10px 40px;
+        left: 25px;
+    }
+/* FIM INTERFACE TEXTOS*/
+
+
+/*CONTEINER*/
+    .conteiner .sobre{
+        display: block;
+        margin-top: 6%;
+        padding: 10px 80px;
+        position: relative;
+        border: 0;
+        border-radius: 0;
+        box-shadow:  0px 5px 0px 0px rgba(1, 0, 0, 0.078);
+    }
+
+    .sobre h2{
+        font-size: 25px;
+
+    }
+    .sobre h3{
+        font-size: 15px;
+    }
+    .sobre button{
+        margin-top:  18px ;
+        padding: 10px 10px;
+        font-size: 12px;
+        font-weight: 100;
+    }
+    /* FIM CONTEINER*/
+
+    .logos{
+     width: 80%;
+     margin-top: 5px;
+    }
+    .loops img{
+        width: 45px;
+    }
+}
