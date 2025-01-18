@@ -7,8 +7,9 @@
     .logo{
         margin-right: auto;
         margin-left: 0; /* Ajuste para evitar deslocamento */
-        width: 50px;
+        width: 60px;
         height: 50px;
+        z-index: 1;
     }
     .botoes {
         display: none;
@@ -18,7 +19,7 @@
         display: block;
         margin-left: auto ;
         align-self: flex-end; /* Faz o ícone se alinhar ao final da linha */
-
+        z-index: 1;
         
 
     }
@@ -28,11 +29,25 @@
         cursor: pointer;
         
     }
+
+    /*CODIGO PARA QUANDO ABRIR 
+    O MENU O BODY TRAVAR/ js*/
+    body.menu-aberto{
+        overflow: hidden;
+    }
+    /*FIM*/
+
     .mobile-menu ul {
+        top: 0;
+        left: 0;
         display: flex;
         flex-direction: column;
         text-align: center;
-        padding-bottom: 1rem;
+        background-color: #1a3a5f;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        margin: 0;
         
     }
     .open{
@@ -92,14 +107,19 @@
 
 
 /*CONTEINER*/
+
+    .conteiner{
+        width: 100%;
+        background-color: whitesmoke;
+    }
     .conteiner .sobre{
         display: block;
         margin-top: 6%;
-        padding: 10px 80px;
+        padding: 10px 40px;
         position: relative;
         border: 0;
         border-radius: 0;
-        box-shadow:  0px 5px 0px 0px rgba(1, 0, 0, 0.078);
+        background-color: whitesmoke;
     }
 
     .sobre h2{
