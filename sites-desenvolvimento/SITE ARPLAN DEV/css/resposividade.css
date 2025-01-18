@@ -86,6 +86,14 @@
 
 
     /*INTERFACE TEXTOS*/
+
+    .azul-escuro{
+        height: 400px;
+    }
+    .azul-claro{
+        height: 400px;
+    }
+
     .azul-escuro h1{
         font-size: 30px;
         word-break: break-word;
@@ -98,7 +106,7 @@
     }
 
     .azul-escuro .button-fale{
-        top: 57%;
+        top: 68%;
         font-size: 14px;
         padding: 10px 40px;
         left: 25px;
@@ -123,16 +131,16 @@
     }
 
     .sobre h2{
-        font-size: 25px;
+        font-size: 30px;
 
     }
     .sobre h3{
-        font-size: 15px;
+        font-size: 20px;
     }
     .sobre button{
         margin-top:  18px ;
-        padding: 10px 10px;
-        font-size: 12px;
+        padding: 12px 12px;
+        font-size: 15px;
         font-weight: 100;
     }
     /* FIM CONTEINER*/
