@@ -169,8 +169,40 @@ footer .social-icons a:hover {
     text-align: center;
     padding-bottom: 1rem;
 }
+.conteiner{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.projetos-interface{
+    display: flex;
+    justify-content: center;
+    
+    height: 75vh;
+}
+
+.desenvolvendo{
+    padding: 20px 100px;
+    background-color: #003785;
+    margin-bottom: 60px;
+    margin-top: 30px;
+    color: #fff;
+    border-radius: 10px;
+}
+.desenvolvendo a{
+    color: black;
+}
 
 
+.finalizados{
+    padding: 20px 100px;
+    background-color: #003785;
+    margin-left: 50px;
+    margin-bottom: 60px;
+    margin-top: 30px;
+    color: #fff;
+    border-radius: 10px;
+}
 
 /* RESPOSIVIDADE */
 @media screen and (max-width: 1110px){
@@ -248,6 +280,27 @@ footer .social-icons a:hover {
         background-color: #2980b9; /* Cor de fundo ao clicar */
         color: white; /* Cor do texto ao clicar */
         border: 2px solid #1f78b4; /* Borda mais escura ao clicar */
+    }
+
+   
+    .desenvolvendo{
+        padding: 20px 10px;
+        background-color: #003785;
+      
+        color: #fff;
+        border-radius: 10px;
+        font-size: 8px;
+        margin-bottom: 250px;
+        
+    }
+    
+    .finalizados{
+        padding: 20px 10px;
+        background-color: #003785;
+        color: #fff;
+        border-radius: 10px;
+        font-size: 8px;
+        margin-bottom: 250px;
     }
 }
 
