@@ -137,6 +137,7 @@
     }
     /* FIM CONTEINER*/
 
+
     .marcas{
      width: 80%;
      margin-top: 5px;
@@ -185,7 +186,30 @@
         margin-left: 0;
     }  
     /*PARTE ARPLAN ENGENHARIA*/
+
+    
+     /* AR SEGURO */
+     .ar-seguro{
+        text-align: center;
+     }
+     .textos-ar-seguro p{
+        padding-left: 25px;
+        padding-right: 25px;
+        font-size: 15px;
+     }
+     .caixinhas{
+        flex-direction: column;
+        padding-top: 300px;
+     }
+     .botao-sobre button{
+        margin-top: 380px;
+     }
+      /* FIM AR SEGURO */
+
 }
+
+
+
 
 @media screen and (max-width:399px) {
     .img-pmoc img{
