@@ -145,11 +145,9 @@
     .loops img{
         width: 50px;
     }
-    
     .serviços{
         font-size: 22px;
     }
-
     .quadrados{
         flex-direction: column;
         
@@ -205,11 +203,31 @@
         margin-top: 380px;
      }
       /* FIM AR SEGURO */
+   
+    /*Section-razoes*/
+    .razoes{
+        margin-top: 600px;
+        background-color: transparent;
+    }
+    .textoEfundo{
+        background-color: #1a3a5f;
+    }
+    .razoes > img{
+        display: none;
+    }  
+    .caixinhas-valores {
+        flex-direction: column;
+        align-items: center;
+        background-color: #1a3a5f;
+        padding-bottom: 80px;
+    }
+    /*Section-razoes*/
+
+    
+
+
 
 }
-
-
-
 
 @media screen and (max-width:399px) {
     .img-pmoc img{
