@@ -380,7 +380,7 @@ header{
 }
 /* FIM AR SEGURO*/
 
-/*OBRAS*/
+/*VALORES*/
 .razoes{
     margin-top: 4.5rem;
     width: 100%;
@@ -396,8 +396,6 @@ header{
     z-index: -1;
     position: absolute;
 }
-    
-
 .textoEfundo{
    width: 900px;
    height: 400px;
@@ -417,7 +415,6 @@ header{
     justify-content: center;
     margin-top: 50px;
 }
-
 .perso-valores{
    width: 250px;
    background-color: #fff;
@@ -430,7 +427,6 @@ header{
     margin-top: 4px;
     font-size: 20px;
 }
-
 .perso-valores p{
     font-size: 14px;
     color: black;
@@ -438,15 +434,31 @@ header{
     text-align: left;
     margin: 10px;
 }
-
 .img-missao{
     margin-top: 2px;
     width: 45px;
 }
-
 .img-visao{
     width: 50px;
 }
 .img-valores{
     width: 50px;
+}
+/*VALORES*/
+
+
+/*texto-obra-arplan*/
+.texto-h1-obras h1{
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 20px;
+    color: #1a3a5f;
+}
+/*texto-obra-arplan*/
+
+footer{
+    background-color: #1a3a5f;
+    width: 100%;
+    height: 160px;
+    margin-top: 80px;
 }
