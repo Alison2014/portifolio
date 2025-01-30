@@ -446,19 +446,46 @@ header{
 }
 /*VALORES*/
 
-
-/*texto-obra-arplan*/
-.texto-h1-obras h1{
+.carrossel-obras{
+    margin-top: 50px;
+    margin-bottom: 50px;
     text-align: center;
-    margin-top: 70px;
-    margin-bottom: 20px;
-    color: #1a3a5f;
+    color: #999;
 }
-/*texto-obra-arplan*/
+
+/*FOOTER*/
 
 footer{
     background-color: #1a3a5f;
-    width: 100%;
-    height: 160px;
-    margin-top: 80px;
+    flex-flow: row wrap;
+    padding: 50px;
+}
+
+
+footer h2{
+    font-weight: 600;
+    font-size: 17px;
+    color: #999;
+}
+footer ul{
+    list-style: none;
+    padding-left: 0;
+}
+footer li{
+    line-height: 2em;
+}
+.footer-right{
+    display: flex;
+    gap: 100px;
+}
+.box{
+    flex-direction: column;
+}
+.box li{
+    color: #999;
+}
+.footer-bottom{
+    text-align: center;
+    color: #999;
+    padding-top: 50px;
 }
