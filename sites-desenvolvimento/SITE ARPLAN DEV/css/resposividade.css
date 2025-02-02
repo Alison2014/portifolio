@@ -1,4 +1,10 @@
 
+@media screen and (max-width: 1130px) {
+    .logo-footer{
+        margin-right: 150px;
+    }
+}
+
 @media screen and (max-width: 999px) {
     .cabecalho {
         flex-direction: row; /* Mantém o alinhamento horizontal */
@@ -230,6 +236,9 @@
         flex-direction: column;
         text-align: center;
         gap: 40px;
+    }
+    .logo-footer{
+        display: none;
     }
     /*footer*/
 

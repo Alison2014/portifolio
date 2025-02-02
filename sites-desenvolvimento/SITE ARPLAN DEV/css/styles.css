@@ -460,8 +460,25 @@ footer{
     flex-flow: row wrap;
     padding: 50px;
 }
-
-
+.logo-footer{
+    margin-right: 120px;
+}
+.logo-footer p{
+    position: absolute;
+    left: 100px;
+    margin-top: 50px;
+    color: #fff;
+}
+.icons-footer{
+    position: absolute;
+    left: 125px;
+    margin-top: 100px;
+}
+.icons-footer i{
+    font-size: 35px;
+    margin-left: 10px;
+    color: #999;
+}
 footer h2{
     font-weight: 600;
     font-size: 17px;
@@ -477,15 +494,30 @@ footer li{
 .footer-right{
     display: flex;
     gap: 100px;
+    text-align: center;
+}
+.footer-right img{
+    left: 125px;
+    position: absolute;
 }
 .box{
     flex-direction: column;
+    
 }
 .box li{
     color: #999;
+    text-align: center;
+}
+.box li a{
+    color: #999;
+    text-align: center;
+}
+.logo-footer-mobile{
+    display: none;
 }
 .footer-bottom{
     text-align: center;
     color: #999;
-    padding-top: 50px;
+    padding-top: 5px;
 }
+
