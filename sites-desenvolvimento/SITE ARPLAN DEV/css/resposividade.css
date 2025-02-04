@@ -232,13 +232,18 @@
     .carrossel-obras{
         margin-top: 550px;
     }
-    .footer-right{
-        flex-direction: column;
-        text-align: center;
-        gap: 40px;
+   
+    .footer-section{
+      flex-direction: column-reverse;
+    }
+    .conteiner-footer{
+        flex-direction: column-reverse;
+        gap: 70px;
     }
     .logo-footer{
-        display: none;
+        text-align: center;
+        margin-right: 0;
+        margin-top: 50px;
     }
     /*footer*/
 

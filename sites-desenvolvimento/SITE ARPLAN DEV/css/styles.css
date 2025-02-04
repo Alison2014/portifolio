@@ -41,9 +41,14 @@ header{
     background-color: transparent;
     border-radius: 5px;
     padding: 5px 14px; /* Adicionando um pouco de espaçamento ao redor do texto */
+    transition: 0.4s;
 }
 .perso:hover{
-    color: blue;
+    transform: translateY(-4px);
+    background-color: #fff;
+    color: #1a3a5f;
+    border-radius: 15px;
+    
 }
 .button-contato{
     border: none;
@@ -170,9 +175,10 @@ header{
     font-size: 28px;
     color: #fff;
     transition: 0.4s;
+    cursor: pointer;
 }
 .sobre button:hover{
-    background-color:#1a3a5f ;
+    background-color:#1a3a5f;
 }
 @media screen and (max-width: 1299px){
     .conteiner .sobre{
@@ -297,6 +303,14 @@ header{
     background-color: #2fbdff;
     color: #fff;
     font-size: 15px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.botao-azul button:hover{
+    transform: translateY(-4px);
+    background-color: #fff;
+    color: #1a3a5f;
+    border-radius: 15px;
 }
 .botao-azul h4{
     margin-top: 15px;
@@ -377,6 +391,14 @@ header{
     color: #fff;
     margin-top: 25px;  
     font-size: 15px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.botao-sobre button:hover{
+    transform: translateY(-4px);
+    background-color:  #1a3a5f;
+    border-radius: 15px;
+   
 }
 /* FIM AR SEGURO*/
 
@@ -422,6 +444,10 @@ header{
    color: #1a3a5f;
    text-align: center;
    border-radius: 10px;
+   transition: 0.3s;
+}
+.perso-valores:hover{
+    transform: translateY(-5px);
 }
 .perso-valores h3{
     margin-top: 4px;
@@ -457,67 +483,49 @@ header{
 
 footer{
     background-color: #1a3a5f;
-    flex-flow: row wrap;
     padding: 50px;
 }
+.footer-section{
+    display: flex;
+    justify-content: center;
+}
 .logo-footer{
-    margin-right: 120px;
+    margin-right: 100px;
 }
 .logo-footer p{
-    position: absolute;
-    left: 100px;
-    margin-top: 50px;
-    color: #fff;
+   font-size: 15px;
+   color: #999;
+   margin-bottom: 10px;
 }
-.icons-footer{
-    position: absolute;
-    left: 125px;
-    margin-top: 100px;
+.logo-footer i{
+   color: #999;
+   font-size: 25px;
 }
-.icons-footer i{
-    font-size: 35px;
-    margin-left: 10px;
-    color: #999;
-}
-footer h2{
-    font-weight: 600;
-    font-size: 17px;
-    color: #999;
-}
-footer ul{
-    list-style: none;
-    padding-left: 0;
-}
-footer li{
-    line-height: 2em;
-}
-.footer-right{
+.conteiner-footer{
     display: flex;
+    text-align: center;
     gap: 100px;
-    text-align: center;
+    margin-top: 7px;
 }
-.footer-right img{
-    left: 125px;
-    position: absolute;
-}
-.box{
-    flex-direction: column;
-    
-}
-.box li{
+.conteiner-footer h2{
     color: #999;
-    text-align: center;
+    font-size: 30px;
+    font-weight: 900;
 }
-.box li a{
+.conteiner-footer a{
+    text-decoration: none;
     color: #999;
-    text-align: center;
+    border-bottom: 1px solid grey;
+    font-size: 18px;
+    font-weight: lighter;
 }
-.logo-footer-mobile{
-    display: none;
+.conteiner-footer p{
+    font-size: 18px;
+    color: #999;
+    font-weight: lighter;
 }
 .footer-bottom{
     text-align: center;
     color: #999;
-    padding-top: 5px;
 }
 
