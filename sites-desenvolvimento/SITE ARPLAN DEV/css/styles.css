@@ -9,7 +9,7 @@
 header{
     background-color:transparent;
     width: 100%;
-    padding: 15px 5px;
+    padding: 7px 5px;
    ; /* Adiciona a sombra embaixo */
     position: absolute;
     z-index: 1;
@@ -84,7 +84,7 @@ header{
     display: flex;
  }
  .azul-escuro{
-     width: 77%;
+     width: 78%;
      height: 600px;
      background-color: #1a3a5f;
      border-top-right-radius: 90px;
@@ -269,6 +269,10 @@ header{
     border-radius: 15px;
     width: 260px;
 }
+.quadra:hover{
+    transform: scale(1.05);
+    transition: .6s;
+}
 /* fim QUADRADOS AZUIS ESCUROS*/
 
 
@@ -444,10 +448,10 @@ header{
    color: #1a3a5f;
    text-align: center;
    border-radius: 10px;
-   transition: 0.3s;
 }
 .perso-valores:hover{
-    transform: translateY(-5px);
+    transform: scale(1.05);
+    transition: .6s;
 }
 .perso-valores h3{
     margin-top: 4px;
@@ -482,6 +486,7 @@ header{
 /*FOOTER*/
 
 footer{
+    border-top: 5px solid #287cb0;
     background-color: #1a3a5f;
     padding: 50px;
 }

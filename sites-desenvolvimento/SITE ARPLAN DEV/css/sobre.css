@@ -1,0 +1,264 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Alice", serif;
+}
+
+/*HEADER*/
+header{
+    background-color:#1a3a5f;
+    width: 100%;
+    top: 0;
+    padding: 5px 5px;
+    position: sticky;/* FAZ QUE O MENU FIQUE FIXO AO ROLAR PRA BAIXO*/
+    border-bottom: 5px solid #287cb0;
+    
+}
+.cabecalho{
+    display: flex;
+    justify-content: space-between; /* Para garantir que a logo e os botões se alinhem corretamente */
+    align-items: center; /* Para garantir que a logo e os botões fiquem no centro verticalmente */
+    margin: 0px;
+}
+.logo{
+    margin-left: 50px;
+    margin-top: 0px;
+    display: flex;
+    width: 10px;
+}
+.botoes, ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+}
+.botoes, li{
+    margin-left:15x;
+}
+.perso{
+    border: none;
+    cursor: pointer;
+    font-size: 22px;
+    color: white;
+    background-color: transparent;
+    border-radius: 5px;
+    padding: 5px 14px; /* Adicionando um pouco de espaçamento ao redor do texto */
+    transition: 0.4s;
+}
+.perso:hover{
+    transform: translateY(-4px);
+    background-color: #fff;
+    color: #1a3a5f;
+    border-radius: 15px;
+    
+}
+.button-contato{
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 25px;
+    padding: 10px 15px;
+    background-color: #287cb0;
+    color: #fff;
+    box-shadow: 0 4px 6px rgba(42, 42, 42, 0.2);
+    margin-right: 70px;
+    margin-left: 25px;
+    transition: 0.3s;
+}
+.button-contato:hover{
+  transform: translateY(-4px);
+  background-color: #fff;
+  color: #1a3a5f;
+}
+.mobile-menu-icone{
+    display: none; /* Faz que o elemento suma da tela ate que apareça uma condição pra ele aparecer*/
+    
+}
+.mobile-menu{
+    display: none;
+}
+/*HEADER FIM*/
+
+ 
+/*FOOTER*/
+
+footer{
+    margin-top: 25%;
+    border-top: 5px solid #287cb0;
+    background-color: #1a3a5f;
+    padding: 30px;
+}
+.footer-section{
+    display: flex;
+    justify-content: center;
+}
+.logo-footer{
+    margin-right: 100px;
+}
+.logo-footer p{
+   font-size: 15px;
+   color: #999;
+   margin-bottom: 10px;
+}
+.logo-footer i{
+   color: #999;
+   font-size: 25px;
+}
+.conteiner-footer{
+    display: flex;
+    text-align: center;
+    gap: 100px;
+    margin-top: 7px;
+}
+.conteiner-footer h2{
+    color: #999;
+    font-size: 30px;
+    font-weight: 900;
+}
+.conteiner-footer a{
+    text-decoration: none;
+    color: #999;
+    border-bottom: 1px solid grey;
+    font-size: 18px;
+    font-weight: lighter;
+}
+.conteiner-footer p{
+    font-size: 18px;
+    color: #999;
+    font-weight: lighter;
+}
+.footer-bottom{
+    text-align: center;
+    color: #999;
+}
+/*FOOTER*/
+
+
+.titulo h3{
+    text-align: center;
+    margin-top: 45px;
+    font-size: 14px;
+    font-weight: 200;
+    color: #287cb0;
+    letter-spacing: 2px;
+}
+.titulo h1{
+    text-align: center;
+    font-weight: bolder;
+    color: #1a3a5f;
+    letter-spacing: 2px;
+}
+
+
+@media screen and (max-width: 1130px) {
+    .logo-footer{
+        margin-right: 150px;
+    }
+}
+@media screen and (max-width: 999px) {
+    .cabecalho {
+        flex-direction: row; /* Mantém o alinhamento horizontal */
+        align-items: center; /* Alinha os itens ao centro */  
+    }
+    .logo{
+        margin-right: auto;
+        margin-left: 0; /* Ajuste para evitar deslocamento */
+        width: 60px;
+        height: 50px;
+        z-index: 1;
+    }
+    .botoes {
+        display: none;
+        
+    }
+    .mobile-menu-icone{
+        display: block;
+        margin-left: auto ;
+        align-self: flex-end; /* Faz o ícone se alinhar ao final da linha */
+        z-index: 1;
+        
+
+    }
+    .mobile-menu-icone button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        
+    }
+
+    /*CODIGO PARA QUANDO ABRIR 
+    O MENU O BODY TRAVAR/ js*/
+    body.menu-aberto{
+        overflow: hidden;
+    }
+    /*FIM*/
+
+    .mobile-menu ul {
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        background-color: #1a3a5f;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        margin: 0;
+        
+    }
+    .open{
+        display: block;
+    }
+    .mobile-menu li {
+        margin: 10px 0; /* Espaçamento entre os botões */
+        
+    }
+    .mobile-menu li button {
+
+        border: 2px solid transparent; /* Borda invisível por padrão */
+        padding: 10px 20px;
+        font-size: 20px;
+        color: #ffffff;
+        cursor: pointer;
+        transition: all 0.4s ease;
+        width: 100%; /* Garante que os botões ocupem a largura toda */
+    }
+
+    /* Efeito de destaque ao passar o mouse (hover) */
+    .mobile-menu li button:hover {
+        background-color: #3498db; /* Cor de fundo ao passar o mouse */
+        color: white; /* Cor do texto ao passar o mouse */
+        border: 2px solid #2980b9; /* Borda visível ao passar o mouse */
+    }
+
+    /* Efeito ao clicar (active) */
+    .mobile-menu li button:active {
+        background-color: #2980b9; /* Cor de fundo ao clicar */
+        color: white; /* Cor do texto ao clicar */
+        border: 2px solid #1f78b4; /* Borda mais escura ao clicar */
+    }
+
+
+    
+    /*footer*/
+    .carrossel-obras{
+        margin-top: 550px;
+    }
+   
+    .footer-section{
+      flex-direction: column-reverse;
+    }
+    .conteiner-footer{
+        flex-direction: column-reverse;
+        gap: 70px;
+    }
+    .logo-footer{
+        text-align: center;
+        margin-right: 0;
+        margin-top: 50px;
+    }
+    /*footer*/
+
+}
+@media screen and (max-width:399px) {
+}
