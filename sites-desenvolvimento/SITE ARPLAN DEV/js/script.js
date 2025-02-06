@@ -13,5 +13,19 @@ function menuShow() {
     document.querySelector('#menu').classList.toggle('menu-aberto');
  }
 
- 
+           
+/*FUNÇAO PARA OBSERVAR ALGUM ELEMENTO, QUANDO TIVER MUDANÇA ELE ME AVISA*/
+const myObserver = new IntersectionObserver((observacao) => {
+    observacao.forEach( (entry) => {
+        if(entry.isIntersecting){
+            entry.target.classList.add('show')
+        }
+    })
+})
+
+const elements = document.querySelectorAll('.scroll');
+
+/*REUNI TODOS OS ELEMENTOS E TRANSFORMA ELE EM LISTA E VAI PEGANDO ELEMENT POR ELEMENT*/
+elements.forEach((element) => myObserver.observe(element));/*MY OBSERVE ITEM PARA SER OBSERVADO*/
+
 
