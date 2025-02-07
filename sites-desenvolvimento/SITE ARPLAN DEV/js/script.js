@@ -29,12 +29,12 @@ const elements = document.querySelectorAll('.scroll');
 elements.forEach((element) => myObserver.observe(element));/*MY OBSERVE ITEM PARA SER OBSERVADO*/
 
 
-Mande o código /*PARTE DA ANIMAÇÃO  DO FLIP QUADRADOS*/
+/*PARTE DA ANIMAÇÃO  DO FLIP QUADRADOS*/
 document.querySelectorAll('.flip').forEach(flip => {
     flip.addEventListener('click', function() {
         // Alterna a classe que controla a rotação
         flip.classList.toggle('flip-rotate');
-
+        
         // Define o tempo para reverter a rotação após 3 segundos
         setTimeout(() => {
             flip.classList.toggle('flip-rotate');
