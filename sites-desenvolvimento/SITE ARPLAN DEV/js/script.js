@@ -29,3 +29,11 @@ const elements = document.querySelectorAll('.scroll');
 elements.forEach((element) => myObserver.observe(element));/*MY OBSERVE ITEM PARA SER OBSERVADO*/
 
 
+/*PARTE DA ANIMAÇÃO  DO FLIP QUADRADOS*/
+document.querySelectorAll('.flip').forEach(flip => {
+    flip.addEventListener('click', function() {
+        // Alterna a classe que controla a rotação
+        flip.classList.toggle('flip-rotate');
+    });
+});
+/*PARTE DA ANIMAÇÃO  DO FLIP QUADRADOS*/
