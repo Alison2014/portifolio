@@ -28,7 +28,7 @@ const elements = document.querySelectorAll('.scroll');
 /*REUNI TODOS OS ELEMENTOS E TRANSFORMA ELE EM LISTA E VAI PEGANDO ELEMENT POR ELEMENT*/
 elements.forEach((element) => myObserver.observe(element));/*MY OBSERVE ITEM PARA SER OBSERVADO*/
 
-```
+
 /*PARTE DA ANIMAÇÃO DO FLIP QUADRADOS*/
 document.querySelectorAll('.flip').forEach(flip => {
   let timeoutId = null;
@@ -48,4 +48,3 @@ document.querySelectorAll('.flip').forEach(flip => {
   });
 });
 /*PARTE DA ANIMAÇÃO DO FLIP QUADRADOS*/
-```
