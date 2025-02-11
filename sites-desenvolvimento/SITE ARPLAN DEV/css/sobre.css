@@ -5,6 +5,21 @@
     font-family: "Alice", serif;
 }
 
+.scroll {
+    opacity: 0;
+    filter: blur(3px);
+    transform: translateX(-100%); /* Faz o elemento começar à esquerda */
+    transition: opacity 0.8s ease, filter 0.8s ease, transform 0.8s ease;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0); /* Faz o elemento se mover para sua posição original */
+    transition: opacity 0.8s ease, filter 0.8s ease, transform 0.8s ease;
+}
+
+
 /*HEADER*/
 header{
     background-color:#1a3a5f;
@@ -125,6 +140,8 @@ header{
     color: #fff;
     margin-right: 50px;
     line-height: 1.2;
+    margin-bottom: 25px;
+    margin-top: 25px;
 }
 .sobre-nos img{
     border-top-left-radius: 25px;
@@ -149,12 +166,14 @@ header{
     color: #3498db;
     font-weight: bolder;
     letter-spacing: 3px;
+    margin-top: 25px;
 }
 .sobre-nos2 p{
     font-size: 16px;
     color: #fff;
     margin-left: 50px;
     line-height: 1.2;
+    margin-bottom: 25px;
 }
 .sobre-nos2 img{
     width: 500px;
@@ -215,10 +234,19 @@ header{
 .sobre-nos4 img{
     width: 900px;
     margin-top: 25px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     border-radius: 25px;
     border: 5px solid #1f78b4;
 }
+.sobre-nos4 p{
+    text-align: center;
+    font-size: 17px;
+    margin-bottom: 15px;
+    color: #fff;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
 /*HISTORIA-ARPLAN*/
  
 /*FOOTER*/
@@ -370,11 +398,11 @@ footer{
     .titulo h3{
         margin-top: 50px;
     }
-
     .titulo h1{
        font-size: 25px;
        text-decoration-thickness: 2px;
     }
+
 
     .sobre-nos{
         flex-direction: column;
@@ -386,13 +414,15 @@ footer{
         margin-right: 25px;
         margin-left: 25px;
         margin-bottom: 20px;
-        font-size: 10px;
+        font-size: 14px;
     }
     .sobre-nos img{
         border-top-left-radius: 0;
         border-bottom-right-radius: 25px;
-        width: 300px;
+        width: 350px;
     }
+
+
 
     .sobre-nos2{
         flex-direction: column-reverse;
@@ -403,46 +433,58 @@ footer{
         margin-left: 25px;
         margin-right: 25px;
         margin-bottom: 20px;
-        font-size: 10px;
+        font-size: 14px;
     }
     .sobre-nos2 img{
         border-top-right-radius: 0;
         border-bottom-left-radius: 25px;
-        width: 300px;
+        width: 350px;
     }
     .sobre-nos2 h1{
         margin-left: 0;
         margin-bottom: 5px;
     }
 
+
+
     .sobre-nos3{
-        width: 300px;
+        width: 350px;
         min-width: 200px;
         max-width: 750px;
     }
-
     .sobre-nos3 h1{
         font-size: 15px;
     }
-
     .sobre-nos3 li{
         font-size: 15px;
+        margin-left: 5px;
+        margin-right: 5px;
     }
     .sobre-nos4{
-        display: none;
+        margin-bottom: 0;
+        width: 350px;
     }
+    .sobre-nos4 img{
+        width: 300px;
+        border: 0;
+    }
+   
+    
+    /*SOBRE-NOS*/
     
     /*footer*/
     .carrossel-obras{
         margin-top: 550px;
     }
-   
     .footer-section{
       flex-direction: column-reverse;
     }
     .conteiner-footer{
         flex-direction: column-reverse;
-        gap: 70px;
+        gap: 40px;
+    }
+    .conteiner-footer h2{
+        font-size: 25px;
     }
     .logo-footer{
         text-align: center;

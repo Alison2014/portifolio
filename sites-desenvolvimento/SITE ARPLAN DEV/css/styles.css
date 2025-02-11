@@ -259,7 +259,6 @@ header{
 
 
 /* QUADRADOS AZUIS ESCUROS*/
-
 .quadrados {
     display: flex;
     justify-content: center;
@@ -523,7 +522,6 @@ header{
 }
 
 /*FOOTER*/
-
 footer{
     border-top: 5px solid #287cb0;
     background-color: #1a3a5f;
@@ -574,52 +572,17 @@ footer{
 }
 
 /*ANIMAÇÃO DE ENTRADA DE ELEMENTOS*/
-.scroll{
+.scroll {
     opacity: 0;
     filter: blur(3px);
-    transition: all 0.8s;
+    transform: translateY(20px); /* Adiciona um efeito de movimento sutil */
+    transition: opacity 0.8s ease, filter 0.8s ease, transform 0.8s ease;
 }
-.show{
+.show {
     opacity: 1;
     filter: blur(0);
-    transition: all 0.8s;
+    transform: translateY(0); /* Retorna ao estado original */
+    transition: opacity 0.8s ease, filter 0.8s ease, transform 0.8s ease;
 }
 /*ANIMAÇÃO DE ENTRADA DE ELEMENTOS*/
 
-.total{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.conter{
-    position: relative;
-}
-.conter:hover .flip{
-    transform: rotateY(180deg);
-}
-
-
-.flip{
-    position: absolute;
-    width: 260px;
-    cursor: pointer;
-    transform-style: preserve-3d;
-    transition: 1s;
-}
-.frente, .tras{
-    position: absolute;
-    width: 260px;
-    height: 260px;
-    border-radius: 20px;
-    box-shadow: 0px 0px 10px #00000065;
-    backface-visibility: hidden;
-}
-.frente img{
-    width: 260px;
-}
-.tras{
-    background-color: #1a3a5f;
-    transform: rotateY(180deg);
-}
