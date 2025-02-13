@@ -13,7 +13,9 @@ function menuShow() {
     document.querySelector('#menu').classList.toggle('menu-aberto');
  }
 
-           
+ 
+/*SCROLL DO SITE*/ 
+
 /*FUNÇAO PARA OBSERVAR ALGUM ELEMENTO, QUANDO TIVER MUDANÇA ELE ME AVISA*/
 const myObserver = new IntersectionObserver((observacao) => {
     observacao.forEach( (entry) => {
@@ -27,6 +29,8 @@ const elements = document.querySelectorAll('.scroll');
 
 /*REUNI TODOS OS ELEMENTOS E TRANSFORMA ELE EM LISTA E VAI PEGANDO ELEMENT POR ELEMENT*/
 elements.forEach((element) => myObserver.observe(element));/*MY OBSERVE ITEM PARA SER OBSERVADO*/
+
+/*SCROLL DO SITE*/ 
 
 
 /*PARTE DA ANIMAÇÃO  DO FLIP QUADRADOS*/
@@ -42,3 +46,12 @@ document.querySelectorAll('.flip').forEach(flip => {
     });
 });
 /*PARTE DA ANIMAÇÃO  DO FLIP QUADRADOS*/
+
+/* FUNÇAÕ ESCONDE TELA DE CARREGAMENTO LOANDING*/
+window.onload = function() {
+    setTimeout(function() {
+      document.getElementById("loading-screen").style.display = "none";  // Esconde a tela de carregamento
+      document.getElementById("content").style.display = "block";  // Exibe o conteúdo do site
+    }, 3500); // Exemplo de 3 segundos de tela de carregamento
+  };
+/* FUNÇAÕ ESCONDE TELA DE CARREGAMENTO LOANDING*/

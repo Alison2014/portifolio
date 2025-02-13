@@ -134,8 +134,16 @@
         font-size: 30px;
 
     }
-    .sobre h3{
+    .versao-pc-text{
+        font-size: 22px;
+        display: none;
+    }
+    .versao-mobile-text{
+        display: flex;
+        text-align: center;
+        font-weight: 100;
         font-size: 20px;
+        max-width: 500px;
     }
     .sobre button{
         margin-top:  18px ;
