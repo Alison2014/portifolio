@@ -638,7 +638,7 @@ footer{
 
 
 .obras-con{
-    margin-top: 70px;
+    margin-top: 50px;
     margin-bottom: 10px;
     text-align: center;
     color: #1a3a5f;
@@ -670,23 +670,18 @@ footer{
 
 .slide-content {
     position: absolute;
-    bottom: -100%; /* Esconde o texto inicialmente */
     left: 0;
     width: 100%;
-    background: rgba(0, 0, 0, 0.7); /* Fundo semi-transparente */
     color: white;
     text-align: center;
     padding: 10px;
-    transition: bottom 0.5s ease-in-out; /* Animação suave */
-}
-
-.slide:hover .slide-content {
-    bottom: 0; /* Mostra o texto ao passar o mouse */
+    margin-top: 270px;
+    font-weight: 600;
 }
 
 .slide-text {
-    font-size: 18px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra no texto */
+    font-size: 15px;
+    font-family: Arial;
 }
 
 .prev, .next {
