@@ -25,6 +25,7 @@
     <div class="loader"></div>
     <p>ARPLAN</p>
    </div>
+    <!-- Tela de carregamento -->
 
 
     <header>
@@ -84,7 +85,6 @@
             </li>
         </ul>
     </div><!--Fim mobile-menu-->
-
     </header>
 
 
@@ -326,7 +326,23 @@
     </section><!--Fim-razoes-->
 
     <h1 class="carrossel-obras scroll">EM CONSTRUÇÃO <br> CARROSSEL DE FOTOS</h1>
-
+    <div class="carrossel">
+        <div class="slides">
+            <!-- Slides duplicados no final -->
+            <div class="slide" style="background-color: #FF5733;">Slide 1</div>
+            <div class="slide" style="background-color: #33FF57;">Slide 2</div>
+            <div class="slide" style="background-color: #3357FF;">Slide 3</div>
+            <div class="slide" style="background-color: #FF33A1;">Slide 4</div>
+            <div class="slide" style="background-color: #A133FF;">Slide 5</div>
+            <div class="slide" style="background-color: #33FFF5;">Slide 6</div>
+            <!-- Slides duplicados no início -->
+            <div class="slide" style="background-color: #FF5733;">Slide 1</div>
+            <div class="slide" style="background-color: #33FF57;">Slide 2</div>
+            <div class="slide" style="background-color: #3357FF;">Slide 3</div>
+        </div>
+        <button class="prev" onclick="moverSlide(-1)">&#10094;</button>
+        <button class="next" onclick="moverSlide(1)">&#10095;</button>
+    </div>
 
 
     <footer class="footer-select">
