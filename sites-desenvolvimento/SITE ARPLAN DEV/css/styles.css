@@ -562,13 +562,6 @@ header{
 }
 /*VALORES*/
 
-.carrossel-obras{
-    margin-top: 50px;
-    margin-bottom: 50px;
-    text-align: center;
-    color: #999;
-}
-
 /*FOOTER*/
 footer{
     border-top: 5px solid #287cb0;
@@ -636,11 +629,25 @@ footer{
 }
 /*ANIMAÇÃO DE ENTRADA DE ELEMENTOS*/
 
-/*SLIDE CARROSSEL OBRAS*/
+.obras-con{
+    margin-top: 70px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #1a3a5f;
+}
+
+
+.obras-con{
+    margin-top: 70px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #1a3a5f;
+}
+
 .carrossel {
     position: relative;
     width: 100%;
-    height: 400px; /* Altura ajustada para 400px */
+    height: 370px; /* Altura ajustada para 370px */
     overflow: hidden;
 }
 
@@ -657,9 +664,29 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 24px;
+    position: relative;
+    overflow: hidden;
+}
+
+.slide-content {
+    position: absolute;
+    bottom: -100%; /* Esconde o texto inicialmente */
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Fundo semi-transparente */
     color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    padding: 10px;
+    transition: bottom 0.5s ease-in-out; /* Animação suave */
+}
+
+.slide:hover .slide-content {
+    bottom: 0; /* Mostra o texto ao passar o mouse */
+}
+
+.slide-text {
+    font-size: 18px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra no texto */
 }
 
 .prev, .next {
@@ -694,9 +721,8 @@ footer{
 }
 
 /* Responsividade para 380px: 1 slide visível */
-@media (max-width: 400px) {
+@media (max-width: 390px) {
     .slide {
         flex: 0 0 100%; /* 1 slide visível */
     }
-}
-/*SLIDE CARROSSEL OBRAS*/
+} 
