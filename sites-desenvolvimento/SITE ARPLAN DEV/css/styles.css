@@ -628,17 +628,10 @@ footer{
     transition: opacity 0.8s ease, filter 0.8s ease, transform 0.8s ease;
 }
 /*ANIMAÇÃO DE ENTRADA DE ELEMENTOS*/
+
 
 .obras-con{
-    margin-top: 70px;
-    margin-bottom: 10px;
-    text-align: center;
-    color: #1a3a5f;
-}
-
-
-.obras-con{
-    margin-top: 70px;
+    margin-top: 200px;
     margin-bottom: 10px;
     text-align: center;
     color: #1a3a5f;
