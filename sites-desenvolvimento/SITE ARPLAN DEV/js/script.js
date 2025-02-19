@@ -109,7 +109,7 @@ function autoPlay() {
 
 // Configura o intervalo para passar os slides a cada 3 segundos (3000ms)
 function iniciarIntervalo() {
-    intervalo = setInterval(autoPlay, 3000);
+    intervalo = setInterval(autoPlay, 2800);
 }
 
 // Reinicia o intervalo (usado quando um botão é clicado)

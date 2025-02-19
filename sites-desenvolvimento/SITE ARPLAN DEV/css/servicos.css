@@ -1,0 +1,383 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Alice", serif;
+}
+
+/* Estilos para a tela de carregamento */
+#loading-screen{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    flex-direction: column;
+}
+.loader{
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid #287cb0;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 2s linear infinite;
+}
+@keyframes spin{
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+#loading-screen p{
+    font-size: 18px;
+    font-weight: 900;
+    color: #1a3a5f;
+    margin-top: 10px;
+}
+/* Estilos para a tela de carregamento */
+
+
+/*HEADER*/
+header{
+    background-color:#1a3a5f;
+    width: 100%;
+    top: 0;
+    padding: 5px 5px;
+    position: sticky;/* FAZ QUE O MENU FIQUE FIXO AO ROLAR PRA BAIXO*/
+    border-bottom: 5px solid #287cb0;
+    z-index: 1000;
+    
+}
+.cabecalho{
+    display: flex;
+    justify-content: space-between; /* Para garantir que a logo e os botões se alinhem corretamente */
+    align-items: center; /* Para garantir que a logo e os botões fiquem no centro verticalmente */
+    margin: 0px;
+}
+.logo{
+    margin-left: 50px;
+    margin-top: 0px;
+    display: flex;
+    width: 10px;
+}
+.botoes, ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+}
+.botoes, li{
+    margin-left:15x;
+}
+.perso{
+    border: none;
+    cursor: pointer;
+    font-size: 22px;
+    color: white;
+    background-color: transparent;
+    border-radius: 5px;
+    padding: 5px 14px; /* Adicionando um pouco de espaçamento ao redor do texto */
+    transition: 0.4s;
+}
+.perso:hover{
+    transform: translateY(-4px);
+    background-color: #fff;
+    color: #1a3a5f;
+    border-radius: 15px;
+    
+}
+.button-contato{
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 25px;
+    padding: 10px 15px;
+    background-color: #287cb0;
+    color: #fff;
+    box-shadow: 0 4px 6px rgba(42, 42, 42, 0.2);
+    margin-right: 70px;
+    margin-left: 25px;
+    transition: 0.3s;
+}
+.button-contato:hover{
+  transform: translateY(-4px);
+  background-color: #fff;
+  color: #1a3a5f;
+}
+.mobile-menu-icone{
+    display: none; /* Faz que o elemento suma da tela ate que apareça uma condição pra ele aparecer*/
+    
+}
+.mobile-menu{
+    display: none;
+}
+/*HEADER FIM*/
+
+/*SERVIÇOS*/
+.servicos-menu{
+    background-color: rgba(128, 128, 128, 0.547);
+    height: 150px;
+    width: 100%;
+    border-top: 1px solid rgba(128, 128, 128, 0.547);
+}
+.textos-inicial{
+    margin-left: 100px;
+}
+.textos-inicial h1{
+    color: #1a3a5f;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    margin-top: 20px;
+    border-left: 2px solid #1a3a5f;
+    padding-left: 20px;
+}
+.textos-inicial p{
+    color: #1a3a5f;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    border-left: 2px solid #1a3a5f;
+    padding-left: 20px;
+    
+}
+.galeria-servicos{
+    margin-top: 90px;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 350px 350px 350px;
+    gap: 50px 100px;
+}
+.sessoes{
+    width: 350px;
+    height: 350px;
+    border: 5px solid #287cb0;
+    text-align: center;
+}
+.sessoes h1{
+    margin-top: 20px;
+    color: #1a3a5f;
+    padding-bottom: 10px;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: #1a3a5f;
+}
+.sessoes p{
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: 500;
+    color: gray;
+}
+.sessoes img{
+    margin-top: 35px;
+}
+/*SERVIÇOS*/
+
+/*FOOTER*/
+footer{
+    margin-top: 50px;
+    border-top: 5px solid #287cb0;
+    background-color: #1a3a5f;
+    padding: 30px;
+}
+.footer-section{
+    display: flex;
+    justify-content: center;
+}
+.logo-footer{
+    margin-right: 100px;
+}
+.logo-footer p{
+   font-size: 15px;
+   color: #999;
+   margin-bottom: 10px;
+}
+.logo-footer i{
+   color: #999;
+   font-size: 25px;
+}
+.conteiner-footer{
+    display: flex;
+    text-align: center;
+    gap: 100px;
+    margin-top: 7px;
+}
+.conteiner-footer h2{
+    color: #999;
+    font-size: 30px;
+    font-weight: 900;
+}
+.conteiner-footer a{
+    text-decoration: none;
+    color: #999;
+    border-bottom: 1px solid grey;
+    font-size: 18px;
+    font-weight: lighter;
+}
+.conteiner-footer p{
+    font-size: 18px;
+    color: #999;
+    font-weight: lighter;
+}
+.footer-bottom{
+    text-align: center;
+    color: #999;
+}
+/*FOOTER*/
+
+
+/*ANIMAÇÃO DE ENTRADA DE ELEMENTOS*/
+.scroll {
+    opacity: 0;
+    filter: blur(3px);
+    transform: translateY(20px); /* Adiciona um efeito de movimento sutil */
+    transition: opacity 0.8s ease, filter 0.8s ease, transform 0.8s ease;
+}
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0); /* Retorna ao estado original */
+    transition: opacity 0.8s ease, filter 0.8s ease, transform 0.8s ease;
+}
+/*ANIMAÇÃO DE ENTRADA DE ELEMENTOS*/
+
+@media screen and (max-width: 1300px) {
+    .galeria-servicos{
+        margin-top: 90px;
+        justify-content: center;
+        display: grid;
+        grid-template-columns: 350px 350px;
+        gap: 50px 100px;
+    }
+}
+
+@media screen and (max-width: 999px) {
+    .cabecalho {
+        flex-direction: row; /* Mantém o alinhamento horizontal */
+        align-items: center; /* Alinha os itens ao centro */  
+    }
+    .logo{
+        margin-right: auto;
+        margin-left: 0; /* Ajuste para evitar deslocamento */
+        width: 60px;
+        height: 50px;
+        z-index: 1;
+    }
+    .botoes {
+        display: none;
+        
+    }
+    .mobile-menu-icone{
+        display: block;
+        margin-left: auto ;
+        align-self: flex-end; /* Faz o ícone se alinhar ao final da linha */
+        z-index: 1;
+        
+
+    }
+    .mobile-menu-icone button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        
+    }
+    /*CODIGO PARA QUANDO ABRIR 
+    O MENU O BODY TRAVAR/ js*/
+    body.menu-aberto{
+        overflow: hidden;
+    }
+    /*FIM*/
+
+    .mobile-menu ul {
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        background-color: #1a3a5f;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        margin: 0;
+        
+    }
+    .open{
+        display: block;
+    }
+    .mobile-menu li {
+        margin: 10px 0; /* Espaçamento entre os botões */
+        
+    }
+    .mobile-menu li button {
+
+        border: 2px solid transparent; /* Borda invisível por padrão */
+        padding: 10px 20px;
+        font-size: 20px;
+        color: #ffffff;
+        cursor: pointer;
+        transition: all 0.4s ease;
+        width: 100%; /* Garante que os botões ocupem a largura toda */
+    }
+    /* Efeito de destaque ao passar o mouse (hover) */
+    .mobile-menu li button:hover {
+        background-color: #3498db; /* Cor de fundo ao passar o mouse */
+        color: white; /* Cor do texto ao passar o mouse */
+        border: 2px solid #2980b9; /* Borda visível ao passar o mouse */
+    }
+    /* Efeito ao clicar (active) */
+    .mobile-menu li button:active {
+        background-color: #2980b9; /* Cor de fundo ao clicar */
+        color: white; /* Cor do texto ao clicar */
+        border: 2px solid #1f78b4; /* Borda mais escura ao clicar */
+    }
+
+
+    .galeria-servicos{
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+    }
+
+    .servicos-menu{
+        background-color: rgba(128, 128, 128, 0.547);
+        height: 120px;
+    }
+    .textos-inicial{
+        margin-left: 70px;
+    }
+    .textos-inicial h1{
+        font-size: 25px;
+        margin-top: 10px;
+    }
+    .textos-inicial p{
+        font-size: 15px;
+    }
+
+    /*footer*/
+    .carrossel-obras{
+        margin-top: 550px;
+    }
+    .footer-section{
+      flex-direction: column-reverse;
+    }
+    .conteiner-footer{
+        flex-direction: column-reverse;
+        gap: 40px;
+    }
+    .conteiner-footer h2{
+        font-size: 25px;
+    }
+    .logo-footer{
+        text-align: center;
+        margin-right: 0;
+        margin-top: 50px;
+    }
+    /*footer*/
+
+}
+@media screen and (max-width: 410px) {
+    .textos-inicial{
+        margin-left: 40px;
+    }
+}

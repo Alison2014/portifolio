@@ -514,12 +514,14 @@ header{
    text-align: center;
 }
 .textoEfundo h6{
-    margin-top: 80px;
+    margin-top: 60px;
     color: #2fbdff;
     font-weight: 200;
+    font-size: 14px;
 }
 .textoEfundo h2{
     color: #fff;
+    font-size: 25px;
 }
 .caixinhas-valores{
     display: flex;
@@ -528,7 +530,7 @@ header{
     margin-top: 50px;
 }
 .perso-valores{
-   width: 250px;
+   width: 300px;
    background-color: #fff;
    height: 180px;
    color: #1a3a5f;
@@ -629,35 +631,26 @@ footer{
 }
 /*ANIMAÇÃO DE ENTRADA DE ELEMENTOS*/
 
-.obras-con{
-    margin-top: 70px;
-    margin-bottom: 10px;
-    text-align: center;
-    color: #1a3a5f;
-}
 
-
+/*ESTILO CARROSSEL OBRAS E RESPOSIVIDADE*/
 .obras-con{
     margin-top: 50px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     text-align: center;
     color: #1a3a5f;
 }
-
 .carrossel {
     position: relative;
     width: 100%;
     height: 370px; /* Altura ajustada para 370px */
     overflow: hidden;
 }
-
 .slides {
     display: flex;
     width: 100%;
     height: 100%;
     transition: transform 0.7s ease-in-out; /* Transição suave */
 }
-
 .slide {
     flex: 0 0 33.33%; /* Padrão: 3 slides visíveis */
     height: 100%;
@@ -667,57 +660,335 @@ footer{
     position: relative;
     overflow: hidden;
 }
-
 .slide-content {
     position: absolute;
     left: 0;
     width: 100%;
-    color: white;
+    color: whitesmoke;
     text-align: center;
     padding: 10px;
     margin-top: 270px;
     font-weight: 600;
 }
-
 .slide-text {
-    font-size: 15px;
-    font-family: Arial;
+    font-size: 18px;
+    background-color: #1a3a5f;
 }
-
+.legend-p {
+    opacity: 0; 
+    transition: opacity 0.3s ease;
+    background-color: #1a3a5f;
+}
+.slide:hover .legend-p {
+    opacity: 1; 
+}
 .prev, .next {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: #1a3a5fe0;
     color: white;
     border: none;
     padding: 10px;
     cursor: pointer;
     font-size: 24px;
 }
-
 .prev {
     left: 10px;
 }
-
 .next {
     right: 10px;
 }
-
 .prev:hover, .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
-
 /* Responsividade para 700px: 2 slides visíveis */
 @media (max-width: 700px) {
     .slide {
         flex: 0 0 50%; /* 2 slides visíveis */
     }
 }
-
 /* Responsividade para 380px: 1 slide visível */
 @media (max-width: 390px) {
     .slide {
         flex: 0 0 100%; /* 1 slide visível */
     }
 } 
+/*ESTILO CARROSSEL OBRAS*/
+
+
+/*RESPOSIVIDADE DA PAGINA PRINCIPAL*/
+@media screen and (max-width: 1130px) {
+    .logo-footer{
+        margin-right: 150px;
+    }
+}
+
+@media screen and (max-width: 999px) {
+    .cabecalho {
+        flex-direction: row; /* Mantém o alinhamento horizontal */
+        align-items: center; /* Alinha os itens ao centro */  
+    }
+    .logo{
+        margin-right: auto;
+        margin-left: 0; /* Ajuste para evitar deslocamento */
+        width: 60px;
+        height: 50px;
+        z-index: 1;
+    }
+    .botoes {
+        display: none;
+        
+    }
+    .mobile-menu-icone{
+        display: block;
+        margin-left: auto ;
+        align-self: flex-end; /* Faz o ícone se alinhar ao final da linha */
+        z-index: 1;
+        
+
+    }
+    .mobile-menu-icone button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        
+    }
+
+    /*CODIGO PARA QUANDO ABRIR 
+    O MENU O BODY TRAVAR/ js*/
+    body.menu-aberto{
+        overflow: hidden;
+    }
+    /*FIM*/
+
+    .mobile-menu ul {
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        background-color: #1a3a5f;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        margin: 0;
+        
+    }
+    .open{
+        display: block;
+    }
+    .mobile-menu li {
+        margin: 10px 0; /* Espaçamento entre os botões */
+        
+    }
+    .mobile-menu li button {
+
+        border: 2px solid transparent; /* Borda invisível por padrão */
+        padding: 10px 20px;
+        font-size: 20px;
+        color: #ffffff;
+        cursor: pointer;
+        transition: all 0.4s ease;
+        width: 100%; /* Garante que os botões ocupem a largura toda */
+    }
+
+    /* Efeito de destaque ao passar o mouse (hover) */
+    .mobile-menu li button:hover {
+        background-color: #3498db; /* Cor de fundo ao passar o mouse */
+        color: white; /* Cor do texto ao passar o mouse */
+        border: 2px solid #2980b9; /* Borda visível ao passar o mouse */
+    }
+
+    /* Efeito ao clicar (active) */
+    .mobile-menu li button:active {
+        background-color: #2980b9; /* Cor de fundo ao clicar */
+        color: white; /* Cor do texto ao clicar */
+        border: 2px solid #1f78b4; /* Borda mais escura ao clicar */
+    }
+
+
+    /*INTERFACE TEXTOS*/
+    .azul-escuro{
+        height: 450px;
+    }
+    .azul-claro{
+        height: 450px;
+    }
+    .azul-escuro h1{
+        font-size: 30px;
+        word-break: break-word;
+        width: 300px;
+        left: 25px;
+    }
+    .azul-escuro h3{
+        display: none;
+    }
+    .azul-escuro .button-fale{
+        top: 64%;
+        font-size: 14px;
+        padding: 10px 40px;
+        left: 25px;
+    }
+/* FIM INTERFACE TEXTOS*/
+
+
+/*CONTEINER*/
+    .conteiner{
+        width: 100%;
+        background-color: whitesmoke;
+    }
+    .conteiner .sobre{
+        display: block;
+        margin-top: 6%;
+        padding: 10px 40px;
+        position: relative;
+        border: 0;
+        border-radius: 0;
+        background-color: whitesmoke;
+    }
+    .sobre h2{
+        font-size: 30px;
+
+    }
+    .versao-pc-text{
+        font-size: 22px;
+        display: none;
+    }
+    .versao-mobile-text{
+        display: flex;
+        text-align: center;
+        font-weight: 100;
+        font-size: 20px;
+        max-width: 500px;
+    }
+    .sobre button{
+        margin-top:  18px ;
+        padding: 12px 12px;
+        font-size: 15px;
+        font-weight: 100;
+    }
+    /* FIM CONTEINER*/
+
+
+    .marcas{
+     width: 80%;
+     margin-top: 5px;
+    }
+    .loops img{
+        width: 50px;
+    }
+    .serviços{
+        font-size: 22px;
+    }
+    .quadrados{
+        flex-direction: column;
+        
+    }
+    .quadra img{
+        width: 260px;
+        border-radius: 15px;
+    }
+    
+
+
+    /*PARTE ARPLAN ENGENHARIA*/
+    .pmoc{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;  
+    }
+    .fundo-azul h5{
+        text-align: center;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .img-pmoc img{
+        margin-left: 0;
+        width: 350px;
+    }
+    .botao-azul button{
+        margin-left: 0;
+        
+    }
+    .botao-azul h4{
+        margin-left: 0;
+    }  
+    /*PARTE ARPLAN ENGENHARIA*/
+
+    
+     /* AR SEGURO */
+     .ar-seguro{
+        text-align: center;
+     }
+     .textos-ar-seguro p{
+        padding-left: 25px;
+        padding-right: 25px;
+        font-size: 15px;
+     }
+     .caixinhas{
+        flex-direction: column;
+        padding-top: 300px;
+     }
+     .botao-sobre button{
+        margin-top: 380px;
+     }
+      /* FIM AR SEGURO */
+   
+    /*Section-razoes*/
+    .razoes{
+        margin-top: 600px;
+        background-color: transparent;
+    }
+    .textoEfundo{
+        background-color: #1a3a5f;
+    }
+    .razoes > img{
+        display: none;
+    }  
+    .caixinhas-valores {
+        flex-direction: column;
+        align-items: center;
+        background-color: #1a3a5f;
+        padding-bottom: 80px;
+    }
+    /*Section-razoes*/
+    
+    /*footer*/
+    .obras-con{
+        margin-top: 540px;
+    }
+    .footer-section{
+      flex-direction: column-reverse;
+    }
+    .conteiner-footer{
+        flex-direction: column-reverse;
+        gap: 40px;
+    }
+    .conteiner-footer h2{
+        font-size: 25px;
+    }
+    .logo-footer{
+        text-align: center;
+        margin-right: 0;
+        margin-top: 50px;
+    }
+    /*footer*/
+
+}
+
+@media screen and (max-width:399px) {
+    .img-pmoc img{
+        width: 270px;
+
+    }
+    .botao-azul button{
+        margin-left: 0;
+        font-size: 10px;
+    }
+    .botao-azul h4{
+        margin-left: 0;
+        font-size: 10px;
+    }  
+}
