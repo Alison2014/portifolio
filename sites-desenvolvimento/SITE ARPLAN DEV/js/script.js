@@ -1,17 +1,17 @@
 function menuShow() {
     let menuMobile = document.querySelector('.mobile-menu');
     if (menuMobile.classList.contains('open')) {
-        menuMobile.classList.remove('open');
-        document.querySelector('.icone').src = "img/menu-alt-svgrepo-com.svg"
+        menuMobile.classList.remove('open'); // Remove a classe 'open' para fechar o menu
+        document.querySelector('.icone').src = "img/menu-alt-svgrepo-com.svg"; // Ícone de menu
     } else {
-        menuMobile.classList.add('open');
-        document.querySelector('.icone').src = "img/close-lg-svgrepo-com.svg"
+        menuMobile.classList.add('open'); // Adiciona a classe 'open' para abrir o menu
+        document.querySelector('.icone').src = "img/close-lg-svgrepo-com.svg"; // Ícone de fechar
     }
     
-    /*CODIGO PARA QUANDO ABRIR O MENU O BODY TRAVAR*/
+    // Bloqueia o rolar da página quando o menu estiver aberto
     document.body.classList.toggle('menu-aberto');
     document.querySelector('#menu').classList.toggle('menu-aberto');
- }
+}
 
  
 /*SCROLL DO SITE*/ 
