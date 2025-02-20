@@ -749,14 +749,14 @@ footer{
         z-index: 1;
     }
     .mobile-menu-icone button{
-        width: 100px;
+        width: 80px;
         height: 50px;
         cursor: pointer;
         background-color: transparent;
         border: 0;
     }
     .mobile-menu-icone .linha{
-        width: 35px;
+        width: 45px;
         height: 5px;
         background-color: #fff;
         display: block;
