@@ -732,8 +732,8 @@ footer{
     .logo{
         margin-right: auto;
         margin-left: 0; /* Ajuste para evitar deslocamento */
-        width: 80px;
-        height: 70px;
+        width: 70px;
+        height: 50px;
         z-index: 1;
     }
     .botoes {
@@ -756,11 +756,11 @@ footer{
         border: 0;
     }
     .mobile-menu-icone .linha{
-        width: 50px;
-        height: 6px;
+        width: 45px;
+        height: 5px;
         background-color: #fff;
         display: block;
-        margin: 10px auto;
+        margin: 8px auto;
         position: relative;
         border-radius: 5px;
         transform-origin: center;/*Significa que a ponta da linha vai pra o centro*/
