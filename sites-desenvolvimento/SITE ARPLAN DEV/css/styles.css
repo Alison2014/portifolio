@@ -767,16 +767,17 @@ footer{
         transition: transform 0.3s ease, width 0.3s ease;
     }
     #btn-menu.ativar .linha:nth-child(1){
-        transform: translateY(16px) rotate(-50deg);
+        transform: translateY(13px) rotate(-48deg);
     }
     #btn-menu.ativar .linha:nth-child(3){
-        transform: translateY(-16px) rotate(50deg);
+        transform: translateY(-13px) rotate(48deg);
     }
     #btn-menu.ativar .linha:nth-child(2){
         width: 0;
     }
      /*ANIMAÇAÕ DO ICONE MENU*/
 
+     
     .mobile-menu{
         position: fixed;
         top: -470px; /* Inicia o menu fora da tela */
@@ -788,7 +789,7 @@ footer{
         flex-direction: column;
         text-align: center;
         margin: 0;
-        transition: top 0.5s ease-in-out; /* Animação para deslizar */
+        transition: top 0.3s ease-in-out; /* Animação para deslizar */
         z-index: 0;
     }
     .mobile-menu ul{
