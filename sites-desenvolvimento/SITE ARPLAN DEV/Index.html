@@ -8,37 +8,68 @@
     <!--ICONES-FOOTER-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <!--ICONES-FOOTER-->
-    
+
     <!--GOOGLE FONTS-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet">    
-     <!--GOOGLE FONTS-->
+    <link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet">
+    <!--GOOGLE FONTS-->
     <title> Arplan Eng </title>
 </head>
 
 <body>
 
-      <!-- Tela de carregamento -->
-   <div id="loading-screen">
-    <div class="loader"></div>
-    <p>ARPLAN</p>
-   </div>
+    <!-- Tela de carregamento -->
+    <div id="loading-screen">
+        <div class="loader"></div>
+        <p>ARPLAN</p>
+    </div>
     <!-- Tela de carregamento -->
 
 
     <header>
-    <nav class="cabecalho">    
-       
-        <div class="logo">
+        <nav class="cabecalho">
 
-            <img src="img/logo_arplan.png" width="250px"/>
+            <div class="logo">
 
-        </div>
+                <img src="img/logo_arplan.png" width="250px" />
 
-    
-        <div class="botoes">
+            </div>
 
+
+            <div class="botoes">
+
+                <ul>
+                    <li>
+                        <a href="Index.html"> <button class="perso"> HOME </button> </a>
+                    </li>
+                    <li>
+                        <a href=""> <button class="perso"> OBRAS </button> </a>
+                    </li>
+                    <li>
+                        <a href="servicos.html"> <button class="perso"> SERVIÇOS </button></a>
+                    </li>
+                    <li>
+                        <a href=""> <button class="perso"> CLIENTES </button></a>
+                    </li>
+                    <li>
+                        <a href="contato.html"> <button class="button-contato"> CONTATO </button></a>
+                    </li>
+                </ul>
+            </div><!-- fim botoes-->
+
+            <div class="mobile-menu-icone">
+                <button onclick="menuShow()" id="btn-menu">
+                    <span class="linha"></span>
+                    <span class="linha"></span>
+                    <span class="linha"></span>
+                </button>
+            </div>
+
+        </nav><!--Fim cabecalho-->
+
+
+        <div class="mobile-menu">
             <ul>
                 <li>
                     <a href="Index.html"> <button class="perso"> HOME </button> </a>
@@ -53,100 +84,68 @@
                     <a href=""> <button class="perso"> CLIENTES </button></a>
                 </li>
                 <li>
-                    <a href=""> <button class="button-contato"> CONTATO </button></a>
+                    <a href="contato.html"> <button class="perso"> CONTATO </button></a>
                 </li>
             </ul>
-        </div><!-- fim botoes-->
-
-        <div class="mobile-menu-icone">
-            <button onclick="menuShow()" id="btn-menu">
-               <span class="linha"></span>
-               <span class="linha"></span>
-               <span class="linha"></span>
-            </button>
-       </div>
-
-    </nav><!--Fim cabecalho-->
-
-
-    <div class="mobile-menu">
-        <ul>
-            <li>
-                <a href="Index.html"> <button class="perso"> HOME </button> </a>
-            </li>
-            <li>
-                <a href=""> <button class="perso"> OBRAS </button> </a>
-            </li>
-            <li>
-                <a href="servicos.html"> <button class="perso"> SERVIÇOS </button></a>
-            </li>
-            <li>
-                <a href=""> <button class="perso"> CLIENTES </button></a>
-            </li>
-            <li>
-                <a href=""> <button class="perso"> CONTATO </button></a>
-            </li>
-        </ul>
-    </div><!--Fim mobile-menu-->
+        </div><!--Fim mobile-menu-->
     </header>
 
 
     <div class="background-interface">
 
         <div class="azul-escuro">
-           
+
             <div class="titulos">
-                <h1>Especialistas<br> 
+                <h1>Especialistas<br>
                     em Instalação, Manutenção e<br>
                     <span style="color: #2fbdff;">Qualidade do AR!</span>
                 </h1>
                 <h3>Tudo que seu ar condicionado precisa está aqui</h3>
             </div><!--titulos-->
 
-             <a href="#"><button class="button-fale">Fale Conosco</button></a>
-             
+            <a href="#"><button class="button-fale">Fale Conosco</button></a>
+
         </div><!--azul-escuro-->
 
         <div class="azul-claro"></div>
     </div><!--background-interface-->
-       
-    <section class="conteiner">
-          <div class="sobre">
-             <h2>SOBRE NÓS</h2>
-             <h3 class="versao-pc-text">A Arplan foi fundada em 1989 pelo Engenheiro<br>
-                 Peter Wursch, com o objetivo de prestar serviços<br>
-                  nas áreas de projeto, instalação e assistência<br>
-                  técnica em centrais de ar condicionado e sistemas<br
-                  >de ventilação/exaustão Mecânica. [...]</h3>
 
-                  <h3 class="versao-mobile-text">A Arplan foi fundada em 1989 pelo Engenheiro
-                    Peter Wursch, com o objetivo de prestar serviços
-                     nas áreas de projeto, instalação e assistência
-                     técnica em centrais de ar condicionado e sistemas
-                     de ventilação/exaustão Mecânica. [...]</h3>
-             
-                  <a href="sobre-nos.html"><button>LEIA MAIS</button></a>
-          </div><!--fim sobre-->
+    <section class="conteiner">
+        <div class="sobre">
+            <h2>SOBRE NÓS</h2>
+            <h3 class="versao-pc-text">A Arplan foi fundada em 1989 pelo Engenheiro<br>
+                Peter Wursch, com o objetivo de prestar serviços<br>
+                nas áreas de projeto, instalação e assistência<br>
+                técnica em centrais de ar condicionado e sistemas<br>de ventilação/exaustão Mecânica. [...]</h3>
+
+            <h3 class="versao-mobile-text">A Arplan foi fundada em 1989 pelo Engenheiro
+                Peter Wursch, com o objetivo de prestar serviços
+                nas áreas de projeto, instalação e assistência
+                técnica em centrais de ar condicionado e sistemas
+                de ventilação/exaustão Mecânica. [...]</h3>
+
+            <a href="sobre-nos.html"><button>LEIA MAIS</button></a>
+        </div><!--fim sobre-->
 
     </section><!--Fim conteiner-->
-    
-    <div class="marcas">
-    <div class="loops">
-        <img src="img/samsung-icone.png">
-        <img src="img/elgin-icone.png">
-        <img src="img/carrier-icone.png">
-        <img src="img/midea-icone.png">
-        <img src="img/lg-icone.png">  
-     </div>
 
-     <div class="loops">
-        <img src="img/samsung-icone.png">
-        <img src="img/elgin-icone.png">
-        <img src="img/carrier-icone.png">
-        <img src="img/midea-icone.png">
-        <img src="img/lg-icone.png">
-     </div>
-     
+    <div class="marcas">
+        <div class="loops">
+            <img src="img/samsung-icone.png">
+            <img src="img/elgin-icone.png">
+            <img src="img/carrier-icone.png">
+            <img src="img/midea-icone.png">
+            <img src="img/lg-icone.png">
+        </div>
+
+        <div class="loops">
+            <img src="img/samsung-icone.png">
+            <img src="img/elgin-icone.png">
+            <img src="img/carrier-icone.png">
+            <img src="img/midea-icone.png">
+            <img src="img/lg-icone.png">
+        </div>
+
     </div><!--logos-->
 
     <h1 class="serviços scroll">ARPLAN SERVIÇOS</h1>
@@ -160,13 +159,13 @@
                 <div class="tras">
                     <h2>CLIMATIZAÇÂO</h2>
                     <p>Projetos completos de climatização,
-                         garantindo ambientes confortáveis 
-                         e eficientes, com instalação e manutenção 
-                         de sistemas de ar condicionado</p>
+                        garantindo ambientes confortáveis
+                        e eficientes, com instalação e manutenção
+                        de sistemas de ar condicionado</p>
                 </div>
             </div>
         </div>
-        
+
         <div class="quadra">
             <div class="flip">
                 <div class="frente">
@@ -174,15 +173,15 @@
                 </div>
                 <div class="tras">
                     <h2>MANUNTEÇÃO</h2>
-                    <p>Serviços de manutenção preventiva 
-                        e corretiva para garantir o funcionamento 
-                        ideal de sistemas, evitando falhas e prolongando 
+                    <p>Serviços de manutenção preventiva
+                        e corretiva para garantir o funcionamento
+                        ideal de sistemas, evitando falhas e prolongando
                         a vida útil dos equipamentos.
                     </p>
                 </div>
             </div>
         </div>
-    
+
         <div class="quadra">
             <div class="flip">
                 <div class="frente">
@@ -190,15 +189,15 @@
                 </div>
                 <div class="tras">
                     <h2>INSTALAÇÃO VRF</h2>
-                    <p>Instalação de sistemas VRF, oferecendo 
-                        soluções de climatização para grandes 
-                        espaços, com até 60 saídas, de maneira 
+                    <p>Instalação de sistemas VRF, oferecendo
+                        soluções de climatização para grandes
+                        espaços, com até 60 saídas, de maneira
                         econômica e eficiente.
                     </p>
                 </div>
             </div>
         </div>
-    
+
         <div class="quadra">
             <div class="flip">
                 <div class="frente">
@@ -206,16 +205,16 @@
                 </div>
                 <div class="tras">
                     <h2>VENTILAÇÃO</h2>
-                    <p>Desenvolvimento e instalação de sistemas 
-                        de ventilação e exaustão, melhorando a 
-                        circulação de ar e a qualidade do ambiente 
+                    <p>Desenvolvimento e instalação de sistemas
+                        de ventilação e exaustão, melhorando a
+                        circulação de ar e a qualidade do ambiente
                         de maneira eficaz e segura.
                     </p>
                 </div>
             </div>
         </div>
     </section><!--Quadrados-->
-    
+
 
 
     <section class="empresarial">
@@ -223,17 +222,17 @@
             <h5>Tambem temos:</h5>
 
             <div class="pmoc scroll">
-             
+
 
                 <div class="img-pmoc">
                     <img src="img/PMOC.svg">
                 </div><!--img-pmoc-->
-             
+
                 <div class="botao-azul">
                     <a href="#"><button>+ SOBRE ARPLAN ENG.</button></a>
                     <h4><img src="img/icone-medalha.svg"> Certified Company</h4>
                 </div><!--botao-azul-->
-               
+
 
             </div><!--pmoc-->
         </div><!--fundo-azul-->
@@ -241,48 +240,48 @@
 
     <section class="ar-seguro">
         <div class="textos-ar-seguro">
-               <h1>AR SEGURO</h1>
-               <h5>PLANO MENSAL</h5>
-               <P>Na Arplan, somos especialistas em reduzir 
+            <h1>AR SEGURO</h1>
+            <h5>PLANO MENSAL</h5>
+            <P>Na Arplan, somos especialistas em reduzir
                 o consumo de energia e melhorar a qualidade do ar.
-                Com nosso plano mensal de assistência e manutenção, 
-                tanto para residências quanto para estabelecimentos 
-                comerciais, garantimos a longevidade dos seus aparelhos 
+                Com nosso plano mensal de assistência e manutenção,
+                tanto para residências quanto para estabelecimentos
+                comerciais, garantimos a longevidade dos seus aparelhos
                 e a qualidade do ar que você respira. Economize e deixe o resto conosco.
-               </P>
+            </P>
 
-               <div class="caixinhas scroll">
-                   
-                   <div class="visitas">
-                       <img src="img/calendario.svg">
-                       <h5>VISITAS</h5>
-                       <p>Visita mensalmente de um técnico e Higienização mensal
-                        </p>
-                   </div>
+            <div class="caixinhas scroll">
 
-                   <div class="emergencia">
-                       <img src="img/relogio.svg">
-                       <h5>EM CASO DE EMERGENCIA</h5>
-                       <p>Enviamos um técnico no prazo maximo de 2h</p>
-                   </div>
+                <div class="visitas">
+                    <img src="img/calendario.svg">
+                    <h5>VISITAS</h5>
+                    <p>Visita mensalmente de um técnico e Higienização mensal
+                    </p>
+                </div>
 
-                   <div class="substituicoes">
-                        <img src="img/ventilador.svg">
-                        <h5>SUBSTITUIÇÃO</h5>
-                        <p>Se necessario, Substituimos peças ou o aparelho</p>
-                   </div>
+                <div class="emergencia">
+                    <img src="img/relogio.svg">
+                    <h5>EM CASO DE EMERGENCIA</h5>
+                    <p>Enviamos um técnico no prazo maximo de 2h</p>
+                </div>
 
-                   <div class="manutencao">
-                         <img src="img/tecnico.svg">
-                         <h5>MANUTENÇÃO</h5>
-                         <p>Manunteções mensais preventivas, e corretivas em caso de problemas</p>
-                   </div>
-                   
-                     
-               </div><!--Fim-Caixinhas-->
-               
-               <div class="botao-sobre scroll">
-               <a href="#"><button>+ SOBRE PLANO</button></a>
+                <div class="substituicoes">
+                    <img src="img/ventilador.svg">
+                    <h5>SUBSTITUIÇÃO</h5>
+                    <p>Se necessario, Substituimos peças ou o aparelho</p>
+                </div>
+
+                <div class="manutencao">
+                    <img src="img/tecnico.svg">
+                    <h5>MANUTENÇÃO</h5>
+                    <p>Manunteções mensais preventivas, e corretivas em caso de problemas</p>
+                </div>
+
+
+            </div><!--Fim-Caixinhas-->
+
+            <div class="botao-sobre scroll">
+                <a href="#"><button>+ SOBRE PLANO</button></a>
             </div><!--Fim-botao-sobre-->
 
         </div><!--Fim-textos-ar-seguro-->
@@ -293,38 +292,38 @@
         <img src="img/IMG_3025.jpg">
 
         <div class="textoEfundo scroll">
-              <h6>POR QUE NOS ESCOLHER?</h6>
-              <h2>RAZÕES PARA ESCOLHER A ARPLAN</h2>
+            <h6>POR QUE NOS ESCOLHER?</h6>
+            <h2>RAZÕES PARA ESCOLHER A ARPLAN</h2>
 
-        <div class="caixinhas-valores">
-        
-            <div class="perso-valores">
-                <img class="img-missao" src="img/missao.gif">
-                 <h3>MISSÃO</h3>
-                 <P>Promover bem-estar, confiabilidade
-                    e produtividade aos nossos clientes
-                    através de soluções em climatizacão</P>
-            </div><!--perso-valores-->
+            <div class="caixinhas-valores">
 
-            <div class="perso-valores">
-                <img class="img-visao" src="img/visao.gif">
-                <h3>VISÃO</h3>
-                <p>Estar entre as 5 melhores empresas de
-                     climatização do Nordeste</p>
-            </div><!--perso-valores-->
+                <div class="perso-valores">
+                    <img class="img-missao" src="img/missao.gif">
+                    <h3>MISSÃO</h3>
+                    <P>Promover bem-estar, confiabilidade
+                        e produtividade aos nossos clientes
+                        através de soluções em climatizacão</P>
+                </div><!--perso-valores-->
 
-            <div class="perso-valores">
-                <img class="img-valores" src="img/valores.gif">
-                <h3>VALORES</h3>
-                <P>° Comprometimento<br>
-                   ° Inovação<br>
-                   ° Cooperação<br>
-                   ° Transparência</P>
-            </div><!--perso-valores-->
+                <div class="perso-valores">
+                    <img class="img-visao" src="img/visao.gif">
+                    <h3>VISÃO</h3>
+                    <p>Estar entre as 5 melhores empresas de
+                        climatização do Nordeste</p>
+                </div><!--perso-valores-->
 
-        </div><!--Fim-caixinhas-valores-->
-       </div><!--Fim-Texto-e-fundo-->
-       
+                <div class="perso-valores">
+                    <img class="img-valores" src="img/valores.gif">
+                    <h3>VALORES</h3>
+                    <P>° Comprometimento<br>
+                        ° Inovação<br>
+                        ° Cooperação<br>
+                        ° Transparência</P>
+                </div><!--perso-valores-->
+
+            </div><!--Fim-caixinhas-valores-->
+        </div><!--Fim-Texto-e-fundo-->
+
 
     </section><!--Fim-razoes-->
 
@@ -342,7 +341,8 @@
                 </div>
             </div>
             <div class="slide">
-                <img src="img/slide-obras/IGREJA_DE_STO_AGOSTINHO.jpg" alt="IGREJA-SANTO-AGOSTINHO" width="100%" height="100%">
+                <img src="img/slide-obras/IGREJA_DE_STO_AGOSTINHO.jpg" alt="IGREJA-SANTO-AGOSTINHO" width="100%"
+                    height="100%">
                 <div class="slide-content">
                     <span class="slide-text">IGREJA DE SANTO AGOSTINHO</span>
                     <br>
@@ -360,7 +360,8 @@
                 </div>
             </div>
             <div class="slide">
-                <img src="img/slide-obras/ACADEMIA-PULSE-97TR-EXPANSAO-DIR.jpg" alt="ACADEMIA-PULSE" width="100%" height="100%">
+                <img src="img/slide-obras/ACADEMIA-PULSE-97TR-EXPANSAO-DIR.jpg" alt="ACADEMIA-PULSE" width="100%"
+                    height="100%">
                 <div class="slide-content">
                     <span class="slide-text">ACADEMIA PULSE</span>
                     <br>
@@ -369,7 +370,8 @@
                 </div>
             </div>
             <div class="slide">
-                <img src="img/slide-obras/CAMAROES-MIDWAY-MALL-REDE-DE-DUTOS.jpg" alt="CAMAROES" width="100%" height="100%">
+                <img src="img/slide-obras/CAMAROES-MIDWAY-MALL-REDE-DE-DUTOS.jpg" alt="CAMAROES" width="100%"
+                    height="100%">
                 <div class="slide-content">
                     <span class="slide-text">CAMARÕES MIDWAY</span>
                     <br>
@@ -378,7 +380,8 @@
                 </div>
             </div>
             <div class="slide">
-                <img src="img/slide-obras/EXPRESSO-CIDADAO-GARANHUNS-EXPANSAO-DIRETA-93TR.jpg" alt="EXPRESSO-CIDADAO" width="100%" height="100%">
+                <img src="img/slide-obras/EXPRESSO-CIDADAO-GARANHUNS-EXPANSAO-DIRETA-93TR.jpg" alt="EXPRESSO-CIDADAO"
+                    width="100%" height="100%">
                 <div class="slide-content">
                     <span class="slide-text">EXPRESSO CIDADÂO</span>
                     <br>
@@ -387,7 +390,8 @@
                 </div>
             </div>
             <div class="slide">
-                <img src="img/slide-obras/HOSPITAL-DE-OLHOS-EXPANSAO-DIRETA.jpg" alt="HOSPITAL DE OLHOS" width="100%" height="100%">
+                <img src="img/slide-obras/HOSPITAL-DE-OLHOS-EXPANSAO-DIRETA.jpg" alt="HOSPITAL DE OLHOS" width="100%"
+                    height="100%">
                 <div class="slide-content">
                     <span class="slide-text">HOSPITAL DE OLHOS</span>
                     <br>
@@ -396,7 +400,8 @@
                 </div>
             </div>
             <div class="slide">
-                <img src="img/slide-obras/HOSPITAL-DO-CORAÇÃO-300TR-SISTEMA-DE-ÁGUA-GELADA.jpg" alt="HOSPITAL DO CORAÇÃO" width="100%" height="100%">
+                <img src="img/slide-obras/HOSPITAL-DO-CORAÇÃO-300TR-SISTEMA-DE-ÁGUA-GELADA.jpg"
+                    alt="HOSPITAL DO CORAÇÃO" width="100%" height="100%">
                 <div class="slide-content">
                     <span class="slide-text">HOSPITAL DO CORAÇÃO</span>
                     <br>
@@ -405,7 +410,8 @@
                 </div>
             </div>
             <div class="slide">
-                <img src="img/slide-obras/HOSPITAL-UNIMED-180TR-SISTEMA-DE-ÁGUA-GELADA.jpg" alt="HOSPITAL UNIMED" width="100%" height="100%">
+                <img src="img/slide-obras/HOSPITAL-UNIMED-180TR-SISTEMA-DE-ÁGUA-GELADA.jpg" alt="HOSPITAL UNIMED"
+                    width="100%" height="100%">
                 <div class="slide-content">
                     <span class="slide-text">HOSPITAL UNIMED</span>
                     <br>
@@ -414,7 +420,8 @@
                 </div>
             </div>
             <div class="slide">
-                <img src="img/slide-obras/PRAÇA-DE-ALIMENTAÇÃO-NATAL-SHOPPING-120TR-ÁGUA-GELADA.jpg" alt="HOSPITAL UNIMED" width="100%" height="100%">
+                <img src="img/slide-obras/PRAÇA-DE-ALIMENTAÇÃO-NATAL-SHOPPING-120TR-ÁGUA-GELADA.jpg"
+                    alt="HOSPITAL UNIMED" width="100%" height="100%">
                 <div class="slide-content">
                     <span class="slide-text">PRAÇA DE ALIMENTAÇÃO NATAL SHOPPING</span>
                     <br>
@@ -433,7 +440,8 @@
                 </div>
             </div>
             <div class="slide">
-                <img src="img/slide-obras/IGREJA_DE_STO_AGOSTINHO.jpg" alt="IGREJA-SANTO-AGOSTINHO" width="100%" height="100%">
+                <img src="img/slide-obras/IGREJA_DE_STO_AGOSTINHO.jpg" alt="IGREJA-SANTO-AGOSTINHO" width="100%"
+                    height="100%">
                 <div class="slide-content">
                     <span class="slide-text">IGREJA DE SANTO AGOSTINHO</span>
                     <br>
@@ -457,59 +465,62 @@
 
 
     <footer class="footer-select">
-   
+
         <section class="footer-section">
-        <div class="logo-footer">
-              <img src="img/logo_arplan.png" width="150px" height="50px"> 
-              <p>Climatizando Seu Ambiente<br> Presevando O Nosso!</p> 
-              <div class="icons-footer">
-                   <i class="fa-brands fa-square-instagram"></i>
-                   <i class="fa-brands fa-facebook"></i>
-                   <i class="fa-brands fa-linkedin"></i>
-               </div> 
+            <div class="logo-footer">
+                <img src="img/logo_arplan.png" width="150px" height="50px">
+                <p>Climatizando Seu Ambiente<br> Presevando O Nosso!</p>
+                <div class="icons-footer">
+                    <i class="fa-brands fa-square-instagram"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                </div>
+            </div>
+
+
+            <div class="conteiner-footer">
+
+                <div class="blog">
+                    <img src="img/blog-svgrepo-com.svg" width="38px">
+                    <h2>BLOG</h2>
+                    <a href="Index.html">Home</a><br>
+                    <a href="sobre-nos.html">Sobre nós</a><br>
+                    <a href="#">Obras</a><br>
+                    <a href="servicos.html">Serviços</a>
+                </div>
+
+                <div class="freatures">
+                    <img src="img/location-pin-svgrepo-com.svg" width="38px">
+                    <h2>VISITE-NOS</h2>
+                    <p>Natal/RN<br>
+                        Rua da Saudade 1313,<br>
+                        Nova descoberta <br>
+                        CEP: 59056-400</p>
+                </div>
+
+
+                <div class="contate">
+                    <img src="img/telephone-call-svgrepo-com.svg" width="38px">
+                    <h2>CONTATE-NOS</h2>
+                    <p>contato@arplan.eng.br</p>
+                    <p>engenharia@arplan.eng.br</p>
+                    <p>manutencao@arplan.eng.br</p>
+                    <p>rh@arplan.eng.br</p>
+                </div>
+
+            </div><!--conteiner-footer-->
+        </section>
+
+
+
+        <br>
+        <br>
+        <br>
+
+        <div class="footer-bottom">
+
+            <p>&copy;Copyright Arplan 2025. Todos os direitos reservados.</p>
         </div>
-            
-
-        <div class="conteiner-footer">
-       
-        <div class="blog">
-                <h2>BLOG</h2>
-                <a href="Index.html">Home</a><br>
-                <a href="sobre-nos.html">Sobre nós</a><br>
-                <a href="#">Obras</a><br>
-                <a href="servicos.html">Serviços</a>  
-        </div>
-
-        <div class="freatures">
-                <h2>VISITE-NOS</h2>
-                <p>Natal/RN<br>
-                Rua da Saudade 1313,<br>
-                Nova descoberta <br>
-                CEP: 59056-400</p>
-        </div>
-
-
-       <div class="contate">
-                <h2>CONTATE-NOS</h2>
-                <p>contato@arplan.eng.br</p>
-                <p>engenharia@arplan.eng.br</p>
-                <p>manutencao@arplan.eng.br</p>
-                <p>rh@arplan.eng.br</p>
-        </div>
-
-    </div><!--conteiner-footer-->
-</section>
-    
-
-   
-<br>
-<br>
-<br>
-
-    <div class="footer-bottom">
-
-        <p>&copy;ARPLAN 2025</p>
-    </div>
 
     </footer>
 
@@ -518,4 +529,5 @@
 
     <script src="js/script.js"></script>
 </body>
+
 </html>

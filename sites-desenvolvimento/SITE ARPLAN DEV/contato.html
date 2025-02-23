@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/sobre.css">
+    <link rel="stylesheet" type="text/css" href="css/contato.css">
     <!--ICONES-FOOTER-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <!--ICONES-FOOTER-->
@@ -14,11 +14,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet">
     <!--GOOGLE FONTS-->
-
     <title> Arplan Eng </title>
 </head>
 
 <body>
+
+    <!-- Tela de carregamento -->
+    <div id="loading-screen">
+        <div class="loader"></div>
+        <p>ARPLAN</p>
+    </div>
+    <!-- Tela de carregamento -->
 
 
     <header>
@@ -52,6 +58,7 @@
                 </ul>
             </div><!-- fim botoes-->
 
+
             <div class="mobile-menu-icone">
                 <button onclick="menuShow()" id="btn-menu">
                     <span class="linha"></span>
@@ -82,123 +89,85 @@
                 </li>
             </ul>
         </div><!--Fim mobile-menu-->
-
     </header>
 
 
-    <div class="historia">
-
-        <div class="titulo scroll">
-            <h3>SOBRE NÓS</h3>
-            <h1>HISTÓRIA</h1>
+    <div class="contate-menu">
+        <div class="textos-inicial">
+            <h1>CONTATE-NÓS</h1>
+            <p> FALE CONOSCO PELOS NOSSOS<br> MEIOS DE COMUNICAÇÕES</p>
         </div>
-
-        <div class="textos-sobre">
-
-        </div>
-
-    </div><!--historia-->
+    </div>
 
 
-    <section class="historia-arplan">
 
-        <div class="sobre-nos">
+    <section class="contato">
+        <div class="contato-esquerdo">
+            <h1>ENTRE EM CONTATO COM A <span class="arplan-name-p">ARPLAN</span>,
+                REFERÊNCIA EM CLIMATIZAÇÃO!
+            </h1>
+            <h5>Entre em contato com a Arplan. Estamos prontos para oferecer as melhores soluções e transformar suas
+                ideias em realidade
+            </h5>
 
-            <div class="foto1">
-                <img src="img/PETER-FILHOS.jpg" width="500px">
+            <div class="icons">
+                <img src="img/contato-img/email-1-svgrepo-com.svg" width="16px">
+                <p>contato@arplan.eng.br</p>
             </div>
 
-            <div class="paragrafo1">
-                <p>A Arplan foi fundada em 1989 pelo Engenheiro Peter Wursch,
-                    com o objetivo de prestar serviços nas áreas de projeto,
-                    instalação e assistência técnica em centrais de ar condicionado
-                    e sistemas de ventilação/exaustão Mecânica. Natural da Suíça e
-                    com vários anos de atuação no mercado internacional e nacional de
-                    climatização, O fundador da Arplan enxergou no RN uma excelente
-                    oportunidade de mercado. Hoje a empresa conta com mais de 25 anos
-                    de atuação, com amplo currículo de obras realizadas, e tem como marca
-                    registrada a qualidade dos serviços. Atualmente a direção da Arplan é
-                    composta por três Engenheiros: Peter Wursch (eng. Mecânico), Raffael Wursch
-                    (eng. Mecânico) e Daniel Wursch (Eng. Eletricista).</p>
+            <div class="icons">
+                <img src="img/contato-img/locations-svgrepo-com.svg" width="16px">
+                <p> Rua da Saudade 1313 -
+                    Nova descoberta, Natal - RN,
+                    59056-400</p>
             </div>
 
-        </div>
-
-        <div class="sobre-nos2">
-            <div class="paragrafo2">
-                <h1>ARPLAN</h1>
-                <p>Somos credenciados por diversos fabricantes com excelência em climatização,
-                    proporcionando o melhor fornecimento, instalação e manutenção de toda linha
-                    de condicionadores de ar com habilitação em expansão direta e indireta (água gelada).
-                    <br>
-                    <br>
-                    A Arplan é reconhecida no mercado pela qualidade dos serviços, competência técnica, inovação
-                    e comprometimento. Investimos periodicamente em cursos oferecidos por nossos fornecedores e mantemos
-                    um Centro Interno de Capacitações para aperfeiçoamento técnico constante do nosso quadro de
-                    colaboradores.
-                    <br>
-                    <br>
-                    Área de atuação atual: Estados do RN, PE, CE, PB.
-                </p>
-            </div>
-
-            <div class="foto2">
-                <img src="img/FROTA.jpg">
+            <div class="icons">
+                <img src="img/contato-img/phone-svgrepo-com.svg" width="16px">
+                <p>(84) 90000-0000</p>
             </div>
 
         </div>
 
-        <div class="sobre-nos3">
-            <div class="paragrafo3">
 
-                <h1>DENTRE OS DIVERSOS SERVIÇOS QUE REALIZAMOS PODEMOS DESTACAR:</h1>
+        <div class="centro">
+            <h2>ENVIE-NOS UM EMAIL</h2>
+            <h4>Entre em contato conosco que retornaremos o mais rápido possível</h4>
+            <!-- Formulário de contato -->
+            <form id="contact-form" action="https://api.staticforms.xyz/submit" method="post"
+                onsubmit="return enviarMensagem();">
 
-                <ul>
+                <input type="text" name="name" placeholder="NOME" autocomplete="off" required>
 
-                    <li>Aplicações especiais de climatização (Ressonâncias Magnéticas,<br>
-                        Hemodinâmicas, aceleradores lineares, laboratórios, centros cirúrgicos,
-                        UTIs,<br> pressurização de escadas, etc.)
-                    </li>
 
-                    <li>
-                        Execução de obras de Médio/Grande Porte: Centrais de água gelada,
-                        Sistemas<br>
-                        VRF, Sistemas de Multisplit de Alta Capacidade para os diversos
-                        tipos de<br>
-                        segmento do mercado;
-                    </li>
+                <input type="text" name="email" placeholder="EMAIL" autocomplete="off" required>
 
-                    <li>
-                        Manutenção em Chillers, Sistemas VRF, Splitões, multisplits e splits.
-                    </li>
+                <select id="assunto" name="assunto">
+                    <option value="" selected>SELECIONE O ASSUNTO</option>
+                    <option value="duvida">DUVIDA</option>
+                    <option value="sugestao">SUGESTÃO</option>
+                    <option value="curriculo">CURRICULO</option>
+                    <option value="reclamacao">RECLAMAÇÃO</option>
+                </select>
 
-                    <li>
-                        Elaboração de projetos de climatização, ventilação e exaustão de ar.
-                    </li>
 
-                </ul>
+                <textarea name="message" cols="30" rows="10" placeholder="MENSAGEM" required></textarea>
 
+                <button type="submit">Enviar</button>
+
+                <!-- Campo escondido para acesso -->
+                <input type="hidden" name="accessKey" value="eecae167-8afd-4190-bd21-5ff8ab020e61">
+
+            </form>
+
+            <!-- Mensagem de sucesso -->
+            <div id="success-message" class="hidden">
+                Mensagem enviada com sucesso!
             </div>
-
-        </div>
-
-        <div class="sobre-nos4">
-            <h1>NOSSA EQUIPE</h1>
-            <img src="img/EQUIPE.jpg">
-
-            <p>
-                Equipe de Excelência em Refrigeração e Climatização<br>
-
-                Nossa equipe é formada por profissionais capacitados e
-                técnicos especializados em refrigeração e climatização.
-                Com experiência e atualização constante, oferecemos soluções
-                eficientes para garantir o conforto e bem-estar dos nossos clientes.
-                Priorizamos qualidade, segurança e atendimento personalizado, atendendo
-                desde instalações até manutenções e reparos.
-            </p>
-
         </div>
     </section>
+
+
 
     <footer class="footer-select">
 

@@ -1,30 +1,30 @@
 function menuShow() {
     const btn = document.getElementById('btn-menu');
-    
+
     // Alterna a classe 'ativar' no botão para animar o ícone
     btn.classList.toggle('ativar');
-    
+
     // Seleciona o menu mobile
     let menuMobile = document.querySelector('.mobile-menu');
-    
+
     // Alterna a classe 'open' no menu para mostrar ou ocultar
     if (menuMobile) {
         menuMobile.classList.toggle('open');
     }
-    
+
     // Bloqueia ou desbloqueia o rolar da página
     document.body.classList.toggle('menu-aberto');
 }
 
 
 
- 
-/*SCROLL DO SITE*/ 
+
+/*SCROLL DO SITE*/
 
 /*FUNÇAO PARA OBSERVAR ALGUM ELEMENTO, QUANDO TIVER MUDANÇA ELE ME AVISA*/
 const myObserver = new IntersectionObserver((observacao) => {
-    observacao.forEach( (entry) => {
-        if(entry.isIntersecting){
+    observacao.forEach((entry) => {
+        if (entry.isIntersecting) {
             entry.target.classList.add('show')
         }
     })
@@ -35,15 +35,15 @@ const elements = document.querySelectorAll('.scroll');
 /*REUNI TODOS OS ELEMENTOS E TRANSFORMA ELE EM LISTA E VAI PEGANDO ELEMENT POR ELEMENT*/
 elements.forEach((element) => myObserver.observe(element));/*MY OBSERVE ITEM PARA SER OBSERVADO*/
 
-/*SCROLL DO SITE*/ 
+/*SCROLL DO SITE*/
 
 
 /*PARTE DA ANIMAÇÃO  DO FLIP QUADRADOS*/
 document.querySelectorAll('.flip').forEach(flip => {
-    flip.addEventListener('click', function() {
+    flip.addEventListener('click', function () {
         // Alterna a classe que controla a rotação
         flip.classList.toggle('flip-rotate');
-        
+
         // Define o tempo para reverter a rotação após 3 segundos
         setTimeout(() => {
             flip.classList.toggle('flip-rotate');
@@ -53,12 +53,12 @@ document.querySelectorAll('.flip').forEach(flip => {
 /*PARTE DA ANIMAÇÃO  DO FLIP QUADRADOS*/
 
 /* FUNÇAÕ ESCONDE TELA DE CARREGAMENTO LOANDING*/
-window.onload = function() {
-    setTimeout(function() {
-      document.getElementById("loading-screen").style.display = "none";  // Esconde a tela de carregamento
-      document.getElementById("content").style.display = "block";  // Exibe o conteúdo do site
+window.onload = function () {
+    setTimeout(function () {
+        document.getElementById("loading-screen").style.display = "none";  // Esconde a tela de carregamento
+        document.getElementById("content").style.display = "block";  // Exibe o conteúdo do site
     }, 3500); // Exemplo de 3 segundos de tela de carregamento
-  };
+};
 /* FUNÇAÕ ESCONDE TELA DE CARREGAMENTO LOANDING*/
 let slideIndex = 1; // Começa no slide 1 (ignorando o slide duplicado no início)
 let intervalo;
@@ -138,3 +138,21 @@ carrossel.addEventListener('mouseleave', () => {
 mostrarSlide(slideIndex);
 iniciarIntervalo(); // Inicia o autoplay
 /*FUNÇÃO SLIDE CARROSSEL*/
+
+
+
+// Função para exibir a mensagem de sucesso
+function enviarMensagem() {
+    // Impede o envio imediato do formulário
+    event.preventDefault();
+
+    // Exibe a mensagem de sucesso
+    document.getElementById('success-message').classList.remove('hidden');
+
+    // Simula o envio do formulário após 3 segundos
+    setTimeout(function () {
+        document.getElementById('success-message').classList.add('hidden');
+    }, 10000); // 10 segundos de espera
+
+    return false; // Impede o envio imediato
+}

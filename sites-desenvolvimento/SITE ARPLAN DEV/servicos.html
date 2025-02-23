@@ -8,37 +8,69 @@
     <!--ICONES-FOOTER-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <!--ICONES-FOOTER-->
-    
+
     <!--GOOGLE FONTS-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet">    
-     <!--GOOGLE FONTS-->
+    <link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet">
+    <!--GOOGLE FONTS-->
     <title> Arplan Eng </title>
 </head>
 
 <body>
 
-      <!-- Tela de carregamento -->
-   <div id="loading-screen">
-    <div class="loader"></div>
-    <p>ARPLAN</p>
-   </div>
+    <!-- Tela de carregamento -->
+    <div id="loading-screen">
+        <div class="loader"></div>
+        <p>ARPLAN</p>
+    </div>
     <!-- Tela de carregamento -->
 
 
     <header>
-    <nav class="cabecalho">    
-       
-        <div class="logo">
+        <nav class="cabecalho">
 
-            <img src="img/logo_arplan.png" width="250px"/>
+            <div class="logo">
 
-        </div>
+                <img src="img/logo_arplan.png" width="250px" />
 
-    
-        <div class="botoes">
+            </div>
 
+
+            <div class="botoes">
+
+                <ul>
+                    <li>
+                        <a href="Index.html"> <button class="perso"> HOME </button> </a>
+                    </li>
+                    <li>
+                        <a href=""> <button class="perso"> OBRAS </button> </a>
+                    </li>
+                    <li>
+                        <a href="servicos.html"> <button class="perso"> SERVIÇOS </button></a>
+                    </li>
+                    <li>
+                        <a href=""> <button class="perso"> CLIENTES </button></a>
+                    </li>
+                    <li>
+                        <a href="contato.html"> <button class="button-contato"> CONTATO </button></a>
+                    </li>
+                </ul>
+            </div><!-- fim botoes-->
+
+
+            <div class="mobile-menu-icone">
+                <button onclick="menuShow()" id="btn-menu">
+                    <span class="linha"></span>
+                    <span class="linha"></span>
+                    <span class="linha"></span>
+                </button>
+            </div>
+
+        </nav><!--Fim cabecalho-->
+
+
+        <div class="mobile-menu">
             <ul>
                 <li>
                     <a href="Index.html"> <button class="perso"> HOME </button> </a>
@@ -53,42 +85,10 @@
                     <a href=""> <button class="perso"> CLIENTES </button></a>
                 </li>
                 <li>
-                    <a href=""> <button class="button-contato"> CONTATO </button></a>
+                    <a href="contato.html"> <button class="perso"> CONTATO </button></a>
                 </li>
             </ul>
-        </div><!-- fim botoes-->
-
-    
-        <div class="mobile-menu-icone">
-            <button onclick="menuShow()" id="btn-menu">
-               <span class="linha"></span>
-               <span class="linha"></span>
-               <span class="linha"></span>
-            </button>
-       </div>
-
-    </nav><!--Fim cabecalho-->
-
-
-    <div class="mobile-menu">
-        <ul>
-            <li>
-                <a href="Index.html"> <button class="perso"> HOME </button> </a>
-            </li>
-            <li>
-                <a href=""> <button class="perso"> OBRAS </button> </a>
-            </li>
-            <li>
-                <a href="servicos.html"> <button class="perso"> SERVIÇOS </button></a>
-            </li>
-            <li>
-                <a href=""> <button class="perso"> CLIENTES </button></a>
-            </li>
-            <li>
-                <a href=""> <button class="perso"> CONTATO </button></a>
-            </li>
-        </ul>
-    </div><!--Fim mobile-menu-->
+        </div><!--Fim mobile-menu-->
     </header>
 
     <div class="servicos-menu">
@@ -101,32 +101,32 @@
     <section class="galeria-servicos">
 
         <div class="sessoes">
-           <div class="climatizaçao scroll">
-            <img src="img/serviços-img/thermometer-cold-svgrepo-com.svg" width="100px">
-               <h1>CLIMTIZAÇÃO(CONFORTO)</h1>
-               <p>Shoppings Centers, Hospitais, Clínicas,<br> 
-                Supermercados, Edifícios comerciais /<br> 
-                residenciais, Hotéis, Igrejas, etc.</p>
+            <div class="climatizaçao scroll">
+                <img src="img/serviços-img/thermometer-cold-svgrepo-com.svg" width="100px">
+                <h1>CLIMTIZAÇÃO(CONFORTO)</h1>
+                <p>Shoppings Centers, Hospitais, Clínicas,<br>
+                    Supermercados, Edifícios comerciais /<br>
+                    residenciais, Hotéis, Igrejas, etc.</p>
             </div>
         </div>
 
         <div class="sessoes">
             <div class="ventilacao scroll">
-             <img src="img/serviços-img/cpu-fan-svgrepo-com.svg" width="100px">
+                <img src="img/serviços-img/cpu-fan-svgrepo-com.svg" width="100px">
                 <h1>VENTILAÇÃO/EXAUSTÃO</h1>
                 <p>Cozinhas, Banheiros, Pressurização de<br>
-                   Escadas, Laboratórios e Renovação de Ar.
+                    Escadas, Laboratórios e Renovação de Ar.
                 </p>
             </div>
         </div>
 
         <div class="sessoes">
             <div class="consultoria scroll">
-            <img src="img/serviços-img/award1-svgrepo-com.svg" width="100px">
+                <img src="img/serviços-img/award1-svgrepo-com.svg" width="100px">
                 <h1>CONSULTORIA</h1>
                 <p>Retrofit de Sistemas de Ar Condicionado,<br>
-                   Estudos de Eficiência Energética,<br>
-                   Projetos As Built de instalações
+                    Estudos de Eficiência Energética,<br>
+                    Projetos As Built de instalações
                 </p>
             </div>
         </div>
@@ -136,7 +136,7 @@
                 <img src="img/serviços-img/apartments-svgrepo-com.svg" width="100px">
                 <h1>INFRA-ESTRUTURA</h1>
                 <p>Instalações prediais de Ar condicionado<br>
-                   e Exaustão Mecânica para<br>
+                    e Exaustão Mecânica para<br>
                     mpreendimentos/Condomínios.
                 </p>
             </div>
@@ -146,9 +146,9 @@
             <div class="aplicacoes scroll">
                 <img src="img/serviços-img/first-aid-svgrepo-com.svg" width="100px">
                 <h1>APLICAÇÕES ESPECIAIS</h1>
-                <p>Salas Limpas, Automação, Laboratórios,<br> 
-                   Ressonâncias Magnéticas,<br> 
-                   Hemodinâmicas e Aceleradores Lineares
+                <p>Salas Limpas, Automação, Laboratórios,<br>
+                    Ressonâncias Magnéticas,<br>
+                    Hemodinâmicas e Aceleradores Lineares
                 </p>
             </div>
         </div>
@@ -158,8 +158,8 @@
                 <img src="img/serviços-img/maintenance-repair-service-svgrepo-com.svg" width="100px">
                 <h1>MANUNTENÇÃO</h1>
                 <p>Centrais de água gelada, Centrais VRF,<br>
-                   Splitões, Splits, Exaustores/Ventiladores,<br> 
-                   Limpeza de Dutos, entre outros.
+                    Splitões, Splits, Exaustores/Ventiladores,<br>
+                    Limpeza de Dutos, entre outros.
                 </p>
             </div>
         </div>
@@ -167,64 +167,68 @@
     </section>
 
 
-     <footer class="footer-select">
-   
+    <footer class="footer-select">
+
         <section class="footer-section">
-        <div class="logo-footer">
-              <img src="img/logo_arplan.png" width="150px" height="50px"> 
-              <p>Climatizando Seu Ambiente<br> Presevando O Nosso!</p> 
-              <div class="icons-footer">
-                   <i class="fa-brands fa-square-instagram"></i>
-                   <i class="fa-brands fa-facebook"></i>
-                   <i class="fa-brands fa-linkedin"></i>
-               </div> 
+            <div class="logo-footer">
+                <img src="img/logo_arplan.png" width="150px" height="50px">
+                <p>Climatizando Seu Ambiente<br> Presevando O Nosso!</p>
+                <div class="icons-footer">
+                    <i class="fa-brands fa-square-instagram"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                </div>
+            </div>
+
+
+            <div class="conteiner-footer">
+
+                <div class="blog">
+                    <img src="img/blog-svgrepo-com.svg" width="38px">
+                    <h2>BLOG</h2>
+                    <a href="Index.html">Home</a><br>
+                    <a href="sobre-nos.html">Sobre nós</a><br>
+                    <a href="#">Obras</a><br>
+                    <a href="servicos.html">Serviços</a>
+                </div>
+
+                <div class="freatures">
+                    <img src="img/location-pin-svgrepo-com.svg" width="38px">
+                    <h2>VISITE-NOS</h2>
+                    <p>Natal/RN<br>
+                        Rua da Saudade 1313,<br>
+                        Nova descoberta <br>
+                        CEP: 59056-400</p>
+                </div>
+
+
+                <div class="contate">
+                    <img src="img/telephone-call-svgrepo-com.svg" width="38px">
+                    <h2>CONTATE-NOS</h2>
+                    <p>contato@arplan.eng.br</p>
+                    <p>engenharia@arplan.eng.br</p>
+                    <p>manutencao@arplan.eng.br</p>
+                    <p>rh@arplan.eng.br</p>
+                </div>
+
+            </div><!--conteiner-footer-->
+        </section>
+
+
+
+        <br>
+        <br>
+        <br>
+
+        <div class="footer-bottom">
+
+            <p>&copy;Copyright Arplan 2025. Todos os direitos reservados.</p>
         </div>
-            
 
-        <div class="conteiner-footer">
-       
-        <div class="blog">
-                <h2>BLOG</h2>
-                <a href="Index.html">Home</a><br>
-                <a href="sobre-nos.html">Sobre nós</a><br>
-                <a href="#">Obras</a><br>
-                <a href="servicos.html">Serviços</a>  
-        </div>
+    </footer>
 
-        <div class="freatures">
-                <h2>VISITE-NOS</h2>
-                <p>Natal/RN<br>
-                Rua da Saudade 1313,<br>
-                Nova descoberta <br>
-                CEP: 59056-400</p>
-        </div>
-
-
-       <div class="contate">
-                <h2>CONTATE-NOS</h2>
-                <p>contato@arplan.eng.br</p>
-                <p>engenharia@arplan.eng.br</p>
-                <p>manutencao@arplan.eng.br</p>
-                <p>rh@arplan.eng.br</p>
-        </div>
-
-    </div><!--conteiner-footer-->
-</section>
-    
-
-   
-<br>
-<br>
-<br>
-
-    <div class="footer-bottom">
-
-        <p>&copy;ARPLAN 2025</p>
-    </div>
-
-     </footer>
- 
 
     <script src="js/script.js"></script>
 </body>
+
 </html>
