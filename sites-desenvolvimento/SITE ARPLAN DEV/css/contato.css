@@ -541,7 +541,7 @@ footer {
 
     /*PARTE CONTATO ESQUERDO*/
     .contato {
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 
     .contato-esquerdo {
