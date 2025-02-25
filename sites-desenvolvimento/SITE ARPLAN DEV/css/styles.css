@@ -18,9 +18,11 @@
     align-items: center;
     z-index: 9999;
     flex-direction: column;
+
+}
+#loanding-screen p {
     font-family: "Roboto Condensed", serif;
     font-weight: 700;
-
 }
 
 .loader {
