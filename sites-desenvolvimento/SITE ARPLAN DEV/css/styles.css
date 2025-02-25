@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,7 +6,7 @@
 }
 
 /* Estilos para a tela de carregamento */
-#loading-screen{
+#loading-screen {
     position: fixed;
     top: 0;
     left: 0;
@@ -19,7 +19,8 @@
     z-index: 9999;
     flex-direction: column;
 }
-.loader{
+
+.loader {
     border: 8px solid #f3f3f3;
     border-top: 8px solid #287cb0;
     border-radius: 50%;
@@ -27,65 +28,88 @@
     height: 50px;
     animation: spin 2s linear infinite;
 }
-@keyframes spin{
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
-#loading-screen p{
+
+#loading-screen p {
     font-size: 18px;
     font-weight: 900;
     color: #1a3a5f;
     margin-top: 10px;
 }
+
 /* Estilos para a tela de carregamento */
 
 
 /*HEADER*/
-header{
-    background-color:transparent;
+header {
+    background-color: transparent;
     width: 100%;
     padding: 7px 5px;
-   ; /* Adiciona a sombra embaixo */
+    ;
+    /* Adiciona a sombra embaixo */
     position: absolute;
     z-index: 1;
 }
-.cabecalho{
+
+.cabecalho {
     display: flex;
-    justify-content: space-between; /* Para garantir que a logo e os botões se alinhem corretamente */
-    align-items: center; /* Para garantir que a logo e os botões fiquem no centro verticalmente */
+    justify-content: space-between;
+    /* Para garantir que a logo e os botões se alinhem corretamente */
+    align-items: center;
+    /* Para garantir que a logo e os botões fiquem no centro verticalmente */
     margin: 0px;
 }
-.logo{
+
+.logo {
     margin-left: 50px;
     margin-top: 0px;
     display: flex;
 }
-.botoes, ul{
+
+.botoes,
+ul {
     display: flex;
     list-style-type: none;
     justify-content: center;
 }
-.botoes, li{
-    margin-left:15x;
+
+.botoes,
+li {
+    margin-left: 15x;
 }
-.perso{
+
+.perso {
     border: none;
     cursor: pointer;
     font-size: 22px;
     color: white;
     background-color: transparent;
     border-radius: 5px;
-    padding: 5px 14px; /* Adicionando um pouco de espaçamento ao redor do texto */
+    padding: 5px 14px;
+    /* Adicionando um pouco de espaçamento ao redor do texto */
     transition: 0.4s;
+    font-family: "Roboto Condensed", serif;
+    font-weight: 600;
 }
-.perso:hover{
+
+.perso:hover {
     transform: translateY(-4px);
     background-color: #fff;
     color: #1a3a5f;
     border-radius: 15px;
-    
+
 }
-.button-contato{
+
+.button-contato {
     border: none;
     cursor: pointer;
     font-size: 18px;
@@ -97,19 +121,26 @@ header{
     margin-right: 70px;
     margin-left: 25px;
     transition: 0.3s;
+    font-family: "Roboto Condensed", serif;
+    font-weight: 600;
 }
-.button-contato:hover{
-  transform: translateY(-4px);
-  background-color: #fff;
-  color: #1a3a5f;
+
+.button-contato:hover {
+    transform: translateY(-4px);
+    background-color: #fff;
+    color: #1a3a5f;
 }
-.mobile-menu-icone{
-    display: none; /* Faz que o elemento suma da tela ate que apareça uma condição pra ele aparecer*/
-    
+
+.mobile-menu-icone {
+    display: none;
+    /* Faz que o elemento suma da tela ate que apareça uma condição pra ele aparecer*/
+
 }
-.mobile-menu{
+
+.mobile-menu {
     display: none;
 }
+
 /*HEADER FIM*/
 
 
@@ -117,29 +148,34 @@ header{
     position: relative;
     width: 100%;
     display: flex;
- }
- .azul-escuro{
-     width: 78%;
-     height: 600px;
-     background-color: #1a3a5f;
-     border-top-right-radius: 90px;
- }
- .azul-claro{
-     width: 100%;
-     height: 600px;
-     background-color: #287cb0;
-     position: absolute;
-     z-index: -1;
- }
-.azul-escuro h1{
+}
+
+.azul-escuro {
+    width: 78%;
+    height: 600px;
+    background-color: #1a3a5f;
+    border-top-right-radius: 90px;
+}
+
+.azul-claro {
+    width: 100%;
+    height: 600px;
+    background-color: #287cb0;
+    position: absolute;
+    z-index: -1;
+}
+
+.azul-escuro h1 {
     position: absolute;
     top: 34%;
     left: 4%;
     color: #fff;
     font-size: 50px;
-    font-weight: bold;
+    font-weight: 900;
+    font-family: "Roboto Condensed", serif;
 }
-.azul-escuro h3{
+
+.azul-escuro h3 {
     position: absolute;
     top: 63%;
     left: 4%;
@@ -147,38 +183,44 @@ header{
     font-weight: bold;
     color: #2fbdff;
     word-spacing: 3px;
+    font-family: "Roboto Condensed", serif;
+
 }
-.azul-escuro .button-fale{
-    top:68%;
+
+.azul-escuro .button-fale {
+    top: 68%;
     position: absolute;
-    left:60px;
+    left: 60px;
     border: 0;
     padding: 10px 80px;
     border-radius: 50px;
     white-space: nowrap;
-    font-size: 19px;
+    font-size: 18px;
     margin-top: 16px;
     color: #fff;
     background-color: #287cb0;
     transition: 0.3s;
-    font-weight: 500;
-
+    font-family: "Roboto Condensed", serif;
+    font-weight: 700;
 }
-.button-fale:hover{
+
+.button-fale:hover {
     transform: translateY(-4px);
     background-color: #fff;
     color: #1a3a5f;
+
 }
 
 /*SOBRE NOS*/
-.conteiner{
+.conteiner {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    
+
 }
-.conteiner .sobre{
+
+.conteiner .sobre {
     background-color: whitesmoke;
     border: 2px solid gray;
     border-radius: 10px;
@@ -186,68 +228,85 @@ header{
     position: absolute;
     margin-top: 11%;
 }
-.sobre h2{
+
+.sobre h2 {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     font-size: 35px;
     color: #1a3a5f;
-    
+    font-family: "Roboto Condensed", serif;
+
+
 }
-.versao-pc-text{
+
+.versao-pc-text {
     text-align: center;
     font-weight: 100;
-    font-size: 22px;
+    font-size: 20px;
+    font-family: "Open Sans", sans-serif;
 }
-.versao-mobile-text{
+
+.versao-mobile-text {
     display: none;
+    font-family: "Open Sans", sans-serif;
+
 }
-.sobre button{
+
+.sobre button {
     padding: 20px 100px;
     margin-top: 30px;
     justify-items: center;
     margin-left: 50%;
-    transform: translate(-50%);  
-    white-space: nowrap; 
+    transform: translate(-50%);
+    white-space: nowrap;
     border: 0;
     background-color: #287cb0;
     font-size: 28px;
     color: #fff;
     transition: 0.4s;
     cursor: pointer;
+    font-family: "Roboto Condensed", serif;
+    font-weight: 700;
 }
-.sobre button:hover{
-    background-color:#1a3a5f;
+
+.sobre button:hover {
+    background-color: #1a3a5f;
     border-radius: 25px;
 }
-@media screen and (max-width: 1299px){
-    .conteiner .sobre{
+
+@media screen and (max-width: 1299px) {
+    .conteiner .sobre {
         display: block;
 
         margin-top: 6%;
         padding: 10px 250px;
-        
+
     }
-    .logos{
+
+    .logos {
         margin-top: 1%;
     }
 
-    .quadra img{
+    .quadra img {
         width: 2px;
     }
 }
+
 /* FIM SOBRE NOS*/
 
 
 /*LOOPS*/
-@keyframes slide{
-    from{
+@keyframes slide {
+    from {
         transform: translateX(0);
     }
-    to{
+
+    to {
         transform: translateX(-100%);
     }
 }
-.marcas{
+
+.marcas {
     overflow: hidden;
     padding: 20px 0px;
     margin-top: 18%;
@@ -258,8 +317,9 @@ header{
     transform: translate(-50%);
 
 }
+
 .marcas:before,
-.marcas::after{
+.marcas::after {
     position: absolute;
     top: 0;
     width: 100px;
@@ -267,33 +327,41 @@ header{
     content: "";
     z-index: 2;
 }
-.marcas:before{
+
+.marcas:before {
     left: 0;
-    background: linear-gradient(to left, rgba(255,255,255, 0), rgb(255, 255, 255));
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), rgb(255, 255, 255));
 }
-.marcas::after{
+
+.marcas::after {
     right: 0;
-    background: linear-gradient(to right, rgba(255,255,255, 0), white);
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
 }
-.marcas:hover .loops{
+
+.marcas:hover .loops {
     animation-play-state: paused;
 }
-.loops{
-   display: inline-block;
-   animation: 30s slide infinite linear;
-   
+
+.loops {
+    display: inline-block;
+    animation: 30s slide infinite linear;
+
 }
-.loops img{
+
+.loops img {
     width: 80px;
     margin: 0 20px;
 }
+
 /*Fim loops*/
 
-.serviços{
+.serviços {
     text-align: center;
     margin-top: 25px;
     color: #1a3a5f;
     bottom: 0;
+    font-family: "Roboto Condensed", serif;
+    font-weight: 900;
 }
 
 
@@ -303,44 +371,54 @@ header{
     justify-content: center;
     align-items: center;
     gap: 20px;
-    margin-top: 2%;
-    flex-wrap: wrap; /* Garante que os itens se ajustem para a tela pequena */
-    padding: 0 10px; /* Adiciona um pequeno espaçamento para evitar que os itens fiquem na borda */
+    margin-top: 15px;
+    flex-wrap: wrap;
+    /* Garante que os itens se ajustem para a tela pequena */
+    padding: 0 10px;
+    /* Adiciona um pequeno espaçamento para evitar que os itens fiquem na borda */
 }
+
 .quadra {
     position: relative;
-    width: 260px; 
-    height: 260px; 
-    flex-shrink: 0; 
+    width: 260px;
+    height: 260px;
+    flex-shrink: 0;
 }
+
 .flip {
     position: relative;
     width: 100%;
-    height: 100%; 
+    height: 100%;
     cursor: pointer;
     transform-style: preserve-3d;
     transition: transform 1s;
 }
+
 .flip-rotate {
-    transform: rotateY(180deg); 
+    transform: rotateY(180deg);
 }
+
 .quadra:hover .flip {
-    transform: rotateY(180deg); 
+    transform: rotateY(180deg);
 }
-.frente, .tras {
+
+.frente,
+.tras {
     position: absolute;
-    width: 100%; 
-    height: 100%; 
+    width: 100%;
+    height: 100%;
     border-radius: 15px;
     box-shadow: 0px 0px 10px #00000065;
     backface-visibility: hidden;
 }
+
 .frente img {
-    width: 100%; 
-    height: 100%; 
+    width: 100%;
+    height: 100%;
     border-radius: 15px;
 }
-.tras{
+
+.tras {
     background-color: whitesmoke;
     box-shadow: 0px 0px 10px #1a3a5f;
     transform: rotateY(180deg);
@@ -349,106 +427,129 @@ header{
     border-radius: 15px;
     border: 2px solid #1a3a5f;
 }
-.tras h2{
+
+.tras h2 {
     color: #1a3a5f;
     margin-top: 25px;
     margin-bottom: 25px;
+    font-family: "Roboto Condensed", serif;
 }
-.tras p{
+
+.tras p {
     margin-left: 5px;
     margin-right: 5px;
-    font-size: 18px;
+    font-size: 17px;
+    font-family: "Open Sans", sans-serif;
 }
+
 /* QUADRADOS AZUIS ESCUROS*/
 
 
 /*PARTE ARPLAN ENGENHARIA*/
-.fundo-azul{
+.fundo-azul {
     margin-top: 5%;
     padding: 70px;
     background-color: #1a3a5f;
 }
-.fundo-azul h5{
+
+.fundo-azul h5 {
     margin-left: 140px;
     margin-bottom: 25px;
     color: #fff;
     font-size: 15px;
-    
+    font-family: "Open Sans", sans-serif;
+
 }
-.pmoc{
+
+.pmoc {
     display: flex;
 }
-.img-pmoc img{
+
+.img-pmoc img {
     background-color: #1a3a5f;
     border-radius: 15px;
     box-shadow: 5px 5px 40px 5px black;
     margin-left: 130px;
     width: 450px;
 }
-.botao-azul button{
+
+.botao-azul button {
     margin-top: 100px;
     margin-left: 160px;
     border: 0;
     padding: 10px 15px;
     background-color: #2fbdff;
     color: #fff;
-    font-size: 15px;
+    font-size: 13px;
     cursor: pointer;
     transition: 0.4s;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 500;
 }
-.botao-azul button:hover{
+
+.botao-azul button:hover {
     transform: translateY(-4px);
     background-color: #fff;
     color: #1a3a5f;
     border-radius: 15px;
 }
-.botao-azul h4{
+
+.botao-azul h4 {
     margin-top: 15px;
     margin-left: 160px;
     display: flex;
     align-items: center;
     font-weight: 100;
     color: #fff;
-   
-    
+    font-family: "Open Sans", sans-serif;
+
+
 }
-.botao-azul h4 img{
+
+.botao-azul h4 img {
     width: 28px;
     margin-right: 1px;
 }
+
 /* FIM PARTE ARPLAN ENGENHARIA*/
 
 /*AR SEGURO*/
-.ar-seguro{
+.ar-seguro {
     display: flex;
     justify-content: center;
 }
-.textos-ar-seguro{
+
+.textos-ar-seguro {
     margin-top: 5%;
     width: 850px;
     height: 480px;
 }
-.textos-ar-seguro h1{
+
+.textos-ar-seguro h1 {
     color: #1a3a5f;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight:bolder;
+    font-family: "Roboto Condensed", serif;
+    font-weight: 900;
+    font-weight: bolder;
     font-size: 35px;
-    
+
 }
-.textos-ar-seguro > h5{
+
+.textos-ar-seguro>h5 {
     color: #2fbdff;
     margin-top: 15px;
     margin-bottom: 15px;
     font-size: 15px;
     font-family: Arial, Helvetica, sans-serif;
 }
-.textos-ar-seguro p{
+
+.textos-ar-seguro p {
     font-weight: 100;
     font-size: 17px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight:lighter;
+    font-weight: lighter;
+    font-family: "Open Sans", sans-serif;
 }
-.caixinhas{
+
+.caixinhas {
     margin-top: 70px;
     width: 100%px;
     height: 200px;
@@ -457,43 +558,55 @@ header{
     gap: 50px;
     text-align: center;
 }
-.caixinhas img{
+
+.caixinhas img {
     width: 60px;
 }
-.caixinhas h5{
+
+.caixinhas h5 {
     color: #1a3a5f;
     font-size: 20px;
     padding: 0px 15px;
+    font-family: "Roboto Condensed", serif;
+    font-weight: 900;
 }
-.caixinhas p{
-    margin-top: 10px;
+
+.caixinhas p {
+    margin-top: 5px;
     font-size: 14px;
-    font-weight: 100;
+    font-weight: lighter;
+    font-family: "Open Sans", sans-serif;
 }
-.botao-sobre{
+
+.botao-sobre {
     display: flex;
     justify-content: center;
 }
-.botao-sobre button{
+
+.botao-sobre button {
     border: 0;
     padding: 12px;
     background-color: #2fbdff;
     color: #fff;
-    margin-top: 25px;  
-    font-size: 15px;
+    margin-top: 25px;
+    font-size: 14px;
     cursor: pointer;
     transition: 0.4s;
+    font-family: "Roboto Condensed", serif;
+    font-weight: 500;
 }
-.botao-sobre button:hover{
+
+.botao-sobre button:hover {
     transform: translateY(-4px);
-    background-color:  #1a3a5f;
+    background-color: #1a3a5f;
     border-radius: 15px;
-   
+
 }
+
 /* FIM AR SEGURO*/
 
 /*VALORES*/
-.razoes{
+.razoes {
     margin-top: 4.5rem;
     width: 100%;
     height: 400px;
@@ -502,115 +615,150 @@ header{
     justify-content: center;
     align-items: center;
 }
-.razoes > img{
+
+.razoes>img {
     width: 100%;
     height: 400px;
     z-index: -1;
     position: absolute;
 }
-.textoEfundo{
-   width: 900px;
-   height: 400px;
-   text-align: center;
+
+.textoEfundo {
+    width: 900px;
+    height: 400px;
+    text-align: center;
 }
-.textoEfundo h6{
+
+.textoEfundo h6 {
     margin-top: 60px;
     color: #2fbdff;
-    font-weight: 200;
+    font-weight: 700;
     font-size: 14px;
+    font-family: "Roboto Condensed", serif;
+
 }
-.textoEfundo h2{
+
+.textoEfundo h2 {
+    margin-top: 1px;
     color: #fff;
-    font-size: 25px;
+    font-size: 24px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+
 }
-.caixinhas-valores{
+
+.caixinhas-valores {
     display: flex;
     gap: 50px;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 45px;
 }
-.perso-valores{
-   width: 300px;
-   background-color: #fff;
-   height: 180px;
-   color: #1a3a5f;
-   text-align: center;
-   border-radius: 10px;
+
+.perso-valores {
+    width: 300px;
+    background-color: #fff;
+    height: 180px;
+    color: #1a3a5f;
+    text-align: center;
+    border-radius: 10px;
 }
-.perso-valores:hover{
+
+.perso-valores:hover {
     transform: scale(1.05);
     transition: .6s;
 }
-.perso-valores h3{
+
+.perso-valores h3 {
     margin-top: 4px;
     font-size: 20px;
+    font-family: "Roboto Condensed", serif;
+    font-weight: 600;
+
 }
-.perso-valores p{
+
+.perso-valores p {
     font-size: 14px;
     color: black;
-    font-weight: 500;
+    font-weight: 400;
     text-align: left;
     margin: 10px;
+    font-family: "Open Sans", sans-serif;
 }
-.img-missao{
+
+.img-missao {
     margin-top: 2px;
     width: 45px;
 }
-.img-visao{
+
+.img-visao {
     width: 50px;
 }
-.img-valores{
+
+.img-valores {
     width: 50px;
 }
+
 /*VALORES*/
 
 /*FOOTER*/
-footer{
+footer {
     border-top: 5px solid #287cb0;
     background-color: #1a3a5f;
     padding: 50px;
 }
-.footer-section{
+
+.footer-section {
     display: flex;
     justify-content: center;
 }
-.logo-footer{
+
+.logo-footer {
     margin-right: 100px;
 }
-.logo-footer p{
-   font-size: 15px;
-   color: #999;
-   margin-bottom: 10px;
+
+.logo-footer p {
+    font-size: 15px;
+    color: #999;
+    margin-bottom: 10px;
 }
-.logo-footer i{
-   color: #999;
-   font-size: 25px;
+
+.logo-footer i {
+    color: #999;
+    font-size: 25px;
+    margin-right: 10px;
 }
-.conteiner-footer{
+
+.conteiner-footer {
     display: flex;
     text-align: center;
     gap: 100px;
     margin-top: 7px;
 }
-.conteiner-footer h2{
+
+.conteiner-footer h2 {
     color: #999;
     font-size: 25px;
     font-weight: 900;
     margin-bottom: 2px;
+    font-family: "Roboto Condensed", serif;
+    font-weight: 700;
 }
-.conteiner-footer a{
+
+.conteiner-footer a {
     text-decoration: none;
     color: #999;
     border-bottom: 1px solid grey;
     font-size: 18px;
     font-weight: lighter;
 }
-.conteiner-footer p{
+
+.conteiner-footer p {
     font-size: 18px;
     color: #999;
     font-weight: lighter;
 }
-.footer-bottom{
+
+.footer-bottom {
     text-align: center;
     color: #999;
 }
@@ -620,39 +768,51 @@ footer{
 .scroll {
     opacity: 0;
     filter: blur(3px);
-    transform: translateY(20px); /* Adiciona um efeito de movimento sutil */
+    transform: translateY(20px);
+    /* Adiciona um efeito de movimento sutil */
     transition: opacity 0.8s ease, filter 0.8s ease, transform 0.8s ease;
 }
+
 .show {
     opacity: 1;
     filter: blur(0);
-    transform: translateY(0); /* Retorna ao estado original */
+    transform: translateY(0);
+    /* Retorna ao estado original */
     transition: opacity 0.8s ease, filter 0.8s ease, transform 0.8s ease;
 }
+
 /*ANIMAÇÃO DE ENTRADA DE ELEMENTOS*/
 
 
 /*ESTILO CARROSSEL OBRAS E RESPOSIVIDADE*/
-.obras-con{
+.obras-con {
     margin-top: 50px;
     margin-bottom: 15px;
     text-align: center;
     color: #1a3a5f;
+    font-family: "Roboto Condensed", serif;
+    font-weight: 900;
 }
+
 .carrossel {
     position: relative;
     width: 100%;
-    height: 370px; /* Altura ajustada para 370px */
+    height: 370px;
+    /* Altura ajustada para 370px */
     overflow: hidden;
 }
+
 .slides {
     display: flex;
     width: 100%;
     height: 100%;
-    transition: transform 0.7s ease-in-out; /* Transição suave */
+    transition: transform 0.7s ease-in-out;
+    /* Transição suave */
 }
+
 .slide {
-    flex: 0 0 33.33%; /* Padrão: 3 slides visíveis */
+    flex: 0 0 33.33%;
+    /* Padrão: 3 slides visíveis */
     height: 100%;
     display: flex;
     align-items: center;
@@ -660,6 +820,7 @@ footer{
     position: relative;
     overflow: hidden;
 }
+
 .slide-content {
     position: absolute;
     left: 0;
@@ -670,19 +831,27 @@ footer{
     margin-top: 270px;
     font-weight: 600;
 }
+
 .slide-text {
-    font-size: 18px;
+    font-size: 15px;
     background-color: #1a3a5f;
+    font-family: "Roboto Condensed", serif;
+    font-weight: 600;
 }
+
 .legend-p {
-    opacity: 0; 
+    opacity: 0;
     transition: opacity 0.3s ease;
     background-color: #1a3a5f;
+    font-family: "Open Sans", sans-serif;
 }
+
 .slide:hover .legend-p {
-    opacity: 1; 
+    opacity: 1;
 }
-.prev, .next {
+
+.prev,
+.next {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -693,69 +862,85 @@ footer{
     cursor: pointer;
     font-size: 24px;
 }
+
 .prev {
     left: 10px;
 }
+
 .next {
     right: 10px;
 }
-.prev:hover, .next:hover {
+
+.prev:hover,
+.next:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
+
 /* Responsividade para 700px: 2 slides visíveis */
 @media (max-width: 700px) {
     .slide {
-        flex: 0 0 50%; /* 2 slides visíveis */
+        flex: 0 0 50%;
+        /* 2 slides visíveis */
     }
 }
+
 /* Responsividade para 380px: 1 slide visível */
 @media (max-width: 390px) {
     .slide {
-        flex: 0 0 100%; /* 1 slide visível */
+        flex: 0 0 100%;
+        /* 1 slide visível */
     }
-} 
+}
+
 /*ESTILO CARROSSEL OBRAS*/
 
 
 /*RESPOSIVIDADE DA PAGINA PRINCIPAL*/
 @media screen and (max-width: 1130px) {
-    .logo-footer{
+    .logo-footer {
         margin-right: 150px;
     }
 }
 
 @media screen and (max-width: 999px) {
     .cabecalho {
-        flex-direction: row; /* Mantém o alinhamento horizontal */
-        align-items: center; /* Alinha os itens ao centro */  
+        flex-direction: row;
+        /* Mantém o alinhamento horizontal */
+        align-items: center;
+        /* Alinha os itens ao centro */
     }
-    .logo{
+
+    .logo {
         margin-right: auto;
-        margin-left: 0; /* Ajuste para evitar deslocamento */
+        margin-left: 0;
+        /* Ajuste para evitar deslocamento */
         width: 70px;
         height: 55px;
         z-index: 1;
     }
+
     .botoes {
         display: none;
-        
+
     }
-    
-      /*ANIMAÇAÕ DO ICONE MENU*/
-      .mobile-menu-icone {
+
+    /*ANIMAÇAÕ DO ICONE MENU*/
+    .mobile-menu-icone {
         display: block;
         margin-left: auto;
         align-self: flex-end;
         z-index: 1;
     }
-    .mobile-menu-icone button{
+
+    .mobile-menu-icone button {
         width: 80px;
         height: 50px;
         cursor: pointer;
         background-color: transparent;
         border: 0;
     }
-    .mobile-menu-icone .linha{
+
+    .mobile-menu-icone .linha {
         width: 45px;
         height: 5px;
         background-color: #fff;
@@ -763,24 +948,30 @@ footer{
         margin: 8px auto;
         position: relative;
         border-radius: 5px;
-        transform-origin: center;/*Significa que a ponta da linha vai pra o centro*/
+        transform-origin: center;
+        /*Significa que a ponta da linha vai pra o centro*/
         transition: transform 0.3s ease, width 0.3s ease;
     }
-    #btn-menu.ativar .linha:nth-child(1){
+
+    #btn-menu.ativar .linha:nth-child(1) {
         transform: translateY(13px) rotate(-48deg);
     }
-    #btn-menu.ativar .linha:nth-child(3){
+
+    #btn-menu.ativar .linha:nth-child(3) {
         transform: translateY(-13px) rotate(48deg);
     }
-    #btn-menu.ativar .linha:nth-child(2){
+
+    #btn-menu.ativar .linha:nth-child(2) {
         width: 0;
     }
-     /*ANIMAÇAÕ DO ICONE MENU*/
 
-     
-    .mobile-menu{
+    /*ANIMAÇAÕ DO ICONE MENU*/
+
+
+    .mobile-menu {
         position: fixed;
-        top: -470px; /* Inicia o menu fora da tela */
+        top: -470px;
+        /* Inicia o menu fora da tela */
         left: 0;
         width: 100%;
         height: 470px;
@@ -789,10 +980,12 @@ footer{
         flex-direction: column;
         text-align: center;
         margin: 0;
-        transition: top 0.3s ease-in-out; /* Animação para deslizar */
+        transition: top 0.3s ease-in-out;
+        /* Animação para deslizar */
         z-index: 0;
     }
-    .mobile-menu ul{
+
+    .mobile-menu ul {
         position: fixed;
         left: 0;
         width: 100%;
@@ -802,17 +995,22 @@ footer{
         flex-direction: column;
         text-align: center;
         margin: 0;
-        transition: top 0.5s ease-in-out; /* Animação para deslizar */
+        transition: top 0.5s ease-in-out;
+        /* Animação para deslizar */
         z-index: 0;
     }
+
     .mobile-menu.open {
-        top: 0; /* Quando a classe 'open' for adicionada, o menu vai para o topo */
+        top: 0;
+        /* Quando a classe 'open' for adicionada, o menu vai para o topo */
     }
+
     .mobile-menu li {
         margin: 11px 0;
         box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.721);
         text-align: left;
     }
+
     .mobile-menu li button {
         border: 2px solid transparent;
         padding: 10px 20px;
@@ -823,55 +1021,64 @@ footer{
         transition: all 0.4s ease;
         width: 100%;
     }
+
     /* Efeito de destaque ao passar o mouse (hover) */
     .mobile-menu li button:hover {
         background-color: #3498db;
         color: white;
         border: 2px solid #2980b9;
     }
+
     /* Efeito ao clicar (active) */
     .mobile-menu li button:active {
         background-color: #2980b9;
         color: white;
         border: 2px solid #1f78b4;
     }
+
     /* Quando o menu estiver aberto, bloqueia o rolar da página */
     body.menu-aberto {
         overflow: hidden;
     }
-    
+
 
     /*INTERFACE TEXTOS*/
-    .azul-escuro{
+    .azul-escuro {
         height: 450px;
     }
-    .azul-claro{
+
+    .azul-claro {
         height: 450px;
     }
-    .azul-escuro h1{
+
+    .azul-escuro h1 {
         font-size: 30px;
         word-break: break-word;
         width: 300px;
         left: 25px;
     }
-    .azul-escuro h3{
+
+    .azul-escuro h3 {
         display: none;
     }
-    .azul-escuro .button-fale{
+
+    .azul-escuro .button-fale {
         top: 64%;
         font-size: 14px;
         padding: 10px 40px;
         left: 25px;
     }
-/* FIM INTERFACE TEXTOS*/
+
+    /* FIM INTERFACE TEXTOS*/
 
 
-/*CONTEINER*/
-    .conteiner{
+    /*CONTEINER*/
+    .conteiner {
         width: 100%;
         background-color: whitesmoke;
     }
-    .conteiner .sobre{
+
+    .conteiner .sobre {
         display: block;
         margin-top: 6%;
         padding: 10px 40px;
@@ -880,148 +1087,179 @@ footer{
         border-radius: 0;
         background-color: whitesmoke;
     }
-    .sobre h2{
+
+    .sobre h2 {
         font-size: 30px;
 
     }
-    .versao-pc-text{
+
+    .versao-pc-text {
         font-size: 22px;
         display: none;
     }
-    .versao-mobile-text{
+
+    .versao-mobile-text {
         display: flex;
         text-align: center;
         font-weight: 100;
-        font-size: 20px;
+        font-size: 19px;
         max-width: 500px;
+
+
     }
-    .sobre button{
-        margin-top:  18px ;
+
+    .sobre button {
+        margin-top: 18px;
         padding: 12px 12px;
-        font-size: 15px;
+        font-size: 14px;
         font-weight: 100;
     }
+
     /* FIM CONTEINER*/
 
 
-    .marcas{
-     width: 80%;
-     margin-top: 5px;
+    .marcas {
+        width: 80%;
+        margin-top: 5px;
     }
-    .loops img{
+
+    .loops img {
         width: 50px;
     }
-    .serviços{
+
+    .serviços {
         font-size: 22px;
     }
-    .quadrados{
+
+    .quadrados {
         flex-direction: column;
-        
+
     }
-    .quadra img{
+
+    .quadra img {
         width: 260px;
         border-radius: 15px;
     }
-    
+
 
 
     /*PARTE ARPLAN ENGENHARIA*/
-    .pmoc{
+    .pmoc {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;  
+        align-items: center;
     }
-    .fundo-azul h5{
+
+    .fundo-azul h5 {
         text-align: center;
         margin-left: 0;
         margin-right: 0;
     }
-    .img-pmoc img{
+
+    .img-pmoc img {
         margin-left: 0;
         width: 350px;
     }
-    .botao-azul button{
+
+    .botao-azul button {
         margin-left: 0;
-        
+
     }
-    .botao-azul h4{
+
+    .botao-azul h4 {
         margin-left: 0;
-    }  
+    }
+
     /*PARTE ARPLAN ENGENHARIA*/
 
-    
-     /* AR SEGURO */
-     .ar-seguro{
+
+    /* AR SEGURO */
+    .ar-seguro {
         text-align: center;
-     }
-     .textos-ar-seguro p{
+    }
+
+    .textos-ar-seguro p {
         padding-left: 25px;
         padding-right: 25px;
         font-size: 15px;
-     }
-     .caixinhas{
+    }
+
+    .caixinhas {
         flex-direction: column;
         padding-top: 300px;
-     }
-     .botao-sobre button{
+    }
+
+    .botao-sobre button {
         margin-top: 380px;
-     }
-      /* FIM AR SEGURO */
-   
+    }
+
+    /* FIM AR SEGURO */
+
     /*Section-razoes*/
-    .razoes{
+    .razoes {
         margin-top: 600px;
         background-color: transparent;
     }
-    .textoEfundo{
+
+    .textoEfundo {
         background-color: #1a3a5f;
     }
-    .razoes > img{
+
+    .razoes>img {
         display: none;
-    }  
+    }
+
     .caixinhas-valores {
         flex-direction: column;
         align-items: center;
         background-color: #1a3a5f;
         padding-bottom: 80px;
     }
+
     /*Section-razoes*/
-    
+
     /*footer*/
-    .obras-con{
+    .obras-con {
         margin-top: 540px;
     }
-    .footer-section{
-      flex-direction: column-reverse;
+
+    .footer-section {
+        flex-direction: column-reverse;
     }
-    .conteiner-footer{
+
+    .conteiner-footer {
         flex-direction: column-reverse;
         gap: 40px;
     }
-    .conteiner-footer h2{
+
+    .conteiner-footer h2 {
         font-size: 25px;
     }
-    .logo-footer{
+
+    .logo-footer {
         text-align: center;
         margin-right: 0;
         margin-top: 50px;
     }
+
     /*footer*/
 
 }
 
 @media screen and (max-width:399px) {
-    .img-pmoc img{
+    .img-pmoc img {
         width: 270px;
 
     }
-    .botao-azul button{
+
+    .botao-azul button {
         margin-left: 0;
         font-size: 10px;
     }
-    .botao-azul h4{
+
+    .botao-azul h4 {
         margin-left: 0;
         font-size: 10px;
-    }  
+    }
 }

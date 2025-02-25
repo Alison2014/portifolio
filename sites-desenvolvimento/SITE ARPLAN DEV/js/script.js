@@ -152,7 +152,7 @@ function enviarMensagem() {
     // Simula o envio do formulário após 3 segundos
     setTimeout(function () {
         document.getElementById('success-message').classList.add('hidden');
-    }, 10000); // 10 segundos de espera
+    }, 8000); // 8 segundos de espera
 
     return false; // Impede o envio imediato
 }

@@ -142,7 +142,7 @@ li {
 
 /*HEADER FIM*/
 
-/*contate*/
+/*contate-nos*/
 .contate-menu {
     background-color: rgba(128, 128, 128, 0.547);
     height: 110px;
@@ -172,7 +172,7 @@ li {
 
 }
 
-/*contate*/
+/*contate-nos*/
 
 
 /*PARTE CONTATO ESQUERDO*/
@@ -180,7 +180,7 @@ li {
     width: 100%;
     max-width: 600px;
     height: auto;
-    margin-top: 50px;
+
     margin-left: 30px;
 }
 
@@ -221,12 +221,14 @@ li {
 
 
 /* Inicio form contato*/
+
 /* Estilo para a mensagem de sucesso */
 #success-message {
     color: fff;
     text-align: center;
     font-weight: bold;
-    margin-top: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .hidden {
@@ -316,6 +318,8 @@ form button:hover {
     border-radius: 16px;
 }
 
+/* fim form contato*/
+
 
 /*FOOTER*/
 footer {
@@ -343,6 +347,7 @@ footer {
 .logo-footer i {
     color: #999;
     font-size: 25px;
+    margin-right: 10px;
 }
 
 .conteiner-footer {
@@ -499,6 +504,7 @@ footer {
         transition: all 0.4s ease;
         width: 100%;
     }
+
 
     /* Efeito de destaque ao passar o mouse (hover) */
     .mobile-menu li button:hover {
