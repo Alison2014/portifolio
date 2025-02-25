@@ -231,10 +231,11 @@ li {
 
 .sobre h2 {
     text-align: center;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     font-size: 35px;
     color: #1a3a5f;
     font-family: "Roboto Condensed", serif;
+    letter-spacing: 2px;
 
 
 }
@@ -244,6 +245,7 @@ li {
     font-weight: 100;
     font-size: 20px;
     font-family: "Open Sans", sans-serif;
+    color: rgba(0, 0, 0, 0.755);
 }
 
 .versao-mobile-text {
@@ -253,20 +255,21 @@ li {
 }
 
 .sobre button {
-    padding: 20px 100px;
-    margin-top: 30px;
+    padding: 18px 80px;
+    margin-top: 25px;
     justify-items: center;
     margin-left: 50%;
     transform: translate(-50%);
     white-space: nowrap;
     border: 0;
     background-color: #287cb0;
-    font-size: 28px;
+    font-size: 25px;
     color: #fff;
     transition: 0.4s;
     cursor: pointer;
     font-family: "Roboto Condensed", serif;
-    font-weight: 700;
+    font-weight: 600;
+    letter-spacing: 3px;
 }
 
 .sobre button:hover {
@@ -440,6 +443,7 @@ li {
     margin-right: 5px;
     font-size: 17px;
     font-family: "Open Sans", sans-serif;
+    color: rgba(0, 0, 0, 0.755);
 }
 
 /* QUADRADOS AZUIS ESCUROS*/
@@ -547,6 +551,8 @@ li {
     font-size: 17px;
     font-weight: lighter;
     font-family: "Open Sans", sans-serif;
+    color: rgba(0, 0, 0, 0.833);
+
 }
 
 .caixinhas {
@@ -678,7 +684,7 @@ li {
 
 .perso-valores p {
     font-size: 14px;
-    color: black;
+    color: rgba(0, 0, 0, 0.819);
     font-weight: 400;
     text-align: left;
     margin: 10px;
@@ -786,12 +792,14 @@ footer {
 
 /*ESTILO CARROSSEL OBRAS E RESPOSIVIDADE*/
 .obras-con {
-    margin-top: 50px;
-    margin-bottom: 15px;
+    margin-top: 45px;
+    margin-bottom: 12px;
     text-align: center;
     color: #1a3a5f;
     font-family: "Roboto Condensed", serif;
     font-weight: 900;
+    letter-spacing: 1px;
+    font-size: 30px;
 }
 
 .carrossel {
@@ -855,7 +863,7 @@ footer {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: #1a3a5fe0;
+    background-color: #1a3a5f;
     color: white;
     border: none;
     padding: 10px;
