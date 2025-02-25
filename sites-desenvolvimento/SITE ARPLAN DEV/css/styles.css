@@ -18,12 +18,12 @@
     align-items: center;
     z-index: 9999;
     flex-direction: column;
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 700;
+
 
 }
-#loanding-screen p {
-    font-family: "Roboto Condensed", serif;
-    font-weight: 700;
-}
+
 
 .loader {
     border: 8px solid #f3f3f3;
