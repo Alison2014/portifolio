@@ -172,7 +172,7 @@ li {
     color: #fff;
     font-size: 50px;
     font-weight: 900;
-    font-family: "Roboto Condensed", serif;
+    font-family: "Roboto Condensed", sans-serif;
 }
 
 .azul-escuro h3 {
@@ -183,7 +183,7 @@ li {
     font-weight: bold;
     color: #2fbdff;
     word-spacing: 3px;
-    font-family: "Roboto Condensed", serif;
+    font-family: "Roboto Condensed", sans-serif;
 
 }
 
@@ -200,7 +200,7 @@ li {
     color: #fff;
     background-color: #287cb0;
     transition: 0.3s;
-    font-family: "Roboto Condensed", serif;
+    font-family: "Roboto Condensed", sans-serif;
     font-weight: 700;
 }
 
@@ -234,7 +234,7 @@ li {
     margin-bottom: 10px;
     font-size: 35px;
     color: #1a3a5f;
-    font-family: "Roboto Condensed", serif;
+    font-family: "Roboto Condensed", sans-serif;
     letter-spacing: 2px;
 
 
@@ -267,7 +267,7 @@ li {
     color: #fff;
     transition: 0.4s;
     cursor: pointer;
-    font-family: "Roboto Condensed", serif;
+    font-family: "Roboto Condensed", sans-serif;
     font-weight: 600;
     letter-spacing: 3px;
 }
@@ -435,7 +435,7 @@ li {
     color: #1a3a5f;
     margin-top: 25px;
     margin-bottom: 25px;
-    font-family: "Roboto Condensed", serif;
+    font-family: "Roboto Condensed", sans-serif;
 }
 
 .tras p {
@@ -531,7 +531,7 @@ li {
 
 .textos-ar-seguro h1 {
     color: #1a3a5f;
-    font-family: "Roboto Condensed", serif;
+    font-family: "Roboto Condensed", sans-serif;
     font-weight: 900;
     font-weight: bolder;
     font-size: 35px;
@@ -573,7 +573,7 @@ li {
     color: #1a3a5f;
     font-size: 20px;
     padding: 0px 15px;
-    font-family: "Roboto Condensed", serif;
+    font-family: "Roboto Condensed", sans-serif;
     font-weight: 900;
 }
 
@@ -648,7 +648,7 @@ li {
     margin-top: 1px;
     color: #fff;
     font-size: 24px;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     font-weight: 700;
 
 }
@@ -677,7 +677,7 @@ li {
 .perso-valores h3 {
     margin-top: 4px;
     font-size: 20px;
-    font-family: "Roboto Condensed", serif;
+    font-family: "Roboto Condensed", sans-serif;
     font-weight: 600;
 
 }
@@ -746,7 +746,7 @@ footer {
     font-size: 25px;
     font-weight: 900;
     margin-bottom: 2px;
-    font-family: "Roboto Condensed", serif;
+    font-family: "Roboto Condensed", sans-serif;
     font-weight: 700;
 }
 
@@ -796,7 +796,7 @@ footer {
     margin-bottom: 12px;
     text-align: center;
     color: #1a3a5f;
-    font-family: "Roboto Condensed", serif;
+    font-family: "Roboto Condensed", sans-serif;
     font-weight: 900;
     letter-spacing: 1px;
     font-size: 30px;
@@ -843,7 +843,7 @@ footer {
 .slide-text {
     font-size: 15px;
     background-color: #1a3a5f;
-    font-family: "Roboto Condensed", serif;
+    font-family: "Roboto Condensed", sans-serif;
     font-weight: 600;
 }
 
