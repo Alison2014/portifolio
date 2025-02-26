@@ -212,6 +212,10 @@ li {
 
 }
 
+.button-fale i {
+    margin-right: 5px;
+}
+
 /*SOBRE NOS*/
 .conteiner {
     display: flex;
@@ -269,7 +273,7 @@ li {
     transition: 0.4s;
     cursor: pointer;
     font-family: "Roboto Condensed", sans-serif;
-    font-weight: 500;
+    font-weight: 600;
     letter-spacing: 3px;
 }
 
@@ -313,7 +317,7 @@ li {
 .marcas {
     overflow: hidden;
     padding: 20px 0px;
-    margin-top: 18%;
+    margin-top: 16%;
     white-space: nowrap;
     position: relative;
     width: 50%;
@@ -908,6 +912,10 @@ footer {
 @media screen and (max-width: 1130px) {
     .logo-footer {
         margin-right: 150px;
+    }
+
+    .marcas {
+        margin-top: 18%;
     }
 }
 
