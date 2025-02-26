@@ -150,7 +150,7 @@ li {
 /*SERVIÇOS*/
 .servicos-menu {
     background-color: rgba(128, 128, 128, 0.547);
-    height: 150px;
+    height: 110px;
     width: 100%;
     border-top: 1px solid rgba(128, 128, 128, 0.547);
 }
@@ -162,8 +162,8 @@ li {
 .textos-inicial h1 {
     color: #1a3a5f;
     font-family: "Roboto Condensed", sans-serif;
-    font-size: 35px;
-    margin-top: 20px;
+    font-size: 30px;
+    margin-top: 13px;
     border-left: 2px solid #1a3a5f;
     padding-left: 20px;
 }
@@ -171,14 +171,14 @@ li {
 .textos-inicial p {
     color: #1a3a5f;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
+    font-size: 14px;
     border-left: 2px solid #1a3a5f;
     padding-left: 20px;
 
 }
 
 .galeria-servicos {
-    margin-top: 90px;
+    margin-top: 50px;
     justify-content: center;
     display: grid;
     grid-template-columns: 350px 350px 350px;
@@ -453,25 +453,26 @@ footer {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin-top: 50px;
     }
 
     .servicos-menu {
         background-color: rgba(128, 128, 128, 0.547);
-        height: 120px;
+        height: 85px;
     }
 
     .textos-inicial {
-        margin-left: 70px;
+        margin-left: 35px;
     }
 
     .textos-inicial h1 {
-        font-size: 25px;
+        font-size: 20px;
         margin-top: 10px;
         font-family: "Roboto Condensed", sans-serif;
     }
 
     .textos-inicial p {
-        font-size: 15px;
+        font-size: 12px;
     }
 
     /*footer*/
