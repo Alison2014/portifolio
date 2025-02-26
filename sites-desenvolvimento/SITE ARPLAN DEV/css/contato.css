@@ -40,10 +40,11 @@
 }
 
 #loading-screen p {
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 900;
     color: #1a3a5f;
     margin-top: 10px;
+    font-family: "Roboto Condensed", sans-serif;
 }
 
 /* Estilos para a tela de carregamento */
@@ -100,6 +101,8 @@ li {
     padding: 5px 14px;
     /* Adicionando um pouco de espaçamento ao redor do texto */
     transition: 0.4s;
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 500;
 }
 
 .perso:hover {
@@ -122,6 +125,8 @@ li {
     margin-right: 70px;
     margin-left: 25px;
     transition: 0.3s;
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 500;
 }
 
 .button-contato:hover {
@@ -156,7 +161,7 @@ li {
 
 .textos-inicial h1 {
     color: #1a3a5f;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     font-size: 30px;
     margin-top: 20px;
     border-left: 2px solid #1a3a5f;
@@ -165,7 +170,7 @@ li {
 
 .textos-inicial p {
     color: #1a3a5f;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-size: 15px;
     border-left: 2px solid #1a3a5f;
     padding-left: 20px;
@@ -187,6 +192,8 @@ li {
 .arplan-name-p {
     color: #1f78b4;
     font-family: Arial, Helvetica, sans-serif;
+
+
 }
 
 .contato-esquerdo h1 {
@@ -204,13 +211,15 @@ li {
     color: #1f78b4;
     width: 100%;
     margin-bottom: 30px;
+    font-family: "Open Sans", sans-serif;
 }
 
 .contato-esquerdo>.icons {
     color: #1a3a5f;
     display: flex;
-    font-size: 18px;
+    font-size: 20px;
     margin-bottom: 5px;
+    font-family: "Open Sans", sans-serif;
 }
 
 .contato-esquerdo>.icons img {
@@ -281,8 +290,9 @@ section form {
 #assunto {
     margin-bottom: 10px;
     padding: 10px 5px;
-    color: rgba(0, 0, 0, 0.597);
+    color: rgba(0, 0, 0, 0.550);
     border: 2px solid #999;
+    font-family: "Roboto Condensed", sans-serif;
 
 }
 
@@ -294,6 +304,7 @@ form textarea {
     margin-bottom: 10px;
     transition: all 0.5s;
     border: 2px solid #999;
+    font-family: "Roboto Condensed", sans-serif;
 }
 
 form input:focus,
@@ -310,6 +321,8 @@ form button {
     color: rgb(245, 245, 245);
     transition: all 1s;
     margin-bottom: 20px;
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 600;
 }
 
 form button:hover {
@@ -361,6 +374,7 @@ footer {
     color: #999;
     font-size: 25px;
     font-weight: 900;
+    font-family: "Roboto Condensed", sans-serif;
 }
 
 .conteiner-footer a {

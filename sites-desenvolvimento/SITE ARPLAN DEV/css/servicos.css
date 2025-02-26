@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,7 +6,7 @@
 }
 
 /* Estilos para a tela de carregamento */
-#loading-screen{
+#loading-screen {
     position: fixed;
     top: 0;
     left: 0;
@@ -19,7 +19,8 @@
     z-index: 9999;
     flex-direction: column;
 }
-.loader{
+
+.loader {
     border: 8px solid #f3f3f3;
     border-top: 8px solid #287cb0;
     border-radius: 50%;
@@ -27,68 +28,92 @@
     height: 50px;
     animation: spin 2s linear infinite;
 }
-@keyframes spin{
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
-#loading-screen p{
-    font-size: 18px;
+
+#loading-screen p {
+    font-size: 17px;
     font-weight: 900;
     color: #1a3a5f;
     margin-top: 10px;
+    font-family: "Roboto Condensed", sans-serif;
 }
+
 /* Estilos para a tela de carregamento */
 
 
 /*HEADER*/
-header{
-    background-color:#1a3a5f;
+header {
+    background-color: #1a3a5f;
     width: 100%;
     top: 0;
     padding: 5px 5px;
-    position: sticky;/* FAZ QUE O MENU FIQUE FIXO AO ROLAR PRA BAIXO*/
+    position: sticky;
+    /* FAZ QUE O MENU FIQUE FIXO AO ROLAR PRA BAIXO*/
     border-bottom: 5px solid #287cb0;
     z-index: 1000;
-    
+
 }
-.cabecalho{
+
+.cabecalho {
     display: flex;
-    justify-content: space-between; /* Para garantir que a logo e os botões se alinhem corretamente */
-    align-items: center; /* Para garantir que a logo e os botões fiquem no centro verticalmente */
+    justify-content: space-between;
+    /* Para garantir que a logo e os botões se alinhem corretamente */
+    align-items: center;
+    /* Para garantir que a logo e os botões fiquem no centro verticalmente */
     margin: 0px;
 }
-.logo{
+
+.logo {
     margin-left: 50px;
     margin-top: 0px;
     display: flex;
     width: 10px;
 }
-.botoes, ul{
+
+.botoes,
+ul {
     display: flex;
     list-style-type: none;
     justify-content: center;
 }
-.botoes, li{
-    margin-left:15x;
+
+.botoes,
+li {
+    margin-left: 15x;
 }
-.perso{
+
+.perso {
     border: none;
     cursor: pointer;
     font-size: 22px;
     color: white;
     background-color: transparent;
     border-radius: 5px;
-    padding: 5px 14px; /* Adicionando um pouco de espaçamento ao redor do texto */
+    padding: 5px 14px;
+    /* Adicionando um pouco de espaçamento ao redor do texto */
     transition: 0.4s;
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 500;
 }
-.perso:hover{
+
+.perso:hover {
     transform: translateY(-4px);
     background-color: #fff;
     color: #1a3a5f;
     border-radius: 15px;
-    
+
 }
-.button-contato{
+
+.button-contato {
     border: none;
     cursor: pointer;
     font-size: 18px;
@@ -100,129 +125,157 @@ header{
     margin-right: 70px;
     margin-left: 25px;
     transition: 0.3s;
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 500;
 }
-.button-contato:hover{
-  transform: translateY(-4px);
-  background-color: #fff;
-  color: #1a3a5f;
+
+.button-contato:hover {
+    transform: translateY(-4px);
+    background-color: #fff;
+    color: #1a3a5f;
 }
-.mobile-menu-icone{
-    display: none; /* Faz que o elemento suma da tela ate que apareça uma condição pra ele aparecer*/
-    
+
+.mobile-menu-icone {
+    display: none;
+    /* Faz que o elemento suma da tela ate que apareça uma condição pra ele aparecer*/
+
 }
-.mobile-menu{
+
+.mobile-menu {
     display: none;
 }
+
 /*HEADER FIM*/
 
 /*SERVIÇOS*/
-.servicos-menu{
+.servicos-menu {
     background-color: rgba(128, 128, 128, 0.547);
     height: 150px;
     width: 100%;
     border-top: 1px solid rgba(128, 128, 128, 0.547);
 }
-.textos-inicial{
+
+.textos-inicial {
     margin-left: 100px;
 }
-.textos-inicial h1{
+
+.textos-inicial h1 {
     color: #1a3a5f;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     font-size: 35px;
     margin-top: 20px;
     border-left: 2px solid #1a3a5f;
     padding-left: 20px;
 }
-.textos-inicial p{
+
+.textos-inicial p {
     color: #1a3a5f;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
     border-left: 2px solid #1a3a5f;
     padding-left: 20px;
-    
+
 }
-.galeria-servicos{
+
+.galeria-servicos {
     margin-top: 90px;
     justify-content: center;
     display: grid;
     grid-template-columns: 350px 350px 350px;
     gap: 50px 100px;
 }
-.sessoes{
+
+.sessoes {
     width: 350px;
     height: 350px;
     border: 5px solid #287cb0;
     text-align: center;
 }
-.sessoes h1{
+
+.sessoes h1 {
     margin-top: 20px;
     color: #1a3a5f;
     padding-bottom: 10px;
     border-bottom-width: 2px;
     border-bottom-style: solid;
     border-bottom-color: #1a3a5f;
+    font-family: "Roboto Condensed", sans-serif;
 }
-.sessoes p{
+
+.sessoes p {
     margin-top: 15px;
     font-size: 18px;
     font-weight: 500;
     color: gray;
 }
-.sessoes img{
+
+.sessoes img {
     margin-top: 35px;
 }
+
 /*SERVIÇOS*/
 
 /*FOOTER*/
-footer{
+footer {
     margin-top: 50px;
     border-top: 5px solid #287cb0;
     background-color: #1a3a5f;
     padding: 30px;
 }
-.footer-section{
+
+.footer-section {
     display: flex;
     justify-content: center;
 }
-.logo-footer{
+
+.logo-footer {
     margin-right: 100px;
 }
-.logo-footer p{
-   font-size: 15px;
-   color: #999;
-   margin-bottom: 10px;
+
+.logo-footer p {
+    font-size: 15px;
+    color: #999;
+    margin-bottom: 10px;
 }
-.logo-footer i{
-   color: #999;
-   font-size: 25px;
+
+.logo-footer i {
+    color: #999;
+    font-size: 25px;
 }
-.conteiner-footer{
+
+.conteiner-footer {
     display: flex;
     text-align: center;
     gap: 100px;
     margin-top: 7px;
 }
-.conteiner-footer h2{
+
+.conteiner-footer h2 {
     color: #999;
     font-size: 25px;
     font-weight: 900;
+    font-family: "Roboto Condensed", sans-serif;
 }
-.conteiner-footer a{
+
+.conteiner-footer a {
     text-decoration: none;
     color: #999;
     border-bottom: 1px solid grey;
     font-size: 18px;
     font-weight: lighter;
 }
-.conteiner-footer p{
+
+.conteiner-footer p {
     font-size: 18px;
     color: #999;
     font-weight: lighter;
 }
-.footer-bottom{
+
+.footer-bottom {
     text-align: center;
     color: #999;
 }
+
 /*FOOTER*/
 
 
@@ -230,19 +283,23 @@ footer{
 .scroll {
     opacity: 0;
     filter: blur(3px);
-    transform: translateY(20px); /* Adiciona um efeito de movimento sutil */
+    transform: translateY(20px);
+    /* Adiciona um efeito de movimento sutil */
     transition: opacity 0.8s ease, filter 0.8s ease, transform 0.8s ease;
 }
+
 .show {
     opacity: 1;
     filter: blur(0);
-    transform: translateY(0); /* Retorna ao estado original */
+    transform: translateY(0);
+    /* Retorna ao estado original */
     transition: opacity 0.8s ease, filter 0.8s ease, transform 0.8s ease;
 }
+
 /*ANIMAÇÃO DE ENTRADA DE ELEMENTOS*/
 
 @media screen and (max-width: 1300px) {
-    .galeria-servicos{
+    .galeria-servicos {
         margin-top: 90px;
         justify-content: center;
         display: grid;
@@ -253,36 +310,43 @@ footer{
 
 @media screen and (max-width: 999px) {
     .cabecalho {
-        flex-direction: row; /* Mantém o alinhamento horizontal */
-        align-items: center; /* Alinha os itens ao centro */  
+        flex-direction: row;
+        /* Mantém o alinhamento horizontal */
+        align-items: center;
+        /* Alinha os itens ao centro */
     }
-    .logo{
+
+    .logo {
         margin-right: auto;
-        margin-left: 0; /* Ajuste para evitar deslocamento */
+        margin-left: 0;
+        /* Ajuste para evitar deslocamento */
         width: 70px;
         height: 55px;
         z-index: 1;
     }
+
     .botoes {
         display: none;
-        
+
     }
-    
-      /*ANIMAÇAÕ DO ICONE MENU*/
-      .mobile-menu-icone {
+
+    /*ANIMAÇAÕ DO ICONE MENU*/
+    .mobile-menu-icone {
         display: block;
         margin-left: auto;
         align-self: flex-end;
         z-index: 1;
     }
-    .mobile-menu-icone button{
+
+    .mobile-menu-icone button {
         width: 80px;
         height: 50px;
         cursor: pointer;
         background-color: transparent;
         border: 0;
     }
-    .mobile-menu-icone .linha{
+
+    .mobile-menu-icone .linha {
         width: 45px;
         height: 5px;
         background-color: #fff;
@@ -290,24 +354,30 @@ footer{
         margin: 8px auto;
         position: relative;
         border-radius: 5px;
-        transform-origin: center;/*Significa que a ponta da linha vai pra o centro*/
+        transform-origin: center;
+        /*Significa que a ponta da linha vai pra o centro*/
         transition: transform 0.3s ease, width 0.3s ease;
     }
-    #btn-menu.ativar .linha:nth-child(1){
+
+    #btn-menu.ativar .linha:nth-child(1) {
         transform: translateY(13px) rotate(-48deg);
     }
-    #btn-menu.ativar .linha:nth-child(3){
+
+    #btn-menu.ativar .linha:nth-child(3) {
         transform: translateY(-13px) rotate(48deg);
     }
-    #btn-menu.ativar .linha:nth-child(2){
+
+    #btn-menu.ativar .linha:nth-child(2) {
         width: 0;
     }
-     /*ANIMAÇAÕ DO ICONE MENU*/
 
-     
-    .mobile-menu{
+    /*ANIMAÇAÕ DO ICONE MENU*/
+
+
+    .mobile-menu {
         position: fixed;
-        top: -470px; /* Inicia o menu fora da tela */
+        top: -470px;
+        /* Inicia o menu fora da tela */
         left: 0;
         width: 100%;
         height: 470px;
@@ -316,10 +386,12 @@ footer{
         flex-direction: column;
         text-align: center;
         margin: 0;
-        transition: top 0.3s ease-in-out; /* Animação para deslizar */
+        transition: top 0.3s ease-in-out;
+        /* Animação para deslizar */
         z-index: 0;
     }
-    .mobile-menu ul{
+
+    .mobile-menu ul {
         position: fixed;
         left: 0;
         width: 100%;
@@ -329,17 +401,22 @@ footer{
         flex-direction: column;
         text-align: center;
         margin: 0;
-        transition: top 0.5s ease-in-out; /* Animação para deslizar */
+        transition: top 0.5s ease-in-out;
+        /* Animação para deslizar */
         z-index: 0;
     }
+
     .mobile-menu.open {
-        top: 0; /* Quando a classe 'open' for adicionada, o menu vai para o topo */
+        top: 0;
+        /* Quando a classe 'open' for adicionada, o menu vai para o topo */
     }
+
     .mobile-menu li {
         margin: 11px 0;
         box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.721);
         text-align: left;
     }
+
     .mobile-menu li button {
         border: 2px solid transparent;
         padding: 10px 20px;
@@ -350,70 +427,83 @@ footer{
         transition: all 0.4s ease;
         width: 100%;
     }
+
     /* Efeito de destaque ao passar o mouse (hover) */
     .mobile-menu li button:hover {
         background-color: #3498db;
         color: white;
         border: 2px solid #2980b9;
     }
+
     /* Efeito ao clicar (active) */
     .mobile-menu li button:active {
         background-color: #2980b9;
         color: white;
         border: 2px solid #1f78b4;
     }
+
     /* Quando o menu estiver aberto, bloqueia o rolar da página */
     body.menu-aberto {
         overflow: hidden;
     }
-    
-    
-    .galeria-servicos{
-       display: flex;
-       flex-direction: column;
-       justify-content: center;
-       align-items: center;
+
+
+    .galeria-servicos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
-    .servicos-menu{
+    .servicos-menu {
         background-color: rgba(128, 128, 128, 0.547);
         height: 120px;
     }
-    .textos-inicial{
+
+    .textos-inicial {
         margin-left: 70px;
     }
-    .textos-inicial h1{
+
+    .textos-inicial h1 {
         font-size: 25px;
         margin-top: 10px;
+        font-family: "Roboto Condensed", sans-serif;
     }
-    .textos-inicial p{
+
+    .textos-inicial p {
         font-size: 15px;
     }
 
     /*footer*/
-    .carrossel-obras{
+    .carrossel-obras {
         margin-top: 550px;
     }
-    .footer-section{
-      flex-direction: column-reverse;
+
+    .footer-section {
+        flex-direction: column-reverse;
     }
-    .conteiner-footer{
+
+    .conteiner-footer {
         flex-direction: column-reverse;
         gap: 40px;
     }
-    .conteiner-footer h2{
+
+    .conteiner-footer h2 {
         font-size: 25px;
     }
-    .logo-footer{
+
+    .logo-footer {
         text-align: center;
         margin-right: 0;
         margin-top: 50px;
     }
+
     /*footer*/
 
 }
+
 @media screen and (max-width: 410px) {
-    .textos-inicial{
+    .textos-inicial {
         margin-left: 40px;
     }
 }
