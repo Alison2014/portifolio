@@ -1,0 +1,400 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Merriweather", serif;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 100%;
+    padding-top: 100px;
+    /* mesmo valor da altura do header */
+
+
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+
+}
+
+/*SCROL DE SESSOES*/
+.scroll-container {
+    height: 100vh;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+
+}
+
+.section {
+    scroll-snap-align: start;
+    height: 100vh;
+}
+
+/*FIM_SCROL DE SESSOES*/
+
+/*PARTE DO MENU*/
+
+header {
+    background-color: rgba(177, 177, 177, 0.195);
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+
+}
+
+
+.logo {
+    position: absolute;
+    left: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.logo img {
+    width: 240px;
+    height: auto;
+}
+
+/* Centraliza os botões */
+.botoes ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 50px;
+}
+
+/* Estilo dos botões */
+.perso {
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.738);
+    background-color: transparent;
+    padding: 8px 12px;
+    transition: 0.4s;
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 800;
+}
+
+.perso:hover {
+    transform: translateY(-4px);
+
+
+}
+
+.perso.active {
+    border-bottom: 4px solid #0b6ca9;
+    /* Cor da linha */
+    padding-bottom: 8px;
+    /* Espaçamento adicional se necessário */
+}
+
+/*FIM PARTE DO MENU*/
+
+
+/*SOBRE*/
+main {
+
+    display: flex;
+    justify-content: center;
+
+
+}
+
+main h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 55px;
+    color: #29438C;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 150px;
+}
+
+
+
+/*TEXTO1*/
+.texto1 {
+    margin-top: 60px;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+
+}
+
+.texto1 img {
+    top: 30px;
+
+}
+
+.img-container1 {
+    position: relative;
+    width: 350px;
+    height: 250px;
+}
+
+.fundo-azul1 {
+    position: absolute;
+    top: 0px;
+    right: 30px;
+    width: 100%;
+    height: 100%;
+    background-color: #3399cc;
+    border-radius: 16px;
+    z-index: 0;
+}
+
+.img-container1 img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 16px;
+    z-index: 1;
+}
+
+.background_texto1 {
+    width: 500px;
+    height: 280px;
+    background-color: #e1e1e1;
+}
+
+.texto1 p {
+    font-size: 23px;
+    padding: 25px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+/*FIM_TEXTO1*/
+
+
+
+/*TEXTO_2*/
+.texto2 {
+    padding-top: 180px;
+}
+
+.foto_flex {
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+    margin-left: 20px;
+}
+
+.foto_flex img {
+    top: 30px;
+}
+
+.img-container2 {
+    position: relative;
+    width: 350px;
+    height: 250px;
+}
+
+.fundo-azul2 {
+    position: absolute;
+    top: 0px;
+    right: 30px;
+    width: 100%;
+    height: 100%;
+    background-color: #3399cc;
+    border-radius: 16px;
+    z-index: 0;
+}
+
+.img-container2 img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 16px;
+    z-index: 1;
+}
+
+.background_texto2 {
+    margin-top: 60px;
+    width: 950px;
+    height: 160px;
+    background-color: #e1e1e1;
+
+}
+
+.texto2 p {
+    font-size: 22px;
+    padding: 30px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+/*FIM_TEXTO2*/
+
+/*TEXT_3*/
+
+.texto3 {
+
+    padding-top: 180px;
+}
+
+.foto_flex_arplan {
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+    margin-left: 20px;
+}
+
+.foto_flex_arplan img {
+    top: 30px;
+}
+
+.img-container3 {
+    position: relative;
+    width: 350px;
+    height: 250px;
+}
+
+.fundo-azul3 {
+    position: absolute;
+    top: 0px;
+    right: 30px;
+    width: 100%;
+    height: 100%;
+    background-color: #3399cc;
+    border-radius: 16px;
+    z-index: 0;
+}
+
+.img-container3 img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 16px;
+    z-index: 1;
+}
+
+.background_texto3 {
+    margin-top: 60px;
+    width: 950px;
+    height: 160px;
+    background-color: #e1e1e1;
+
+}
+
+.texto3 p {
+    font-size: 22px;
+    padding: 30px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+/*FIM_TEXTO_3*/
+
+
+/*BIG_NUMBER*/
+
+.big_numbers {
+    position: relative;
+    margin-top: 160px;
+    height: 750px;
+    overflow: hidden;
+}
+
+.bigNumbers_img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+}
+
+.bigNumbers_background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(247, 245, 245, 0.684);
+    z-index: -1;
+}
+
+.texto_big_numbers {
+    position: relative;
+    z-index: 1;
+    color: white;
+    text-align: center;
+    top: 25%;
+    transform: translateY(-50%);
+    width: 100%;
+}
+
+.big_titulo h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    color: black;
+    font-size: 32px;
+    margin-top: 30px;
+}
+
+.big_titulo h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    color: #2b4d91;
+    font-size: 75px;
+    margin-top: 40px;
+
+}
+
+.caixinhas {
+    margin-top: 25px;
+    position: absolute;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.quadrados {
+    width: 340px;
+    height: 280px;
+    cursor: pointer;
+    transition: 0.6s;
+}
+
+.quadrados:hover {
+    background-color: rgba(39, 39, 39, 0.218);
+}
+
+.quadrados h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    color: #2b4d91;
+}
+
+.quadrados h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 28px;
+    color: #010000;
+    font-weight: 200;
+    margin-top: 45px;
+}
+
+/*FIM_BIG_NUMBER*/

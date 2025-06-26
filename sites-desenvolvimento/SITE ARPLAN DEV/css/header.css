@@ -1,0 +1,253 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Alice", serif;
+}
+
+
+/*HEADER*/
+header{
+    background-color:transparent;
+    width: 100%;
+    padding: 15px 5px;
+   ; /* Adiciona a sombra embaixo */
+    position: absolute;
+    z-index: 1;
+}
+
+.cabecalho{
+    display: flex;
+    justify-content: space-between; /* Para garantir que a logo e os botões se alinhem corretamente */
+    align-items: center; /* Para garantir que a logo e os botões fiquem no centro verticalmente */
+    margin: 0px;
+}
+
+.logo{
+    margin-left: 50px;
+    margin-top: 0px;
+    display: flex;
+}
+
+.botoes, ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+}
+
+.botoes, li{
+    margin-left:15x;
+}
+
+.perso{
+    border: none;
+    cursor: pointer;
+    font-size: 22px;
+    color: white;
+    background-color: transparent;
+    border-radius: 5px;
+    padding: 5px 14px; /* Adicionando um pouco de espaçamento ao redor do texto */
+}
+.perso:hover{
+    color: blue;
+}
+
+.button-contato{
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 25px;
+    padding: 10px 15px;
+    background-color: #1a3a5f;
+    color: #fff;
+    box-shadow: 0 4px 6px rgba(42, 42, 42, 0.2);
+    margin-right: 70px;
+    margin-left: 25px;
+    transition: 0.3s;
+}
+.button-contato:hover{
+  transform: translateY(-4px);
+  background-color: #fff;
+  color: #1a3a5f;
+}
+
+.mobile-menu-icone{
+    display: none; /* Faz que o elemento suma da tela ate que apareça uma condição pra ele aparecer*/
+    
+}
+.mobile-menu{
+    display: none;
+}
+/*HEADER FIM*/
+
+
+
+
+.background-interface {
+    position: relative;
+    width: 100%;
+    display: flex;
+ }
+ .azul-escuro{
+     width: 77%;
+     height: 600px;
+     background-color: #1a3a5f;
+     border-top-right-radius: 90px;
+ }
+ .azul-claro{
+     width: 100%;
+     height: 600px;
+     background-color: #287cb0;
+     position: absolute;
+     z-index: -1;
+ }
+.azul-escuro h1{
+    position: absolute;
+    top: 34%;
+    left: 4%;
+    color: #fff;
+    font-size: 50px;
+    font-weight: bold;
+}
+.azul-escuro h3{
+    position: absolute;
+    top: 63%;
+    left: 4%;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    color: #2fbdff;
+    word-spacing: 3px;
+}
+.azul-escuro .button-fale{
+    top:68%;
+    position: absolute;
+    left:60px;
+    border: 0;
+    padding: 10px 80px;
+    border-radius: 50px;
+    white-space: nowrap;
+    font-size: 19px;
+    margin-top: 16px;
+    color: #fff;
+    background-color: #287cb0;
+    transition: 0.3s;
+    font-weight: 500;
+
+}
+.button-fale:hover{
+    transform: translateY(-4px);
+    background-color: #fff;
+    color: #1a3a5f;
+}
+
+/*SOBRE NOS*/
+.conteiner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.conteiner .sobre{
+    background-color: #fff;
+    border: 3px solid gray;
+    border-radius: 10px;
+    padding: 10px 250px;
+    position: absolute;
+    margin-top: 11%;
+}
+.sobre h2{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 35px;
+    color: #1a3a5f;
+    
+}
+.sobre h3{
+    text-align: center;
+    font-weight: 100;
+    font-size: 22px;
+}
+.sobre button{
+    padding: 20px 100px;
+    margin-top: 30px;
+    justify-items: center;
+    margin-left: 50%;
+    transform: translate(-50%);  
+    white-space: nowrap; 
+    border: 0;
+    background-color: #287cb0;
+    font-size: 28px;
+    color: #fff;
+    transition: 0.4s;
+}
+.sobre button:hover{
+    background-color:#1a3a5f ;
+}
+@media screen and (max-width: 1299px){
+    .conteiner .sobre{
+        display: block;
+
+        margin-top: 6%;
+        padding: 10px 250px;
+        
+    }
+    .logos{
+        margin-top: 1%;
+    }
+}
+/* FIM SOBRE NOS*/
+
+
+/*LOOPS*/
+
+@keyframes slide{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+.logos{
+    overflow: hidden;
+    padding: 20px 0px;
+    margin-top: 17%;
+    white-space: nowrap;
+    position: relative;
+    width: 50%;
+    left: 50%;
+    transform: translate(-50%);
+
+}
+.logos:before,
+.logos::after{
+    position: absolute;
+    top: 0;
+    width: 100px;
+    height: 100%;
+    content: "";
+    z-index: 2;
+}
+.logos:before{
+    left: 0;
+    background: linear-gradient(to left, rgba(255,255,255, 0), white);
+}
+.logos::after{
+    right: 0;
+    background: linear-gradient(to right, rgba(255,255,255, 0), white);
+}
+.logos:hover .loops{
+    animation-play-state: paused;
+}
+.loops{
+   display: inline-block;
+   animation: 35s slide infinite linear;
+   
+}
+.loops img{
+    width: 100px;
+    margin: 0 20px;
+}
+/*Fim loops*/
