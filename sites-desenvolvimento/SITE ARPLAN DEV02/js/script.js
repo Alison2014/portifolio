@@ -39,7 +39,7 @@ function typeText(text) {
     clearTimeout(typingTimeout); // Cancela se houver texto sendo digitado
     textDiv.innerHTML = "";
     let i = 0;
-    const speed = 40;
+    const speed = 40; // Velocidade de digitação em milissegundos
 
     function type() {
         if (i < text.length) {

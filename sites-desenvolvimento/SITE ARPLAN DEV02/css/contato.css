@@ -92,6 +92,7 @@ header {
 
 section {
     margin-top: 100px;
+    /* Compensa o header fixo */
 }
 
 /*PARTE CONTATO ESQUERDO*/
@@ -321,12 +322,17 @@ footer {
 }
 
 @media screen and (max-width: 900px) {
+    body {
+        overflow: auto !important;
+        height: auto;
+    }
+
     .contato {
         flex-direction: column;
         align-items: stretch;
         gap: 30px;
         min-height: unset;
-        padding: 10px;
+        padding: 20px;
     }
 
     .contato-esquerdo,
@@ -354,6 +360,11 @@ footer {
 }
 
 @media screen and (max-width: 500px) {
+    body {
+        overflow: auto !important;
+        height: auto;
+    }
+
     header {
         height: 70px;
         padding: 0 5px;
@@ -383,5 +394,10 @@ footer {
     form button {
         font-size: 15px;
         padding: 10px;
+    }
+
+    section {
+        margin-top: 70px;
+        /* Compensa o header menor no mobile */
     }
 }
