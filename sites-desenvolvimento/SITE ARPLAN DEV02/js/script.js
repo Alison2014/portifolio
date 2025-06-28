@@ -1,4 +1,4 @@
-/*LINHA ABAIXO DOS BOTOES*/
+/*LINHA ABAIXO DOS BOTOES UL*/
 document.addEventListener('DOMContentLoaded', () => {
     const buttons = document.querySelectorAll('.perso');
     let path = window.location.pathname; // "/sobre.html"
@@ -15,72 +15,9 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
-/*LINHA ABAIXO DOS BOTOES*/
+/*LINHA ABAIXO DOS BOTOES UL*/
 
 
-
-//SCRIPT SLIDE
-const slides = document.querySelectorAll('.carousel-slide');
-const dots = document.querySelectorAll('.dot');
-const textDiv = document.querySelector('.azul-texto');
-
-const slideTexts = [
-    "Precisão suíça, experiência brasileira.",
-    "Excelência em climatização para empresas e pessoas.",
-    "Seu ambiente nossa prioridade.",
-    "Conforto que se traduz em bem estar e produtividade",
-    "Seu conforto, nossa missão há mais de 35 anos."
-];
-
-let currentSlide = 0;
-let typingTimeout;
-
-function typeText(text) {
-    clearTimeout(typingTimeout); // Cancela se houver texto sendo digitado
-    textDiv.innerHTML = "";
-    let i = 0;
-    const speed = 40; // Velocidade de digitação em milissegundos
-
-    function type() {
-        if (i < text.length) {
-            textDiv.innerHTML += text.charAt(i);
-            i++;
-            typingTimeout = setTimeout(type, speed);
-        }
-    }
-
-    type();
-}
-
-function showSlide(index) {
-    slides.forEach((slide, i) => {
-        slide.classList.toggle('active', i === index);
-        dots[i].classList.toggle('active', i === index);
-    });
-
-    currentSlide = index;
-    typeText(slideTexts[index]);
-}
-
-function showNextSlide() {
-    const nextIndex = (currentSlide + 1) % slides.length;
-    showSlide(nextIndex);
-}
-
-// Avanço automático
-setInterval(showNextSlide, 4000);
-
-// Clicar nos indicadores
-dots.forEach(dot => {
-    dot.addEventListener('click', () => {
-        const index = parseInt(dot.getAttribute('data-slide'));
-        showSlide(index);
-    });
-});
-
-// Texto inicial
-typeText(slideTexts[0]);
-//FIM SCRIPT SLIDE
 
 // Função para exibir a mensagem de sucesso
 function enviarMensagem() {
@@ -97,8 +34,9 @@ function enviarMensagem() {
 
     return false; // Impede o envio imediato
 }
+// FIM Função para exibir a mensagem de sucesso
 
-
+// Função para alternar o menu mobile
 function menuShow() {
     const btn = document.getElementById('btn-menu');
 
@@ -116,12 +54,12 @@ function menuShow() {
     // Bloqueia ou desbloqueia o rolar da página
     document.body.classList.toggle('menu-aberto');
 }
+// FIM Função para alternar o menu mobile
 
 
 
 
-
-
+// Script para esconder o menu ao rolar a página
 let lastScrollTop = 0;
 const header = document.querySelector('header');
 
@@ -136,3 +74,51 @@ window.addEventListener('scroll', function () {
     }
     lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
 });
+// FIM Script para esconder o menu ao rolar a página
+
+let currentIndex = 0;
+const slider = document.querySelector('.foto_flex');
+const items = document.querySelectorAll('.foto_flex .img-container2');
+
+if (slider && items.length > 1) {
+    setInterval(() => {
+        currentIndex = (currentIndex + 1) % items.length;
+        slider.scrollTo({
+            left: items[currentIndex].offsetLeft,
+            behavior: 'smooth'
+        });
+    }, 4000);
+}
+
+let slideFotos2Interval = null;
+
+function slideFotos2() {
+    const containers = Array.from(document.querySelectorAll('.foto_flex .img-container2'));
+    if (containers.length < 2) return;
+
+    // DESKTOP: mostra todos os containers
+    if (window.innerWidth > 999) {
+        containers.forEach(c => c.classList.add('active'));
+        if (slideFotos2Interval) {
+            clearInterval(slideFotos2Interval);
+            slideFotos2Interval = null;
+        }
+        return;
+    }
+
+    // MOBILE: só um container por vez
+    containers.forEach(c => c.classList.remove('active'));
+    let current = 0;
+    containers[current].classList.add('active');
+
+    if (slideFotos2Interval) clearInterval(slideFotos2Interval);
+
+    slideFotos2Interval = setInterval(() => {
+        containers[current].classList.remove('active');
+        current = (current + 1) % containers.length;
+        containers[current].classList.add('active');
+    }, 2000);
+}
+
+window.addEventListener('DOMContentLoaded', slideFotos2);
+window.addEventListener('resize', slideFotos2);

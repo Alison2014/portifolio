@@ -136,8 +136,8 @@ main {
     text-align: center;
     width: 100%;
     font-size: 2.2rem;
-    color: #0b6ca9;
-    font-family: "Merriweather", serif;
+    color: #06588a;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .blog p {
@@ -166,4 +166,35 @@ main {
     color: #222;
     font-family: "Roboto", sans-serif;
     font-weight: 600;
+}
+
+@media screen and (max-width: 768px) {
+
+    main {
+        margin-top: 500px;
+    }
+
+    .posts {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .post {
+        max-width: 100%;
+        flex: 1 1 100%;
+    }
+
+    .logo img {
+        width: 180px;
+    }
+
+    .botoes ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .perso {
+        font-size: 18px;
+    }
+
 }

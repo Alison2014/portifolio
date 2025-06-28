@@ -155,3 +155,37 @@ footer {
 .titulo-azul {
     color: #2b4d91;
 }
+
+@media screen and (max-width: 768px) {
+
+    .container h1 {
+        font-size: 2rem;
+    }
+
+    .foto {
+        width: 100%;
+        max-width: 90%;
+    }
+
+    .foto img {
+        height: 150px;
+    }
+
+    .foto h1 {
+        font-size: 1.2rem;
+    }
+
+    .foto p {
+        font-size: 0.9rem;
+    }
+
+    .botoes ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .botoes ul li {
+        margin-bottom: 10px;
+    }
+
+}

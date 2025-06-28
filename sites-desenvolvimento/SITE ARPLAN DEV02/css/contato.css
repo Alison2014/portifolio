@@ -365,17 +365,8 @@ footer {
         height: auto;
     }
 
-    header {
-        height: 70px;
-        padding: 0 5px;
-    }
-
     body {
         padding-top: 70px;
-    }
-
-    .logo img {
-        width: 120px;
     }
 
     .contato-esquerdo h1,
