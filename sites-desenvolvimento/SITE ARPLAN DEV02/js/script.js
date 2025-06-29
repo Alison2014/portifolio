@@ -90,6 +90,9 @@ if (slider && items.length > 1) {
     }, 4000);
 }
 
+
+// Script para o slider de fotos na seção "Sobre"
+
 let slideFotos2Interval = null;
 
 function slideFotos2() {
@@ -122,3 +125,38 @@ function slideFotos2() {
 
 window.addEventListener('DOMContentLoaded', slideFotos2);
 window.addEventListener('resize', slideFotos2);
+
+let slideFotos3Interval = null;
+
+function slideFotos3() {
+    const containers = Array.from(document.querySelectorAll('.foto_flex_arplan .img-container3'));
+    if (containers.length < 2) return;
+
+    // DESKTOP: mostra todos os containers
+    if (window.innerWidth > 999) {
+        containers.forEach(c => c.classList.add('active'));
+        if (slideFotos3Interval) {
+            clearInterval(slideFotos3Interval);
+            slideFotos3Interval = null;
+        }
+        return;
+    }
+
+    // MOBILE: só um container por vez
+    containers.forEach(c => c.classList.remove('active'));
+    let current = 0;
+    containers[current].classList.add('active');
+
+    if (slideFotos3Interval) clearInterval(slideFotos3Interval);
+
+    slideFotos3Interval = setInterval(() => {
+        containers[current].classList.remove('active');
+        current = (current + 1) % containers.length;
+        containers[current].classList.add('active');
+    }, 2000);
+}
+
+window.addEventListener('DOMContentLoaded', slideFotos3);
+window.addEventListener('resize', slideFotos3);
+
+// Script para o slider de fotos na seção "Sobre Galpão"s

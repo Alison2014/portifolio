@@ -311,7 +311,7 @@ main h1 {
 .big_numbers {
     position: relative;
     margin-top: 160px;
-    height: 750px;
+    height: 820px;
     overflow: hidden;
 }
 
@@ -350,7 +350,7 @@ main h1 {
     font-weight: 100;
     color: black;
     font-size: 32px;
-    margin-top: 30px;
+    margin-top: 40px;
 }
 
 .big_titulo h1 {
@@ -358,7 +358,7 @@ main h1 {
     font-weight: 700;
     color: #2b4d91;
     font-size: 75px;
-    margin-top: 40px;
+    margin-top: 50px;
 
 }
 
@@ -401,6 +401,10 @@ main h1 {
 /*FIM_BIG_NUMBER*/
 
 @media (max-width: 999px) {
+
+    header {
+        background-color: #f0efef;
+    }
 
     /*tira o scroll automatico*/
     html,
@@ -483,6 +487,10 @@ main h1 {
         z-index: 0;
     }
 
+    .texto2 {
+        padding-top: 60px;
+    }
+
     .background_texto2 {
         width: auto;
         max-width: 90vw;
@@ -535,6 +543,83 @@ main h1 {
     .foto_flex .img-container2 img {
         display: block;
     }
+
+
+    /*container 3*/
+
+    .galpao {
+        display: none;
+    }
+
+    .fundo-azul3 {
+        position: absolute;
+        top: 0px;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #3399cc;
+        border-radius: 16px;
+        z-index: 0;
+    }
+
+
+    .background_texto3 {
+        width: auto;
+        max-width: 90vw;
+        height: auto;
+        min-height: 180px;
+        background-color: #e1e1e1;
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        box-sizing: border-box;
+    }
+
+    .img-container2 {
+        width: 70vw;
+        max-width: 400px;
+        min-width: 200px;
+        aspect-ratio: 16/11;
+        height: auto;
+        margin: 0 auto;
+        position: relative;
+        display: block;
+    }
+
+    .texto3 {
+        padding-top: 60px;
+    }
+
+    .img-container2 img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 16px;
+        display: block;
+    }
+
+    .foto_flex_arplan {
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+        width: 100%;
+        padding: 0 5vw;
+        box-sizing: border-box;
+        margin: 0 auto;
+    }
+
+    .foto_flex_arplan .img-container3 {
+        display: none;
+    }
+
+    .foto_flex_arplan .img-container3.active {
+        display: block;
+    }
+
+    .foto_flex_arplan .img-container3 img {
+        display: block;
+    }
+
 
 
 }

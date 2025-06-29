@@ -66,11 +66,11 @@
     }
 
     #btn-menu.ativar .linha:nth-child(1) {
-        transform: translateY(13px) rotate(-48deg);
+        transform: translateY(12px) rotate(-48deg);
     }
 
     #btn-menu.ativar .linha:nth-child(3) {
-        transform: translateY(-13px) rotate(48deg);
+        transform: translateY(-12px) rotate(48deg);
     }
 
     #btn-menu.ativar .linha:nth-child(2) {

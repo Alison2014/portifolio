@@ -170,6 +170,10 @@ main {
 
 @media screen and (max-width: 768px) {
 
+    header {
+        background-color: #f0efef;
+    }
+
     main {
         margin-top: 500px;
     }
