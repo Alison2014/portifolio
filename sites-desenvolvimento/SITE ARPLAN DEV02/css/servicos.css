@@ -219,3 +219,79 @@ section {
 }
 
 /*FIM SOLUÇOES_EMPRESARIAL*/
+
+
+@media (max-width: 999px) {
+
+    /*tira o scroll automatico*/
+    html,
+    body {
+        overflow-x: hidden !important;
+        overscroll-behavior-x: none !important;
+        height: auto !important;
+    }
+
+    .scroll-container {
+        overflow-x: hidden !important;
+        height: auto !important;
+    }
+
+    main {
+        margin-top: 90px;
+    }
+
+    section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .serv {
+        padding: 0 2vw;
+    }
+
+    .titulo1 h1 {
+        padding-top: 60px;
+        font-size: 27px;
+    }
+
+    .titulo2 h1 {
+        font-size: 27px;
+    }
+
+    .sessao1,
+    .sessao2 {
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 24px;
+        margin-bottom: 40px;
+        align-items: center;
+    }
+
+    .video,
+    .video2 {
+        width: 90vw;
+        max-width: 350px;
+        height: 180px;
+    }
+
+    .texto1,
+    .texto2 {
+        width: 90vw;
+        max-width: 350px;
+        height: auto;
+        min-height: 120px;
+        padding: 0;
+        background-color: #e1e1e1;
+    }
+
+    .texto1 p,
+    .texto2 p {
+        font-size: 16px;
+        padding: 12px;
+        text-align: justify;
+    }
+
+    .solucoes_pessoas {
+        margin-top: 60px;
+    }
+}

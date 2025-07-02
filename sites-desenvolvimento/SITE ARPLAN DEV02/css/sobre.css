@@ -621,5 +621,80 @@ main h1 {
     }
 
 
+    /*BIG_NUMBER*/
+    .big_numbers.section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 24px 0 32px 0;
+        gap: 24px;
+        width: 100%;
+    }
 
+    .bigNumbers_img {
+        width: 90vw;
+        max-width: 350px;
+        margin: 0 auto 16px auto;
+    }
+
+    .bigNumbers_img img {
+        width: auto;
+        height: auto;
+        border-radius: 16px;
+        display: block;
+    }
+
+    .bigNumbers_background {
+        display: relative;
+        /* Esconde fundo decorativo se não for essencial */
+    }
+
+    .texto_big_numbers {
+        width: 95vw;
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 0;
+        text-align: center;
+    }
+
+    .big_titulo h4 {
+        font-size: 18px;
+        margin-bottom: 10px;
+        margin-top: 0;
+    }
+
+    .big_titulo h1 {
+        font-size: 28px;
+        margin-bottom: 100px;
+    }
+
+    .caixinhas.section {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+        align-items: center;
+        padding-bottom: 120px;
+
+    }
+
+    .quadrados {
+        width: 90vw;
+        max-width: 350px;
+        background: #fff;
+        border-radius: 12px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+        padding: 18px 15px;
+        text-align: center;
+    }
+
+    .quadrados h1 {
+        font-size: 22px;
+        margin-bottom: 6px;
+    }
+
+    .quadrados h4 {
+        font-size: 15px;
+        font-weight: 400;
+        margin: 0;
+    }
 }
