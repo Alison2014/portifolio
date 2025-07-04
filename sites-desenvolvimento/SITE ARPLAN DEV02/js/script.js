@@ -36,22 +36,19 @@ function enviarMensagem() {
 }
 // FIM Função para exibir a mensagem de sucesso
 
+
 // Função para alternar o menu mobile
 function menuShow() {
     const btn = document.getElementById('btn-menu');
 
-    // Alterna a classe 'ativar' no botão para animar o ícone
     btn.classList.toggle('ativar');
 
-    // Seleciona o menu mobile
     let menuMobile = document.querySelector('.mobile-menu');
 
-    // Alterna a classe 'open' no menu para mostrar ou ocultar
     if (menuMobile) {
         menuMobile.classList.toggle('open');
     }
 
-    // Bloqueia ou desbloqueia o rolar da página
     document.body.classList.toggle('menu-aberto');
 }
 // FIM Função para alternar o menu mobile
@@ -76,6 +73,8 @@ window.addEventListener('scroll', function () {
 });
 // FIM Script para esconder o menu ao rolar a página
 
+
+// Script para o slider de fotos na seção "Sobre" e "Arplan"
 let currentIndex = 0;
 const slider = document.querySelector('.foto_flex');
 const items = document.querySelectorAll('.foto_flex .img-container2');
@@ -89,6 +88,7 @@ if (slider && items.length > 1) {
         });
     }, 4000);
 }
+// FIM Script para o slider de fotos na seção "Sobre" e "Arplan"
 
 
 // Script para o slider de fotos na seção "Sobre"
@@ -109,7 +109,7 @@ function slideFotos2() {
         return;
     }
 
-    // MOBILE: só um container por vez
+
     containers.forEach(c => c.classList.remove('active'));
     let current = 0;
     containers[current].classList.add('active');
@@ -132,7 +132,7 @@ function slideFotos3() {
     const containers = Array.from(document.querySelectorAll('.foto_flex_arplan .img-container3'));
     if (containers.length < 2) return;
 
-    // DESKTOP: mostra todos os containers
+
     if (window.innerWidth > 999) {
         containers.forEach(c => c.classList.add('active'));
         if (slideFotos3Interval) {
@@ -142,7 +142,7 @@ function slideFotos3() {
         return;
     }
 
-    // MOBILE: só um container por vez
+
     containers.forEach(c => c.classList.remove('active'));
     let current = 0;
     containers[current].classList.add('active');
@@ -158,5 +158,28 @@ function slideFotos3() {
 
 window.addEventListener('DOMContentLoaded', slideFotos3);
 window.addEventListener('resize', slideFotos3);
+// Mobile: Script para o slider de fotos na seção "Sobre" e "Arplan"
 
-// Script para o slider de fotos na seção "Sobre Galpão"s
+
+// Efeito de entrada nas fotos ao rolar a página, com delay entre cada uma
+document.addEventListener('DOMContentLoaded', function () {
+    const fotos = document.querySelectorAll('.foto');
+
+    function revealOnScroll() {
+        const windowBottom = window.innerHeight + window.scrollY;
+        let delay = 0;
+        fotos.forEach(foto => {
+            const fotoTop = foto.getBoundingClientRect().top + window.scrollY;
+            if (windowBottom > fotoTop + 60 && !foto.classList.contains('visible')) {
+                setTimeout(() => {
+                    foto.classList.add('visible');
+                }, delay);
+                delay += 150; // 150ms entre cada foto
+            }
+        });
+    }
+
+    revealOnScroll();
+    window.addEventListener('scroll', revealOnScroll);
+});
+// Efeito de entrada nas fotos ao rolar a página, com delay entre cada uma
