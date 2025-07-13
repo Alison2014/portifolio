@@ -163,3 +163,22 @@ document.addEventListener('DOMContentLoaded', function () {
     window.addEventListener('scroll', revealOnScroll);
 });
 // Efeito de entrada nas fotos ao rolar a página, com delay entre cada uma
+
+
+// Efeito de entrada elegante da esquerda ao rolar a página
+document.addEventListener('DOMContentLoaded', function () {
+    const elementos = document.querySelectorAll('.efeito-entrada-esquerda');
+
+    function revealOnScroll() {
+        const windowBottom = window.innerHeight + window.scrollY;
+        elementos.forEach(el => {
+            const elTop = el.getBoundingClientRect().top + window.scrollY;
+            if (windowBottom > elTop + 60) {
+                el.classList.add('visible');
+            }
+        });
+    }
+
+    revealOnScroll();
+    window.addEventListener('scroll', revealOnScroll);
+});

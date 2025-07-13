@@ -2,7 +2,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Merriweather", serif;
+    font-family: "Inter", sans-serif !important;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 
 body {
@@ -11,11 +13,11 @@ body {
     height: 100%;
     padding-top: 100px;
     overflow: hidden;
+    font-family: "Inter", sans-serif !important;
 }
 
 html,
 body {
-    scroll-behavior: smooth;
     height: 100%;
     margin: 0;
     padding: 0;
@@ -68,10 +70,9 @@ header {
     font-size: 20px;
     color: rgba(0, 0, 0, 0.738);
     background-color: transparent;
-    padding: 8px 12px;
+    padding: 8px 10px;
     transition: 0.4s;
-    font-family: "Roboto Condensed", sans-serif;
-    font-weight: 800;
+    font-weight: 600;
 }
 
 .perso:hover {
@@ -82,9 +83,8 @@ header {
 
 .perso.active {
     border-bottom: 4px solid #0b6ca9;
-    /* Cor da linha */
     padding-bottom: 8px;
-    /* Espaçamento adicional se necessário */
+
 }
 
 /*FIM PARTE DO MENU*/
@@ -92,7 +92,7 @@ header {
 
 section {
     margin-top: 100px;
-    /* Compensa o header fixo */
+
 }
 
 /*PARTE CONTATO ESQUERDO*/
@@ -105,7 +105,6 @@ section {
 
 .arplan-name-p {
     color: #1f78b4;
-    font-family: Arial, Helvetica, sans-serif;
 
 
 }
@@ -113,7 +112,6 @@ section {
 .contato-esquerdo h1 {
     color: #1a3a5f;
     font-size: 25px;
-    font-family: Arial, Helvetica, sans-serif;
     width: 100%;
     font-weight: 900;
 }
@@ -125,7 +123,7 @@ section {
     color: #1f78b4;
     width: 100%;
     margin-bottom: 30px;
-    font-family: "Open Sans", sans-serif;
+
 }
 
 .contato-esquerdo>.icons {
@@ -133,7 +131,7 @@ section {
     display: flex;
     font-size: 15px;
     margin-bottom: 5px;
-    font-family: "Open Sans", sans-serif;
+
 }
 
 .contato-esquerdo>.icons img {
@@ -182,7 +180,7 @@ section {
 
 .centro h2 {
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
+
     font-size: 30px;
     font-weight: 900;
 }
@@ -192,8 +190,8 @@ section {
     text-align: center;
     color: rgba(0, 0, 0, 0.508);
     font-weight: 100;
-    font-family: Arial, Helvetica, sans-serif;
 }
+
 
 section form {
     display: flex;
@@ -206,7 +204,7 @@ section form {
     padding: 10px 5px;
     color: rgba(0, 0, 0, 0.550);
     border: 2px solid #999;
-    font-family: "Roboto Condensed", sans-serif;
+
 
 }
 
@@ -218,7 +216,6 @@ form textarea {
     margin-bottom: 10px;
     transition: all 0.5s;
     border: 2px solid #999;
-    font-family: "Roboto Condensed", sans-serif;
 }
 
 form input:focus,
@@ -235,7 +232,7 @@ form button {
     color: rgb(245, 245, 245);
     transition: all 1s;
     margin-bottom: 20px;
-    font-family: "Roboto Condensed", sans-serif;
+
     font-weight: 600;
 }
 
@@ -258,7 +255,7 @@ form button:hover {
     margin-top: 70px;
     color: #1a3a5f;
     font-size: 25px;
-    font-family: Arial, Helvetica, sans-serif;
+
     width: 100%;
     font-weight: 900;
 
@@ -270,12 +267,12 @@ form button:hover {
     color: #1f78b4;
     width: 100%;
     margin-bottom: 30px;
-    font-family: "Open Sans", sans-serif;
+
 }
 
 .redes-sociais p {
     color: #1f78b4;
-    font-family: Arial, Helvetica, sans-serif;
+
     font-size: 15px;
     margin-bottom: 20px;
 
@@ -316,7 +313,7 @@ footer {
     width: 100%;
     text-align: center;
     padding: 10px 0;
-    font-family: "Roboto", sans-serif;
+
     font-size: 15px;
     color: #010000;
 }
