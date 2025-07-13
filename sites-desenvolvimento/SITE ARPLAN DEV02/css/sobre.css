@@ -42,7 +42,7 @@ body {
 /*PARTE DO MENU*/
 
 header {
-    background-color: rgba(177, 177, 177, 0.195);
+    background-color: #f0efef;
     width: 100%;
     height: 100px;
     display: flex;
@@ -122,7 +122,7 @@ main h1 {
     color: #29438C;
     font-weight: 600;
     text-align: center;
-    padding-top: 150px;
+    padding-top: 200px;
 }
 
 
@@ -186,7 +186,7 @@ main h1 {
 
 /*TEXTO_2*/
 .texto2 {
-    padding-top: 180px;
+    padding-top: 220px;
 }
 
 .foto_flex {
@@ -247,9 +247,7 @@ main h1 {
 /*TEXT_3*/
 
 .texto3 {
-    padding-top: 0;
-    margin-top: 50px;
-    /* Mesmo valor usado na .texto2 */
+    padding-top: 220px;
 }
 
 
@@ -403,24 +401,18 @@ main h1 {
 
 /*FIM_BIG_NUMBER*/
 
+
+
+
 @media (max-width: 999px) {
 
     header {
         background-color: #f0efef;
     }
 
-    /*tira o scroll automatico*/
-    html,
-    body {
-        overflow-x: hidden !important;
-        overscroll-behavior-x: none !important;
-        height: auto !important;
-    }
 
-    .scroll-container {
-        overflow-x: hidden !important;
-        height: auto !important;
-    }
+
+
 
     main h1 {
         font-size: 30px;
@@ -429,6 +421,11 @@ main h1 {
     }
 
 
+
+    .sobre {
+
+        gap: 20px;
+    }
 
     .texto1 {
         flex-direction: column;
@@ -493,19 +490,15 @@ main h1 {
 
     .texto2 {
         padding-top: 0;
-        margin-top: 30px;
-        /* mesmo valor para ambos */
+        margin-top: 50px
     }
 
     .background_texto2 {
-        margin-top: 25px;
-        /* mesmo valor para ambos */
         width: auto;
         max-width: 90vw;
         height: auto;
         min-height: 180px;
         background-color: #e1e1e1;
-        margin-top: 50px;
         margin-left: auto;
         margin-right: auto;
         box-sizing: border-box;
@@ -598,7 +591,8 @@ main h1 {
     }
 
     .texto3 {
-        margin-top: 0px;
+        padding-top: 0;
+        margin-top: 50px
     }
 
     .img-container img {
@@ -634,20 +628,20 @@ main h1 {
 
 
     /*BIG_NUMBER*/
-    .big_numbers.section {
+    .big_numbers {
         display: flex;
         flex-direction: column;
         align-items: center;
         padding: 24px 0 32px 0;
         gap: 24px;
         width: 100%;
-        margin-top: 0;
+        margin-top: 60px;
     }
 
     .bigNumbers_img {
         width: 90vw;
         max-width: 350px;
-        margin: 0 auto 16px auto;
+        margin: 0 auto 0px auto;
     }
 
     .bigNumbers_img img {
@@ -672,7 +666,7 @@ main h1 {
 
     .big_titulo h4 {
         font-size: 18px;
-        margin-bottom: 10px;
+        margin-bottom: 8px;
         margin-top: 0;
     }
 
@@ -681,7 +675,7 @@ main h1 {
         margin-bottom: 100px;
     }
 
-    .caixinhas.section {
+    .caixinhas {
         display: flex;
         flex-direction: column;
         gap: 18px;

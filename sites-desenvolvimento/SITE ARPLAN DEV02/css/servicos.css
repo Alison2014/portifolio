@@ -9,7 +9,7 @@ body {
     background-color: rgb(255, 255, 255);
     width: 100%;
     height: 100%;
-    overflow: hidden;
+
 }
 
 html,
@@ -21,32 +21,7 @@ body {
 
 }
 
-/*SCROL DE SESSOES*/
-.scroll-container {
-    height: 100vh;
-    scroll-snap-type: y mandatory;
-    overflow-y: scroll;
-    overflow-x: hidden;
 
-}
-
-.section {
-    scroll-snap-align: start;
-    height: 100vh;
-
-}
-
-.scroll-container::-webkit-scrollbar {
-    width: 0px;
-    background: transparent;
-}
-
-.scroll-container {
-    scrollbar-width: thin;
-    scrollbar-color: transparent transparent;
-}
-
-/*FIM_SCROL DE SESSOES*/
 
 
 
@@ -118,7 +93,7 @@ header {
 /*FIM PARTE DO MENU*/
 
 main {
-    margin-top: 200px;
+    margin-top: 220px;
 }
 
 section {
@@ -180,9 +155,6 @@ section {
 
 /*SOLUÇOES_EMPRESARIAL*/
 
-
-
-
 .titulo2 h1 {
     color: #2b4d91;
     font-family: Arial, Helvetica, sans-serif;
@@ -220,21 +192,25 @@ section {
 
 /*FIM SOLUÇOES_EMPRESARIAL*/
 
+.footer-links {
+    display: none;
+}
+
+
+footer {
+
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(177, 177, 177, 0.195);
+    text-align: center;
+    padding: 10px 0;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    color: #010000;
+}
 
 @media (max-width: 999px) {
-
-    /*tira o scroll automatico*/
-    html,
-    body {
-        overflow-x: hidden !important;
-        overscroll-behavior-x: none !important;
-        height: auto !important;
-    }
-
-    .scroll-container {
-        overflow-x: hidden !important;
-        height: auto !important;
-    }
 
     main {
         margin-top: 90px;
@@ -293,5 +269,40 @@ section {
 
     .solucoes_pessoas {
         margin-top: 60px;
+    }
+
+    .footer-mobile {
+        background: #f0efef;
+        padding: 16px 0 8px 0;
+        text-align: center;
+        margin-top: 32px;
+    }
+
+    .footer-links {
+        display: flex;
+        justify-content: center;
+        gap: 14px;
+        flex-wrap: wrap;
+        margin-bottom: 8px;
+    }
+
+    .footer-links a {
+        color: #0b6ca9;
+        text-decoration: none;
+        font-size: 15px;
+        font-family: "Roboto Condensed", sans-serif;
+        font-weight: 700;
+        transition: color 0.2s;
+    }
+
+    .footer-links a:hover {
+        color: #2887c2;
+        text-decoration: underline;
+    }
+
+    .footer-mobile .copy {
+        font-size: 13px;
+        color: #444;
+        margin-top: 6px;
     }
 }
