@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/blog.css">
     <link rel="stylesheet" href="css/menu.css">
     <!--google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,11 +19,7 @@
 
 <body>
 
-    <div class="background">
-        <img src="img/fundo.png" alt="">
-    </div>
-
-    <header>
+    <header id="header">
 
         <div class="menu">
 
@@ -92,99 +88,56 @@
 
         </div><!--menu-->
 
+
     </header>
 
     <main>
-        <div class="slide">
-            <div class="azul-texto">
+        <section class="blog">
 
-            </div><!--azul-texto-->
+            <h1>Blog</h1>
 
-            <div class="carrossel">
+            <div class="posts">
 
-                <div class="carousel-container">
-                    <div class="carousel-slide active">
-                        <img src="img/slider1.jpg" alt="Imagem 1">
+                <article class="post">
+                    <img src="img/post1.png" alt="Imagem do Post 1">
+                    <h2>Revisão da NBR 7256:2022</h2>
+                    <p>Entenda quais são as principais
+                        alterações na norma e os principais
+                        pontos de fiscalização.</p>
+                    <div class="autor">
+                        <img src="img/foto_petter.png" alt="Autor 1">
+                        <span>Por Peter Wursch</span>
                     </div>
-                    <div class="carousel-slide">
-                        <img src="img/slide2.jpg" alt="Imagem 2">
-                    </div>
-                    <div class="carousel-slide">
-                        <img src="img/slide3.jpg" alt="Imagem 3">
-                    </div>
-                    <div class="carousel-slide">
-                        <img src="img/slide4.png" alt="Imagem 4">
-                    </div>
-                    <div class="carousel-slide">
-                        <img src="img/slide5.jpg" alt="Imagem 5">
-                    </div>
-                </div>
+                </article>
 
-            </div><!--carrossel-->
+                <article class="post">
+                    <img src="img/post2.png" alt="Imagem do Post 2">
+                    <h2>Do projeto à manutenção</h2>
+                    <p>Instalações de climatização podem
+                        representar até 50% do consumo
+                        energético...</p>
+                    <div class="autor">
+                        <img src="img/foto_daniel.png" alt="Autor 2">
+                        <span>Por Daniel Wursch</span>
+                    </div>
+                </article>
 
+                <article class="post">
+                    <img src="img/post3.png" alt="Imagem do Post 3">
+                    <h2>A importância da manutenção</h2>
+                    <p>Entenda porque essa prática eleva a
+                        produtividade do seu local de trabalho
+                        bem como reduz doenças respiratórias</p>
+                    <div class="autor">
+                        <img src="img/foto_rafael.png" alt="Autor 3">
+                        <span>Por Raffael Wursch</span>
+                    </div>
+                </article>
 
-        </div><!--slide-->
+            </div><!--posts-->
 
-        <div class="carousel-indicators">
-            <span class="dot active" data-slide="0"></span>
-            <span class="dot" data-slide="1"></span>
-            <span class="dot" data-slide="2"></span>
-            <span class="dot" data-slide="3"></span>
-            <span class="dot" data-slide="4"></span>
-        </div><!--carousel-indicators-->
+        </section><!--blog-->
     </main>
-
-    <section class="sobre-nos-mobile">
-        <h2>Sobre nós</h2>
-        <p>
-            A Arplan foi fundada em 1989 pelo Engenheiro Peter Wursch, com o objetivo de prestar serviços nas áreas de
-            projeto, instalação e assistência técnica em centrais de ar condicionado e sistemas de ventilação/exaustão
-            Mecânica. [...]
-        </p>
-        <a href="sobre.html" class="btn-leia-mais">Leia mais</a>
-    </section>
-
-    <section class="sobre">
-        <div class="container">
-            <h1>Serviço e qualidade desde 1989</h1>
-
-            <div class="textos">
-                <div class="texto">
-
-                    <img src="img/svg/icons8-checkmark.svg" alt="">
-                    <div class="text">
-                        <h2>Confiavel</h2>
-                        <p>Arplan Eng - Com tecnicos de serviço 100% Capacitados</p>
-                    </div>
-                </div>
-
-
-                <div class="texto">
-
-                    <img src="img/svg/icons8-checkmark.svg" alt="">
-                    <div class="text">
-                        <h2>Competente</h2>
-                        <p>Arplan Eng - 35 anos de experiência com marcas lideres e uma forte rede de parceiros</p>
-                    </div>
-                </div>
-
-
-
-                <div class="texto">
-
-                    <img src="img/svg/icons8-checkmark.svg" alt="">
-                    <div class="text">
-                        <h2>Dinâmico</h2>
-                        <p>Arplan Eng - Soluções de climatização que trazem prazer a longo prazo</p>
-                    </div>
-                </div>
-
-
-
-            </div><!--textos-->
-        </div><!--container-->
-    </section><!--sobre-->
-
 
 
     <footer class="footer-mobile">
@@ -202,9 +155,7 @@
     </footer>
 
     <script src="js/script.js"></script>
-    <script src="js/slide.js"></script>
     <script src="js/header.js"></script>
-
 
 </body>
 

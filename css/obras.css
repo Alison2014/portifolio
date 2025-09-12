@@ -11,7 +11,7 @@ body {
     background-color: rgb(255, 255, 255);
     width: 100%;
     height: 100%;
-
+    padding-top: 100px;
 }
 
 html,
@@ -22,20 +22,6 @@ body {
     padding: 0;
 
 }
-
-/* Efeito de entrada elegante da esquerda */
-.efeito-entrada-esquerda {
-    opacity: 0;
-    transform: translateX(-60px);
-    transition: opacity 0.8s cubic-bezier(.77, 0, .18, 1), transform 0.7s cubic-bezier(.77, 0, .18, 1);
-}
-
-.efeito-entrada-esquerda.visible {
-    opacity: 1;
-    transform: translateX(0);
-}
-
-
 
 /*PARTE DO MENU*/
 
@@ -85,6 +71,7 @@ header {
     background-color: transparent;
     padding: 8px 10px;
     transition: 0.4s;
+    font-family: "Roboto Condensed", sans-serif;
     font-weight: 600;
 }
 
@@ -104,112 +91,64 @@ header {
 /*FIM PARTE DO MENU*/
 
 main {
-    margin-top: 220px;
+    margin-top: 100px;
 }
 
-section {
-    display: flex;
-    justify-content: center;
-}
-
-.serv {
-    display: flex;
-    justify-content: center;
-    justify-items: center;
-    flex-direction: column;
-}
-
-/*SOLUÇOES_PESSOAS*/
-.solucoes_pessoas {
-    margin-top: 160px;
-}
-
-.titulo1 h1 {
-    color: #2b4d91;
+.container h1 {
+    text-align: center;
+    font-size: 2.4rem;
+    margin-bottom: 25px;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 50px;
-    font-weight: 700;
+}
+
+.sessao {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.foto {
+    width: 25%;
+    min-width: 200px;
+    max-width: 22%;
+    margin-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.7s ease, transform 0.7s cubic-bezier(.23, 1.01, .32, 1);
+}
+
+.foto.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.foto img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.foto h1 {
+    font-size: 1.1rem;
+    margin: 8px 0 2px 0;
     text-align: center;
 }
 
-
-
-.sessao1 {
-    display: flex;
-    gap: 50px;
-    margin-top: 50px;
-
-}
-
-.video {
-    background-color: aqua;
-    width: 500px;
-    height: 300px;
-}
-
-.texto1 {
-    background-color: #e1e1e1;
-    width: 500px;
-    height: 330px;
-}
-
-.texto1 p {
-    font-size: 25px;
-    padding: 15px;
-    text-align: justify;
-    text-justify: inter-word;
-}
-
-/*FIM SOLUÇOES_PESSOAS*/
-
-
-
-/*SOLUÇOES_EMPRESARIAL*/
-
-.titulo2 h1 {
-    color: #2b4d91;
-    font-size: 50px;
-    font-weight: 700;
+.foto p {
+    font-size: 0.95rem;
+    color: #555;
     text-align: center;
+    margin: 0;
 }
-
-.sessao2 {
-    display: flex;
-    gap: 50px;
-    margin-top: 50px;
-    margin-bottom: 150px;
-
-}
-
-.video2 {
-    background-color: aqua;
-    width: 500px;
-    height: 300px;
-}
-
-.texto2 {
-    background-color: #e1e1e1;
-    width: 500px;
-    height: 330px;
-}
-
-.texto2 p {
-    font-size: 25px;
-    padding: 15px;
-    text-align: justify;
-    text-justify: inter-word;
-}
-
-/*FIM SOLUÇOES_EMPRESARIAL*/
-
-.footer-links {
-    display: none;
-}
-
 
 footer {
 
-    position: relative;
     bottom: 0;
     width: 100%;
     background-color: rgba(177, 177, 177, 0.195);
@@ -220,65 +159,45 @@ footer {
     color: #010000;
 }
 
-@media (max-width: 999px) {
+.footer-links {
+    display: none;
+}
 
-    main {
-        margin-top: 90px;
+
+.titulo-azul {
+    color: #2b4d91;
+}
+
+@media screen and (max-width: 768px) {
+
+    .container h1 {
+        font-size: 2rem;
     }
 
-    section {
+    .foto {
+        width: 100%;
+        max-width: 90%;
+    }
+
+    .foto img {
+        height: 150px;
+    }
+
+    .foto h1 {
+        font-size: 1.2rem;
+    }
+
+    .foto p {
+        font-size: 0.9rem;
+    }
+
+    .botoes ul {
         flex-direction: column;
         align-items: center;
     }
 
-    .serv {
-        padding: 0 2vw;
-    }
-
-    .titulo1 h1 {
-        padding-top: 60px;
-        font-size: 27px;
-    }
-
-    .titulo2 h1 {
-        font-size: 27px;
-    }
-
-    .sessao1,
-    .sessao2 {
-        flex-direction: column;
-        gap: 20px;
-        margin-top: 24px;
-        margin-bottom: 40px;
-        align-items: center;
-    }
-
-    .video,
-    .video2 {
-        width: 90vw;
-        max-width: 350px;
-        height: 180px;
-    }
-
-    .texto1,
-    .texto2 {
-        width: 90vw;
-        max-width: 350px;
-        height: auto;
-        min-height: 120px;
-        padding: 0;
-        background-color: #e1e1e1;
-    }
-
-    .texto1 p,
-    .texto2 p {
-        font-size: 16px;
-        padding: 12px;
-        text-align: justify;
-    }
-
-    .solucoes_pessoas {
-        margin-top: 60px;
+    .botoes ul li {
+        margin-bottom: 10px;
     }
 
     .footer-mobile {
@@ -315,4 +234,17 @@ footer {
         color: #444;
         margin-top: 6px;
     }
+
+}
+
+.foto:hover {
+    transform: translateY(-10px) scale(1.03);
+
+    transition: transform 0.4s cubic-bezier(.23, 1.01, .32, 1), box-shadow 0.4s;
+    z-index: 2;
+}
+
+.foto:hover img {
+    filter: brightness(1.08) saturate(1.1);
+    transition: filter 0.4s;
 }

@@ -1,143 +1,260 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/sobre.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-     <!--GOOGLE FONTS-->
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
-     <!--FIM FONTS-->
-     <!--bootstrap icons-->
-     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-     <!--bootstrap icons-->
-    <title>SOBRE MIM </title>
+    <link rel="stylesheet" href="css/sobre.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,
+        wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,
+        300..800;1,300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,
+        100..900&display=swap" rel="stylesheet">
+    <!--google fonts-->
+    <title>ARPLAN</title>
 </head>
+
 <body>
-    
+
     <header>
-        <div class="interface">
-             <div class="logo">
-                 <a class="destaque" href="index.html">
-                    <h2> ALISON SILVA <span class="dev">| DEV </span> </h2>
-                 </a>
-             </div><!--Logo-->
 
-            <nav class="menu-desktop">
-                 <ul>
-                     <li><a href="index.html">INICIO</a></li>
-                     <li><a href="projetos.html">PROJETOS</a></li>
-                     <li><a href="sobre.html">SOBRE</a></li>
-                     <li><a href="servicos.html">SERVIÇOS</a></li>
-                 </ul>
-            </nav><!--Menu-Desktop-->
+        <div class="menu">
 
-            <div class="btn-contato">
-                <a href="contato.html">
-                    <button>CONTATO</button>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/logo_arplan.png" alt="Logo Arplan">
                 </a>
-            </div>
+            </div><!--logo-->
+
+            <div class="botoes">
+
+                <ul>
+                    <li>
+                        <a href="index.html"><button class="perso" data-link="index.html">Home</button></a>
+                    </li>
+                    <li>
+                        <a href="sobre.html"><button class="perso" data-link="sobre.html">Sobre</button></a>
+                    </li>
+                    <li>
+                        <a href="servicos.html"><button class="perso" data-link="servicos.html">Serviços</button></a>
+                    </li>
+                    <li>
+                        <a href="obras.html"><button class="perso" data-link="obras.html">Obras</button></a>
+                    </li>
+                    <li>
+                        <a href="blog.html"><button class="perso" data-link="blog.html">Blog</button></a>
+                    </li>
+                    <li>
+                        <a href="contato.html"><button class="perso" data-link="contato.html">Contato</button></a>
+                    </li>
+                </ul>
+
+            </div><!--botoes-->
 
             <div class="mobile-menu-icone">
-              <button onclick="menuShow()"><img class="icone" src="img/menu-alt-svgrepo-com.svg"  width="40px" alt="" </button>
-         </div><!--Mobile-menu-icone-->
+                <button onclick="menuShow()" id="btn-menu">
+                    <span class="linha"></span>
+                    <span class="linha"></span>
+                    <span class="linha"></span>
+                </button>
+            </div>
 
-        </div><!--fim-Interface-->
-
-
-        <div class="mobile-menu">
-          <ul>
-              <li>
-                  <a href="index.html"> <button class="perso"> INICIO </button> </a>
-              </li>
-              <li>
-                  <a href="projetos.html"> <button class="perso"> PROJETOS </button> </a>
-              </li>
-              <li>
-                  <a href="sobre.html"> <button class="perso"> SOBRE </button></a>
-              </li>
-              <li>
-                  <a href="servicos.html"> <button class="perso"> SERVIÇOS </button></a>
-              </li>
-              <li>
-                <a href="contato.html"> <button class="perso"> CONTATO </button></a>
-            </li>
-          </ul>
-      </div><!--Mobile-menu-->
-    </header>
- 
-    
-<main> 
-    <div class="container">
-
-         <img class="img-foto" alt="IMAGEM NÃO CARREGADA" src="img/Alison.jpg">
-        
-         <div class="textos">
-            <h1> DESENVOLVEDOR | <span style="color: #003785;">WEB</span></h1>
-            <h2>Meu nome é Alison, tenho 20 anos e sou um entusiasta de tecnologia e inovação. 
-                Atualmente, sou estudante na área de programação, sempre em busca de expandir meus conhecimentos 
-                e habilidades para me tornar um profissional de destaque no mercado de desenvolvimento de software. 
-            </h2>
-            
-            <div class="icones">
-                <ul class="social-icons">
-                    <li><a href="https://github.com/Alison2014" target="_blank"><i class="fab fa-github"></i></a></li>
-                    <li><a href="https://www.instagram.com/alison_of_?igsh=MWVhbnFjaHo4bTh3cw==" target="_blank"><i class="fab fa-instagram"></i></a></li>
-                    <li><a href="https://www.linkedin.com/in/alisonsilvaof/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-                    <li><a href="https://www.instagram.com/alison_of_?igsh=MWVhbnFjaHo4bTh3cw==" target="_blank"><i class="fab fa-tiktok"></i></a></li>
+            <div class="mobile-menu">
+                <ul>
+                    <li>
+                        <a href="index.html"><button class="perso" data-link="index.html">Home</button></a>
+                    </li>
+                    <li>
+                        <a href="sobre.html"><button class="perso" data-link="sobre.html">Sobre</button></a>
+                    </li>
+                    <li>
+                        <a href="servicos.html"><button class="perso" data-link="servicos.html">Serviços</button></a>
+                    </li>
+                    <li>
+                        <a href="obras.html"><button class="perso" data-link="obras.html">Obras</button></a>
+                    </li>
+                    <li>
+                        <a href="blog.html"><button class="perso" data-link="blog.html">Blog</button></a>
+                    </li>
+                    <li>
+                        <a href="contato.html"><button class="perso" data-link="contato.html">Contato</button></a>
+                    </li>
                 </ul>
-                
-            </div><!--ICONES-->
-         </div>
 
-         
-    </div><!--container-->
+            </div><!--mobile-menu-->
 
-    
-    <section class="especialidades">
-         <div class="interfa">
-
-              <h1>MINHAS <span style="color: #003785;">ESPECIALIDADES</span></h1>
-
-            <div class="flex">
-
-               <div class="especialidades-box">
-                <i class="bi bi-filetype-html"></i>
-                  <h2>HTML</h2>
-                  <p>Utilizo HTML para estruturar o conteúdo das páginas, criando elementos como textos,
-                     imagens e links. Trabalho com HTML5, garantindo acessibilidade e otimização para 
-                     SEO, além de criar layouts responsivos. </p>
-               </div><!--ESPECIALIDAES-BOX-->
-
-               <div class="especialidades-box">
-                <i class="bi bi-filetype-css"></i>
-                  <h2>CSS</h2>
-                  <p> No CSS, estilo os elementos HTML aplicando cores, fontes e layouts. 
-                    Tenho experiência em design responsivo com Flexbox, Grid e Media Queries, 
-                    e também crio animações e transições para melhorar a experiência do usuário. </p>
-               </div><!--ESPECIALIDAES-BOX-->
-
-               <div class="especialidades-box">
-                <i class="bi bi-filetype-js"></i>
-                  <h2>JAVASCRIPT</h2>
-                  <p> Com JavaScript, trago interatividade aos meus projetos, criando animações,
-                     validações de formulários e interações em tempo real. Tenho experiência 
-                     com manipulação do DOM, funções, eventos e conceitos avançados como promessas e async/await. </p>
-               </div><!--ESPECIALIDAES-BOX-->
-
-            </div><!--flex-->
-         </div><!--interfa-->
-    </section><!--ESPECIALIDADES-->
-
-</main> 
+        </div><!--menu-->
 
 
-    <footer class="fotter">
-        <p>&copy; ALISON SILVA </p>
+    </header>
+
+
+
+    <section>
+
+        <main>
+
+            <div class="sobre efeito-entrada-esquerda">
+
+                <div class="titulo_sobre">
+
+                    <h1>SOBRE</h1>
+                    <div class="texto1">
+
+                        <div class="img-container1">
+                            <div class="fundo-azul1"></div>
+                            <img src="img/foto_petter.png" alt="foto_petter">
+                        </div>
+
+                        <div class="background_texto1 ">
+                            <p>
+                                Fundada em 1989 pelo Engenheiro suíço Peter Wursch,
+                                a Arplan Engenharia Térmica se
+                                destaca em projetos e instalação de sistemas de climatização e
+                                ventilação mecânica. Com experiência internacional, Peter encontrou no
+                                Rio Grande do Norte a oportunidade perfeita para inovar no mercado. Hoje,
+                                a Arplan é sinônimo de qualidade e eficiência.
+                            </p>
+                        </div><!--background_texto1-->
+
+                    </div><!--texto1-->
+
+
+                </div><!--titulo_sobre-->
+
+
+                <div class="texto2 efeito-entrada-esquerda">
+
+                    <div class="foto_flex">
+                        <div class="img-container2 raffael">
+                            <div class="fundo-azul2"></div>
+                            <img src="img/foto_rafael.png" alt="foto_rafael">
+                        </div>
+                        <div class="img-container2 daniel">
+                            <div class="fundo-azul2"></div>
+                            <img src="img/foto_daniel.png" alt="foto_daniel">
+                        </div>
+                    </div><!--foto_flex-->
+
+                    <div class="background_texto2">
+                        <p>
+
+                            Na Arplan, a paixão pela engenharia é um legado de família. Fazem parte da diretoria o
+                            eng.
+                            Raffael Wursch (diretor de obras) e o eng. Daniel Wursch (diretor de projetos). Peter,
+                            Raffael e
+                            Daniel somam mais de 90 anos de experiência em HVAC, combinando sabedoria, inovação e o
+                            compromisso familiar com excelência e qualidade.
+
+
+                        </p>
+                    </div><!--background_texto2-->
+
+
+                </div><!--texto3-->
+
+                <div class="texto3 efeito-entrada-esquerda">
+
+                    <div class="foto_flex_arplan">
+                        <div class="img-container3 arplan">
+                            <div class="fundo-azul2"></div>
+                            <img src="img/foto_arplan.png" alt="foto_arplan">
+                        </div>
+
+                        <div class="img-container3 galpao">
+                            <div class="fundo-azul3"></div>
+                            <img src="img/foto_galpao.png" alt="foto_galpao">
+                        </div>
+                    </div><!--foto_flex-->
+
+                    <div class="background_texto3">
+                        <p>
+                            Nossa sólida equipe de mais de 60 profissionais é a espinha dorsal
+                            da Arplan. Com engenheiros, técnicos, mecânicos, duteiros, auxiliares, isoladores e
+                            soldadores registrados em nossa empresa, garantimos expertise em cada etapa do processo.
+                            Escolher a Arplan é confiar em um time comprometido com excelência e qualidade em todas
+                            as soluções de climatização..
+                        </p>
+                    </div><!--background_texto2-->
+
+                </div><!--texto3-->
+
+
+            </div><!--sobre-->
+
+        </main>
+
+
+        <div class="big_numbers">
+            <div class="bigNumbers_img">
+                <img src="img/foto_galpao.png" alt="foto_galpao">
+            </div><!--bigNumbers_img-->
+
+            <div class="bigNumbers_background"></div>
+
+            <div class="texto_big_numbers ">
+                <div class="big_titulo">
+                    <h4>Prestação de serviço e qualidade<br>
+                        desde 1989</h4>
+                    <h1>BIG NUMBERS</h1>
+                </div><!--big_titulo-->
+
+                <div class="caixinhas efeito-entrada-esquerda">
+                    <div class="quadrados">
+                        <h1>+35 ANOS</h1>
+                        <h4>Mais de 35 anos de
+                            atuando e inovando no
+                            mercado de HVAC</h4>
+                    </div>
+                    <div class="quadrados">
+                        <h1>+20.000TRs</h1>
+                        <h4>Instalados ao longo de sua
+                            existência, nas mais
+                            diversas modalidades</h4>
+                    </div>
+                    <div class="quadrados">
+                        <h1>1a empresa</h1>
+                        <h4>A instalar chiller
+                            condensação a ar e sistema
+                            VRF no estado do RN</h4>
+                    </div>
+                    <div class="quadrados">
+                        <h1>9 Estados</h1>
+                        <h4>Atuamos em todo o
+                            nordeste brasileiro, levando
+                            o #padraoarplan onde quer
+                            que seja a demanda</h4>
+                    </div>
+                </div><!--caixinhas-->
+
+            </div><!--texto_big_numbers-->
+
+        </div><!--big_numbers-->
+
+    </section><!--scroll-container-->
+
+
+    <footer class="footer-mobile">
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="servicos.html">Serviços</a>
+            <a href="obras.html">Obras</a>
+            <a href="blog.html">Blog</a>
+            <a href="contato.html">Contato</a>
+        </div>
+        <div class="copy">
+            <p>&copy; Arplan 2025. Todos os direitos reservados.</p>
+        </div>
     </footer>
 
-       <script src="js/menu-mobile.js"></script>
+    <script src="js/script.js"></script>
+
+
+
 </body>
+
 </html>

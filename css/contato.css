@@ -1,166 +1,161 @@
-*{
-    margin: 0;  
+* {
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Merriweather", serif;
+    font-family: "Inter", sans-serif !important;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
-body{
-    background-color: rgb(0, 0, 0);
-    height: 100%;
-    position: fixed;
+
+body {
+    background-color: rgb(255, 255, 255);
     width: 100%;
+    height: 100%;
+    padding-top: 100px;
+    overflow: hidden;
+    font-family: "Inter", sans-serif !important;
 }
 
-/*INICIO INTERFACE HEADER */
-.interface{
-    max-width: 1280px;
-    margin: 0 auto;
-} 
-.destaque{
-    color: #fff;
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+
 }
 
-.dev{
-    color:#003785;
-}
+/*PARTE DO MENU*/
 
-header{
-    padding: 30px 4%;
-    background-color: rgba(0, 0, 0, 0.801);
-}
-
-/* > SERVE PRA CHMAR A CLASS DIRETAMENTE*/
-header > .interface{
+header {
+    background-color: rgba(177, 177, 177, 0.195);
+    width: 100%;
+    height: 100px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-}
-
-header a{
-    color: rgba(255, 255, 255, 0.301);
-    text-decoration: none;
-    display: inline-block;
-    transition: .2s;
-}
-
-header a:hover{
-    color: #fff;
-    transform: scale(1.05);
-  
-}
-
-header nav ul{
-    list-style-type: none;
-}
-
-header nav ul li{
-    display: inline-block;
-    padding: 0 40px;
-}
-
-/*Animaçaõ linha branca header*/
-header nav.menu-desktop ul li a::after{
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -5px;
-    width: 0;
-    height: 2px;
-    background-color: #ffffff;
-    transition: 0.3s ease;
-}
-
-header nav ul li a:hover::after{
-    width: 100%;
-}
-/*fim animação linha branca*/
-
-header .btn-contato button{
-    padding: 10px 40px;
-    font-size: 18px;
-    font-weight: 600;
-    border: 0;
-    border-radius: 40px;
-    cursor: pointer;
-    background-color: #003785;
-    color: #fff;
-    
-}
-header .btn-contato button:hover{
-    box-shadow: 0px 0px 8px #343434;
-}
-/*FIM INTERFACE HEADER*/
-
-
- /* Estilos do footer */
- footer {
-
-    background-color: transparent;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-}
-
-footer .social-icons {
-    display: flex;
     justify-content: center;
-    list-style: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+
+}
+
+
+.logo {
     position: absolute;
-    top: 93%;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 50px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
-footer .social-icons li {
-    display: inline;
-    margin: 0 10px;
+.logo img {
+    width: 240px;
+    height: auto;
 }
 
-footer .social-icons a {
-    color: #ffffff84;
-    font-size: 28px;
-    text-decoration: none;
+/* Centraliza os botões */
+.botoes ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 50px;
 }
 
-footer .social-icons a:hover {
-    color: #003785;
-}
-/*Fim estilo footer*/
-
-
-/*MENU-MOBILE.*/
-.mobile-menu-icone{
-    display: none; /* faz com que o icone desapareça*/
-}
-.mobile-menu{
-    display: none;
-}
-.mobile-menu-icone button {
-    background-color: transparent;
+/* Estilo dos botões */
+.perso {
     border: none;
     cursor: pointer;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.738);
+    background-color: transparent;
+    padding: 8px 10px;
+    transition: 0.4s;
+    font-weight: 600;
 }
-.mobile-menu ul {
+
+.perso:hover {
+    transform: translateY(-4px);
+
+
+}
+
+.perso.active {
+    border-bottom: 4px solid #0b6ca9;
+    padding-bottom: 8px;
+
+}
+
+/*FIM PARTE DO MENU*/
+
+
+section {
+    margin-top: 100px;
+
+}
+
+/*PARTE CONTATO ESQUERDO*/
+.contato-esquerdo {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin-left: 30px;
+}
+
+.arplan-name-p {
+    color: #1f78b4;
+
+
+}
+
+.contato-esquerdo h1 {
+    color: #1a3a5f;
+    font-size: 25px;
+    width: 100%;
+    font-weight: 900;
+}
+
+.contato-esquerdo h5 {
+    margin-top: 30px;
+    font-size: 15px;
+    font-weight: 100;
+    color: #1f78b4;
+    width: 100%;
+    margin-bottom: 30px;
+
+}
+
+.contato-esquerdo>.icons {
+    color: #1a3a5f;
     display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding-bottom: 1rem;
+    font-size: 15px;
+    margin-bottom: 5px;
+
 }
-/* FIM MENU MOBILE */
+
+.contato-esquerdo>.icons img {
+    margin-right: 10px;
+}
+
+/*PARTE CONTATO ESQUERDO*/
 
 
 /* Inicio form contato*/
+
 /* Estilo para a mensagem de sucesso */
 #success-message {
     color: fff;
     text-align: center;
     font-weight: bold;
-    margin-top: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .hidden {
     display: none;
 }
+
 /*FIM MENSAGEM DE SUCESSO*/
 
 .contato {
@@ -168,6 +163,8 @@ footer .social-icons a:hover {
     align-items: center;
     justify-content: center;
     min-height: 80vh;
+    gap: 10px;
+
 }
 
 .centro {
@@ -176,10 +173,25 @@ footer .social-icons a:hover {
     justify-content: center;
     flex-direction: column;
     padding: 10px 45px;
-    background-color: #003785;
-    width: 400px;
-    color: white;
+    width: 650px;
+    color: #1a3a5f;
+
 }
+
+.centro h2 {
+    text-align: center;
+
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.centro h4 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.508);
+    font-weight: 100;
+}
+
 
 section form {
     display: flex;
@@ -187,19 +199,27 @@ section form {
     width: 100%;
 }
 
-form label {
-    margin-bottom: 4px;
+#assunto {
+    margin-bottom: 10px;
+    padding: 10px 5px;
+    color: rgba(0, 0, 0, 0.550);
+    border: 2px solid #999;
+
+
 }
 
-form input, form textarea {
+form input,
+form textarea {
     padding: 10px;
     outline: none;
     border: 0;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     transition: all 0.5s;
+    border: 2px solid #999;
 }
 
-form input:focus, form textarea:focus {
+form input:focus,
+form textarea:focus {
     border-radius: 16px;
 }
 
@@ -207,11 +227,13 @@ form button {
     padding: 15px;
     cursor: pointer;
     font-size: 17px;
-    background-color: transparent;
-    border: 2px solid whitesmoke;
-    color: whitesmoke;
+    background-color: #287cb0;
+    border: 2px solid #287cb0;
+    color: rgb(245, 245, 245);
     transition: all 1s;
     margin-bottom: 20px;
+
+    font-weight: 600;
 }
 
 form button:hover {
@@ -220,237 +242,145 @@ form button:hover {
     border-radius: 16px;
 }
 
-/* RESPOSIVIDADE */
-@media screen and (max-width: 1100px){
-   
-    /*cabeçalho*/
-    .menu-desktop, .btn-contato{
-        display: none;
-     }
+/*contato direito*/
 
-     /*menu mobile*/
-    .mobile-menu{
-        z-index: 1;
-        position: fixed;
-        width: 100%;
-        height: 100%;
-        background-color: black;
-        left: 0;
+.contato-direito {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin-right: 30px;
+}
+
+.contato-direito h2 {
+    margin-top: 70px;
+    color: #1a3a5f;
+    font-size: 25px;
+
+    width: 100%;
+    font-weight: 900;
+
+}
+
+.contato-direito h4 {
+    font-size: 15px;
+    font-weight: 100;
+    color: #1f78b4;
+    width: 100%;
+    margin-bottom: 30px;
+
+}
+
+.redes-sociais p {
+    color: #1f78b4;
+
+    font-size: 15px;
+    margin-bottom: 20px;
+
+}
+
+.redes-sociais a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.redes-sociais img {
+    display: block;
+}
+
+.redes-sociais p {
+    margin: 0;
+    color: #222;
+    font-size: 1rem;
+}
+
+.selo-abrava img {
+    width: 250px;
+    max-width: 250px;
+    height: auto;
+    margin-top: 15px;
+}
+
+/* fim contato direito*/
+
+/* fim form contato*/
+
+
+
+
+@media screen and (max-width: 900px) {
+    header {
+        background-color: #f0efef;
     }
 
-     .mobile-menu-icone{
-        display: block;
-        margin-left: auto ;
-        align-self: flex-end; /* Faz o ícone se alinhar ao final da linha */
+    body {
+        overflow: auto !important;
+        height: auto;
     }
 
-    .mobile-menu-icone button {
-        background-color: transparent;
-        border: none;
-        cursor: pointer;
-    }
-
-    .mobile-menu ul {
-        display: flex;
+    .contato {
         flex-direction: column;
-        text-align: center;
-        padding-bottom: 1rem;
-        background-color: rgb(0, 0, 0);
-        top: 0;
-        left: 0;
-        padding: 50px;
+        align-items: stretch;
+        gap: 30px;
+        min-height: unset;
+        padding: 20px;
     }
 
-    .open{
+    .contato-esquerdo,
+    .contato-direito {
+        max-width: 100%;
+        margin: 0;
+        width: 100%;
+    }
+
+    .centro {
+        width: 100%;
+        padding: 10px 5px;
+    }
+
+    section {
+        margin-top: 110px;
+    }
+
+    .selo-abrava img {
+        width: 100%;
+        max-width: 200px;
+        margin: 15px auto 0 auto;
         display: block;
     }
-    
-    .mobile-menu li {
-        margin: 10px 0; /* Espaçamento entre os botões */
+}
+
+@media screen and (max-width: 500px) {
+    body {
+        overflow: auto !important;
+        height: auto;
     }
 
-    .mobile-menu li button {
+    body {
+        padding-top: 70px;
+    }
 
-        border: 2px solid transparent; /* Borda invisível por padrão */
-        padding: 10px 20px;
+    .contato-esquerdo h1,
+    .contato-direito h2 {
         font-size: 18px;
-        color: #ffffff;
-        cursor: pointer;
-        transition: all 0.4s ease;
-        width: 100%; /* Garante que os botões ocupem a largura toda */
-        background-color: transparent;
     }
 
-    /* Efeito de destaque ao passar o mouse (hover) */
-    .mobile-menu li button:hover {
-        color: #2980b9; /* Cor do texto ao passar o mouse */ 
+    .centro h2 {
+        font-size: 20px;
     }
 
-    /* Efeito ao clicar (active) */
-    .mobile-menu li button:active {
-        background-color: #2980b9; /* Cor de fundo ao clicar */
-        color: white; /* Cor do texto ao clicar */
-        border: 2px solid #1f78b4; /* Borda mais escura ao clicar */
+    .centro {
+        padding: 5px 2px;
     }
-    /*FIM MENU MOBILE*/
 
+    form button {
+        font-size: 15px;
+        padding: 10px;
+    }
 
-/* Inicio form contato*/
-/* Estilo para a mensagem de sucesso */
-#success-message {
-    color: fff;
-    text-align: center;
-    font-weight: bold;
-    margin-top: 20px;
-}
-
-.hidden {
-    display: none;
-}
-/*Fim para mensagem de sucesso*/
-
-.contato {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 70vh;
-}
-
-.centro {
-    display: inline-block;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 5px 30px;
-    background-color: #003785;
-    width: 350px;
-    color: white;
-    
-}
-
-section form {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-
-form label {
-    margin-bottom: 2px;
-}
-
-form input, form textarea {
-    padding: 2px;
-    outline: none;
-    border: 0;
-    margin-bottom: 15px;
-    transition: all 0.5s;
-}
-
-form input:focus, form textarea:focus {
-    border-radius: 16px;
-}
-
-form button {
-    padding: 10px;
-    cursor: pointer;
-    font-size: 15px;
-    background-color: transparent;
-    border: 2px solid whitesmoke;
-    color: whitesmoke;
-    transition: all 1s;
-    margin-bottom: 20px;
-}
-
-form button:hover {
-    background-color: rgb(255, 255, 255);
-    color: #003785;
-    border-radius: 16px;
- }
-
-}
-
-@media screen and (max-width: 435px){
-
-    /*cabeçalho*/
-
-    .interface h2{
-        font-size: 17px;
-     }
-
-    .menu-desktop, .btn-contato{
-        display: none;
-     }
-     
- /* Inicio form contato*/
-/* Estilo para a mensagem de sucesso */
-#success-message {
-    color: fff;
-    text-align: center;
-    font-weight: bold;
-    margin-top: 20px;
-}
-
-.hidden {
-    display: none;
-}
-/*FIM MENSAGEM DE SUCESSO*/
-
-.contato {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 70vh;
-}
-
-.centro {
-    display: inline-block;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 5px 30px;
-    background-color: #003785;
-    width: 300px;
-    color: white;
-    
-}
-
-section form {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-
-form label {
-    margin-bottom: 2px;
-}
-
-form input, form textarea {
-    padding: 2px;
-    outline: none;
-    border: 0;
-    margin-bottom: 15px;
-    transition: all 0.5s;
-}
-
-form input:focus, form textarea:focus {
-    border-radius: 16px;
-}
-
-form button {
-    padding: 10px;
-    cursor: pointer;
-    font-size: 15px;
-    background-color: transparent;
-    border: 2px solid whitesmoke;
-    color: whitesmoke;
-    transition: all 1s;
-    margin-bottom: 20px;
-}
-
-form button:hover {
-    background-color: rgb(255, 255, 255);
-    color: #003785;
-    border-radius: 16px;
-}
-/*fim form contato*/
+    section {
+        margin-top: 10px;
+        /* Compensa o header menor no mobile */
+    }
 }
