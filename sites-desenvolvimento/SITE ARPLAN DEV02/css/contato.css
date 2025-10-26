@@ -307,16 +307,7 @@ form button:hover {
 /* fim form contato*/
 
 
-footer {
 
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-    padding: 10px 0;
-
-    font-size: 15px;
-    color: #010000;
-}
 
 @media screen and (max-width: 900px) {
     header {

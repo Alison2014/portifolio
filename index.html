@@ -2,209 +2,126 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/menu.css">
-    <!--google fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,
-        wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,
-        300..800;1,300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,
-        100..900&display=swap" rel="stylesheet">
-    <!--google fonts-->
-    <title>ARPLAN</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--GOOGLE FONTS-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&display=swap"
+    rel="stylesheet">
+  <!--FIM FONTS-->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+  <style>
+    #particles-js {
+      background-color: black;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      /* Para garantir que as partículas fiquem no fundo */
+
+    }
+
+    @media screen and (max-width: 1110px) {
+      #particles-js {
+        width: 500%;
+      }
+    }
+
+    @media screen and (max-width: 435px) {
+      #particles-js {
+        width: 800%;
+      }
+    }
+  </style>
+  <title>ALISON DEV</title>
 </head>
 
 <body>
 
-    <div class="background">
-        <img src="img/fundo.png" alt="">
-    </div>
+  <header>
+    <div class="interface">
+      <div class="logo">
+        <a class="destaque" href="index.html">
+          <h2> ALISON SILVA <span class="dev">| DEV </span> </h2>
+        </a>
+      </div><!--Logo-->
 
-    <header>
+      <nav class="menu-desktop">
+        <ul>
+          <li><a href="index.html">INICIO</a></li>
+          <li><a href="projetos.html">PROJETOS</a></li>
+          <li><a href="sobre.html">SOBRE</a></li>
+          <li><a href="servicos.html">SERVIÇOS</a></li>
+        </ul>
+      </nav><!--Menu-Desktop-->
 
-        <div class="menu">
+      <div class="btn-contato">
+        <a href="contato.html">
+          <button>CONTATO</button>
+        </a>
+      </div>
 
-            <div class="logo">
-                <a href="index.html">
-                    <img src="img/logo_arplan.png" alt="Logo Arplan">
-                </a>
-            </div><!--logo-->
+      <div class="mobile-menu-icone">
+        <button onclick="menuShow()"><img class="icone" src="img/menu-alt-svgrepo-com.svg" width="40px" alt="" </button>
+      </div><!--Mobile-menu-icone-->
 
-            <div class="botoes">
-
-                <ul>
-                    <li>
-                        <a href="index.html"><button class="perso" data-link="index.html">Home</button></a>
-                    </li>
-                    <li>
-                        <a href="sobre.html"><button class="perso" data-link="sobre.html">Sobre</button></a>
-                    </li>
-                    <li>
-                        <a href="servicos.html"><button class="perso" data-link="servicos.html">Serviços</button></a>
-                    </li>
-                    <li>
-                        <a href="obras.html"><button class="perso" data-link="obras.html">Obras</button></a>
-                    </li>
-                    <li>
-                        <a href="blog.html"><button class="perso" data-link="blog.html">Blog</button></a>
-                    </li>
-                    <li>
-                        <a href="contato.html"><button class="perso" data-link="contato.html">Contato</button></a>
-                    </li>
-                </ul>
-
-            </div><!--botoes-->
-
-            <div class="mobile-menu-icone">
-                <button onclick="menuShow()" id="btn-menu">
-                    <span class="linha"></span>
-                    <span class="linha"></span>
-                    <span class="linha"></span>
-                </button>
-            </div>
-
-            <div class="mobile-menu">
-                <ul>
-                    <li>
-                        <a href="index.html"><button class="perso" data-link="index.html">Home</button></a>
-                    </li>
-                    <li>
-                        <a href="sobre.html"><button class="perso" data-link="sobre.html">Sobre</button></a>
-                    </li>
-                    <li>
-                        <a href="servicos.html"><button class="perso" data-link="servicos.html">Serviços</button></a>
-                    </li>
-                    <li>
-                        <a href="obras.html"><button class="perso" data-link="obras.html">Obras</button></a>
-                    </li>
-                    <li>
-                        <a href="blog.html"><button class="perso" data-link="blog.html">Blog</button></a>
-                    </li>
-                    <li>
-                        <a href="contato.html"><button class="perso" data-link="contato.html">Contato</button></a>
-                    </li>
-                </ul>
-
-            </div><!--mobile-menu-->
-
-        </div><!--menu-->
-
-    </header>
-
-    <main>
-        <div class="slide">
-            <div class="azul-texto">
-
-            </div><!--azul-texto-->
-
-            <div class="carrossel">
-
-                <div class="carousel-container">
-                    <div class="carousel-slide active">
-                        <img src="img/slider1.jpg" alt="Imagem 1">
-                    </div>
-                    <div class="carousel-slide">
-                        <img src="img/slide2.jpg" alt="Imagem 2">
-                    </div>
-                    <div class="carousel-slide">
-                        <img src="img/slide3.jpg" alt="Imagem 3">
-                    </div>
-                    <div class="carousel-slide">
-                        <img src="img/slide4.png" alt="Imagem 4">
-                    </div>
-                    <div class="carousel-slide">
-                        <img src="img/slide5.jpg" alt="Imagem 5">
-                    </div>
-                </div>
-
-            </div><!--carrossel-->
+    </div><!--fim-Interface-->
 
 
-        </div><!--slide-->
-
-        <div class="carousel-indicators">
-            <span class="dot active" data-slide="0"></span>
-            <span class="dot" data-slide="1"></span>
-            <span class="dot" data-slide="2"></span>
-            <span class="dot" data-slide="3"></span>
-            <span class="dot" data-slide="4"></span>
-        </div><!--carousel-indicators-->
-    </main>
-
-    <section class="sobre-nos-mobile">
-        <h2>Sobre nós</h2>
-        <p>
-            A Arplan foi fundada em 1989 pelo Engenheiro Peter Wursch, com o objetivo de prestar serviços nas áreas de
-            projeto, instalação e assistência técnica em centrais de ar condicionado e sistemas de ventilação/exaustão
-            Mecânica. [...]
-        </p>
-        <a href="sobre.html" class="btn-leia-mais">Leia mais</a>
-    </section>
-
-    <section class="sobre">
-        <div class="container">
-            <h1>Serviço e qualidade desde 1989</h1>
-
-            <div class="textos">
-                <div class="texto">
-
-                    <img src="img/svg/icons8-checkmark.svg" alt="">
-                    <div class="text">
-                        <h2>Confiavel</h2>
-                        <p>Arplan Eng - Com tecnicos de serviço 100% Capacitados</p>
-                    </div>
-                </div>
+    <div class="mobile-menu">
+      <ul>
+        <li>
+          <a href="index.html"> <button class="perso"> INICIO </button> </a>
+        </li>
+        <li>
+          <a href="projetos.html"> <button class="perso"> PROJETOS </button> </a>
+        </li>
+        <li>
+          <a href="sobre.html"> <button class="perso"> SOBRE </button></a>
+        </li>
+        <li>
+          <a href="servicos.html"> <button class="perso"> SERVIÇOS </button></a>
+        </li>
+        <li>
+          <a href="contato.html"> <button class="perso"> CONTATO </button></a>
+        </li>
+      </ul>
 
 
-                <div class="texto">
-
-                    <img src="img/svg/icons8-checkmark.svg" alt="">
-                    <div class="text">
-                        <h2>Competente</h2>
-                        <p>Arplan Eng - 35 anos de experiência com marcas lideres e uma forte rede de parceiros</p>
-                    </div>
-                </div>
+    </div><!--Mobile-menu-->
 
 
+  </header>
 
-                <div class="texto">
+  <section class="titulos">
+    <div class="titulo">
+      <h1 class="alison-silva">ALISON SILVA</h1>
+      <h2 class="desenvolvedor">Desenvolvedor<span class="web"> Junior </span></h2>
+    </div><!--titulo-->
+  </section><!--tirulos-->
 
-                    <img src="img/svg/icons8-checkmark.svg" alt="">
-                    <div class="text">
-                        <h2>Dinâmico</h2>
-                        <p>Arplan Eng - Soluções de climatização que trazem prazer a longo prazo</p>
-                    </div>
-                </div>
+  <!-- Conteúdo da página fotter -->
+  <footer>
+    <ul class="social-icons">
+      <li><a href="https://github.com/Alison2014" target=" _blank"><i class="fab fa-github"></i></a></li>
+      <li><a href="https://www.instagram.com/alison_of_?igsh=MWVhbnFjaHo4bTh3cw==" target="_blank"><i
+            class="fab fa-instagram"></i></a></li>
+      <li><a href="https://www.linkedin.com/in/alisonsilvaof/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+      <li><a href="https://www.instagram.com/alison_of_?igsh=MWVhbnFjaHo4bTh3cw==" target="_blank"><i
+            class="fab fa-tiktok"></i></a></li>
+    </ul>
+  </footer>
+  <!--Final conteudo fotter-->
 
 
-
-            </div><!--textos-->
-        </div><!--container-->
-    </section><!--sobre-->
-
-
-
-    <footer class="footer-mobile">
-        <div class="footer-links">
-            <a href="index.html">Home</a>
-            <a href="sobre.html">Sobre</a>
-            <a href="servicos.html">Serviços</a>
-            <a href="obras.html">Obras</a>
-            <a href="blog.html">Blog</a>
-            <a href="contato.html">Contato</a>
-        </div>
-        <div class="copy">
-            <p>&copy; Arplan 2025. Todos os direitos reservados.</p>
-        </div>
-    </footer>
-
-    <script src="js/script.js"></script>
-    <script src="js/slide.js"></script>
-    <script src="js/header.js"></script>
-
+  <script src="js/menu-mobile.js"> </script>
 
 </body>
 

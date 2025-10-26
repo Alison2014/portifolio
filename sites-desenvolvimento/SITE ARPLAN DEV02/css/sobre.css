@@ -437,6 +437,13 @@ footer {
         box-sizing: border-box;
     }
 
+    .texto1 p {
+        font-size: 18px;
+        padding: 15px;
+        text-align: justify;
+        text-justify: inter-word;
+    }
+
     .img-container1 {
         width: 60vw;
         max-width: 400px;
@@ -459,6 +466,7 @@ footer {
         height: auto;
         min-height: 180px;
         background-color: #e1e1e1;
+
     }
 
     .fundo-azul1 {
@@ -491,6 +499,13 @@ footer {
     .texto2 {
         padding-top: 0;
         margin-top: 50px
+    }
+
+    .texto2 p {
+        font-size: 18px;
+        padding: 15px;
+        text-align: justify;
+        text-justify: inter-word;
     }
 
     .background_texto2 {
@@ -593,6 +608,13 @@ footer {
     .texto3 {
         padding-top: 0;
         margin-top: 50px
+    }
+
+    .texto3 p {
+        font-size: 18px;
+        padding: 15px;
+        text-align: justify;
+        text-justify: inter-word;
     }
 
     .img-container img {

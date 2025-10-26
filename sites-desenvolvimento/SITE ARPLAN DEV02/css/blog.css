@@ -167,8 +167,19 @@ main {
     font-weight: 600;
 }
 
+/*parte sobre*/
 footer {
-    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(177, 177, 177, 0.195);
+    text-align: center;
+    padding: 10px 0;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-size: 15px;
+    color: #010000;
 }
 
 .footer-links {

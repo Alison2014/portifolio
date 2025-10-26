@@ -91,13 +91,13 @@ header {
 /*FIM PARTE DO MENU*/
 
 main {
-    margin-top: 115px;
+    margin-top: 120px;
 }
 
 .container h1 {
     text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 20px;
+    font-size: 2.4rem;
+    margin-bottom: 25px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -169,6 +169,10 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
+
+    main {
+        margin-top: 100spx;
+    }
 
     .container h1 {
         font-size: 2rem;
