@@ -1,3 +1,5 @@
+alert("JS carregou");
+
 // 🔥 Guarda a última frequência (usado pra suavizar o valor)
 let ultimaFreq = 0;
 
