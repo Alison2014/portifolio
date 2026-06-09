@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif !important;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 100%;
+    padding-top: 100px;
+    font-family: "Inter", sans-serif !important;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+
+}
+
+/*PARTE DO MENU*/
+
+header {
+    background-color: rgba(177, 177, 177, 0.195);
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+
+}
+
+
+.logo {
+    position: absolute;
+    left: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.logo img {
+    width: 240px;
+    height: auto;
+}
+
+/* Centraliza os botões */
+.botoes ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 50px;
+}
+
+/* Estilo dos botões */
+.perso {
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.738);
+    background-color: transparent;
+    padding: 8px 10px;
+    transition: 0.4s;
+    font-weight: 600;
+}
+
+.perso:hover {
+    transform: translateY(-4px);
+
+
+}
+
+.perso.active {
+    border-bottom: 4px solid #0b6ca9;
+    /* Cor da linha */
+    padding-bottom: 8px;
+    /* Espaçamento adicional se necessário */
+}
+
+/*FIM PARTE DO MENU*/
+
+main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.posts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+    width: 100%;
+    margin-top: 32px;
+}
+
+.post {
+    flex: 1 1 30%;
+    max-width: 30%;
+    min-width: 260px;
+    border-radius: 20px;
+    padding: 2px 25px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.post img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    margin-bottom: 16px;
+}
+
+.blog {
+    width: 100%;
+    margin-top: 120px;
+}
+
+.blog h1 {
+    font-size: 50px;
+    color: #29438C;
+    font-weight: 600;
+    text-align: center;
+}
+
+
+.blog p {
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.6;
+
+}
+
+.autor {
+    display: flex;
+    align-items: center;
+    margin-top: 12px;
+    gap: 10px;
+}
+
+.autor img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.autor span {
+    font-size: 1.1rem;
+    color: #222;
+    font-weight: 600;
+}
+
+/*parte sobre*/
+footer {
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(177, 177, 177, 0.195);
+    text-align: center;
+    padding: 10px 0;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-size: 15px;
+    color: #010000;
+}
+
+.footer-links {
+    display: none;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    header {
+        background-color: #f0efef;
+    }
+
+    main {
+        margin-top: 0;
+
+    }
+
+    .posts {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .post {
+        max-width: 100%;
+        flex: 1 1 100%;
+    }
+
+    .logo img {
+        width: 180px;
+    }
+
+    .botoes ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .perso {
+        font-size: 18px;
+    }
+
+    .blog h1 {
+        font-size: 40px;
+    }
+
+    .footer-mobile {
+        background: #f0efef;
+        padding: 16px 0 8px 0;
+        text-align: center;
+        margin-top: 32px;
+    }
+
+    .footer-links {
+        display: flex;
+        justify-content: center;
+        gap: 14px;
+        flex-wrap: wrap;
+        margin-bottom: 8px;
+    }
+
+    .footer-links a {
+        color: #0b6ca9;
+        text-decoration: none;
+        font-size: 15px;
+        font-weight: 700;
+        transition: color 0.2s;
+    }
+
+    .footer-links a:hover {
+        color: #2887c2;
+        text-decoration: underline;
+    }
+
+    .footer-mobile .copy {
+        font-size: 13px;
+        color: #444;
+        margin-top: 6px;
+    }
+
+
+}
