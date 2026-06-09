@@ -1,0 +1,461 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+
+body {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 100%;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+/*PARTE DO MENU*/
+.background img {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+.background::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.025);
+    z-index: -1;
+}
+
+
+header {
+    background-color: #f0efefc2;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    transition: top 0.4s;
+
+}
+
+.logo {
+    position: absolute;
+    left: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.logo img {
+    width: 240px;
+    height: auto;
+}
+
+/* Centraliza os botões */
+.botoes ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 50px;
+}
+
+/* Estilo dos botões */
+.perso {
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.738);
+    background-color: transparent;
+    padding: 8px 10px;
+    transition: 0.4s;
+    font-weight: 600;
+
+}
+
+.perso:hover {
+    transform: translateY(-4px);
+
+}
+
+/*LINHA ABAIXO DOS BOTOES*/
+.perso.active {
+    border-bottom: 4px solid #0b6ca9;
+    /* Cor da linha */
+    padding-bottom: 8px;
+    /* Espaçamento adicional se necessário */
+}
+
+
+
+/*FIM PARTE DO MENU*/
+
+
+
+
+
+
+/*PARTE TEXTO COM SLIDES*/
+main {
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: calc(100vh - 100px);
+
+    /* subtrai altura do header */
+
+}
+
+.azul-texto {
+    width: 30%;
+    height: 200px;
+    color: white;
+    font-size: 28px;
+    font-family: 'arial';
+    padding: 10px;
+    white-space: pre-wrap;
+    font-weight: 500;
+}
+
+.slide {
+    background-color: #2887c2dc;
+    width: 800px;
+    height: 380px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-right-radius: 21px;
+    border-top-right-radius: 20px;
+}
+
+.carrossel {
+    width: 70%;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    border-bottom-right-radius: 21px;
+    border-top-right-radius: 20px;
+}
+
+.carousel-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.carousel-slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transform: scale(1.1);
+    transition: opacity 1.1s, transform 2s;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.carousel-slide.active {
+    opacity: 1;
+    transform: scale(1);
+    z-index: 1;
+}
+
+.carousel-indicators {
+    display: flex;
+    justify-content: center;
+
+    gap: 15px;
+    margin-top: 20px;
+    /* distância abaixo do slide */
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: rgba(128, 128, 128, 0.756);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border: solid grey;
+}
+
+.dot.active {
+    background-color: #0b6ca9;
+}
+
+/*PARTE TEXTO COM SLIDES*/
+
+/*parte sobre*/
+.sobre {
+    display: none;
+    margin-top: 30px;
+    padding: 20px;
+
+}
+
+.texto {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.texto p {
+    font-size: 17px;
+    color: #010000;
+    margin-left: 15px;
+
+}
+
+.texto h2 {
+    font-size: 20px;
+    color: #010000;
+    margin-left: 15px;
+
+}
+
+.container h1,
+p {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+.container h1 {
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+.texto img {
+    width: 50px;
+}
+
+/*parte sobre*/
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(177, 177, 177, 0.195);
+    text-align: center;
+    padding: 10px 0;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-size: 15px;
+    color: #010000;
+}
+
+.sobre-nos-mobile {
+    display: none;
+}
+
+.footer-links {
+    display: none;
+}
+
+@media screen and (max-width: 999px) {
+
+    html,
+    body {
+        overflow: auto !important;
+        height: auto !important;
+    }
+
+    .background {
+        display: none;
+    }
+
+    main {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        margin-top: 120px;
+        height: auto;
+    }
+
+    .azul-texto {
+        width: 60vw;
+        max-width: 400px;
+        min-width: 0;
+        height: auto;
+        min-height: 200px;
+        font-size: 25px;
+        padding: 10px 5vw;
+        box-sizing: border-box;
+        display: flex;
+        align-items: flex-end;
+        text-align: left;
+        align-self: flex-start;
+    }
+
+    .slide {
+        width: 90vw;
+        max-width: 600px;
+        min-width: 0;
+        height: auto;
+        min-height: 350px;
+        background-color: #2887c2dc;
+        border-radius: 12px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 0;
+        border-top-left-radius: 0px;
+
+    }
+
+    .carrossel,
+    .carousel-container {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        height: auto;
+        min-height: 350px;
+        border-bottom-left-radius: 0px;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+    }
+
+    .carousel-slide img {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+        border-bottom-left-radius: 0px;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+    }
+
+    .carousel-indicators {
+        gap: 8px;
+        margin-top: 10px;
+        display: none;
+    }
+
+    .dot {
+        width: 8px;
+        height: 8px;
+    }
+
+    .sobre {
+        display: block;
+    }
+
+    footer {
+        position: relative;
+    }
+
+    .footer-mobile {
+        background: #f0efef;
+        padding: 16px 0 8px 0;
+        text-align: center;
+        margin-top: 32px;
+    }
+
+    .footer-links {
+        display: flex;
+        justify-content: center;
+        gap: 14px;
+        flex-wrap: wrap;
+        margin-bottom: 8px;
+    }
+
+    .footer-links a {
+        color: #0b6ca9;
+        text-decoration: none;
+        font-size: 15px;
+        font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: weight;
+        font-style: normal;
+        font-weight: 700;
+        transition: color 0.2s;
+    }
+
+    .footer-links a:hover {
+        color: #2887c2;
+        text-decoration: underline;
+    }
+
+    .footer-mobile .copy {
+        font-size: 13px;
+        color: #444;
+        margin-top: 6px;
+    }
+
+    .sobre-nos-mobile {
+        display: block;
+        background: #f8fafd;
+        border-radius: 12px;
+        margin: 32px 5vw 0 5vw;
+        padding: 18px 14px 22px 14px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+        text-align: center;
+    }
+
+    .sobre-nos-mobile h2 {
+        font-size: 30px;
+        color: #0b6ca9;
+        margin-bottom: 10px;
+
+    }
+
+    .sobre-nos-mobile p {
+        font-size: 17px;
+        color: #222;
+        margin-bottom: 18px;
+        line-height: 1.6;
+    }
+
+    .btn-leia-mais {
+        display: inline-block;
+        background: #0b6ca9;
+        color: #fff;
+        padding: 8px 22px;
+        border-radius: 8px;
+        text-decoration: none;
+        font-size: 15px;
+        font-family: "Inter", sans-serif;
+        font-weight: 700;
+        transition: background 0.2s;
+    }
+
+    .btn-leia-mais:hover {
+        background: #2887c2;
+    }
+}
