@@ -32,7 +32,8 @@ body {
     display: flex;
     flex-direction: column;
     gap: 30px;
-     height: 95vh; 
+     height: 100dvh;
+      max-height: 100dvh;
      overflow: hidden;
     justify-content: space-between; 
 
