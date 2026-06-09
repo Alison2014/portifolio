@@ -9,9 +9,7 @@ let ultimoAngulo = 0;
 let tempoSemSom = 0;
 let delayReset = 3000;
 
-// =========================
-// ELEMENTOS UI
-// =========================
+
 const elFreq = document.querySelector(".frequency");
 const elNota = document.querySelector(".note");
 const elStatus = document.querySelector(".status-message");
@@ -25,9 +23,8 @@ const bars = {
     sharp: document.querySelector(".sharp"),
 };
 
-// =========================
+
 // INICIAR
-// =========================
 async function iniciar() {
     if (rodando) return;
 
@@ -44,9 +41,8 @@ async function iniciar() {
     }
 }
 
-// =========================
+
 // PARAR
-// =========================
 function parar() {
     rodando = false;
 
@@ -68,9 +64,8 @@ function parar() {
     resetBars();
 }
 
-// =========================
+
 // ÁUDIO
-// =========================
 function iniciarAudio(stream) {
     const audioContext = new (window.AudioContext || window.webkitAudioContext)();
     audioContextGlobal = audioContext;
@@ -139,9 +134,8 @@ function iniciarAudio(stream) {
     analisar();
 }
 
-// =========================
+
 // CENTS (DESVIO REAL)
-// =========================
 function getCents(freq) {
     let A4 = 440;
     let note = 12 * (Math.log2(freq / A4)) + 69;
@@ -152,9 +146,8 @@ function getCents(freq) {
     return 1200 * Math.log2(freq / ideal);
 }
 
-// =========================
+
 // BARRA VISUAL
-// =========================
 function updateBars(cents) {
     resetBars();
 
@@ -175,9 +168,7 @@ function resetBars() {
     Object.values(bars).forEach(b => b.classList.remove("active"));
 }
 
-// =========================
-// AUTO CORRELATE (igual o seu)
-// =========================
+// AUTO CORRELATE
 function autoCorrelate(buffer, sampleRate) {
     let SIZE = buffer.length;
     let rms = 0;
@@ -223,9 +214,7 @@ function autoCorrelate(buffer, sampleRate) {
     return sampleRate / maxpos;
 }
 
-// =========================
 // NOTA
-// =========================
 function getNota(freq) {
     const notas = ["C","C#","D","D#","E","F","F#","G","G#","A","A#","B"];
     let n = 12 * (Math.log2(freq / 440)) + 69;

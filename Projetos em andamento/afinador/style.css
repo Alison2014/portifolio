@@ -1,4 +1,9 @@
-/* Reset básico para limpar margens e definir a fonte */
+
+html, body {
+    height: 100%;
+    overflow: hidden; 
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -12,7 +17,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    padding: 20px;
+    padding: 0; /* importante: remove espaço que causa scroll */
 }
 
 /* Card principal do afinador */
@@ -27,6 +32,10 @@ body {
     display: flex;
     flex-direction: column;
     gap: 30px;
+     height: 95vh; 
+     overflow: hidden;
+    justify-content: space-between; 
+
 }
 
 /* Cabeçalho */
@@ -37,17 +46,19 @@ body {
     font-weight: 700;
 }
 
-/* Display de Informações (Digital) */
+
 .tuner-display {
     display: flex;
     flex-direction: column;
     gap: 10px;
+     text-align: center;
+    gap: 6px;
 }
 
 .frequency {
     font-size: 3.5rem;
     font-weight: 300;
-    color: #e65c00; /* Tom alaranjado/digital */
+    color: #e65c00; 
     letter-spacing: -1px;
 }
 
@@ -64,11 +75,11 @@ body {
 .status-message {
     font-size: 0.95rem;
     font-weight: 600;
-    color: #27ae60; /* Verde para "afinado" */
+    color: #27ae60; 
     margin-top: 5px;
 }
 
-/* Barra de Medição (Tuning Meter) */
+
 .meter-container {
     display: flex;
     justify-content: center;
@@ -81,11 +92,11 @@ body {
     width: 35px;
     height: 14px;
     border-radius: 4px;
-    background-color: #e0e0e0; /* Cor padrão apagada */
+    background-color: #e0e0e0; 
     transition: all 0.3s ease;
 }
 
-/* Cores quando os blocos estiverem ativos (simulado via CSS) */
+
 .meter-bar.flat.active { background-color: #e74c3c; }
 .meter-bar.flat-mild.active { background-color: #f1c40f; }
 .meter-bar.perfect.active { 
@@ -113,7 +124,7 @@ body {
     width: 100%;
     padding: 16px;
     border: none;
-    border-radius: 25px; /* Bordas bem arredondadas */
+    border-radius: 25px;
     font-size: 1rem;
     font-weight: 600;
     cursor: pointer;
@@ -294,7 +305,7 @@ body {
     transform: scale(0.97);
 }
 
-/* RESPONSIVIDADE EXTRA (CELULAR PEQUENO) */
+/* RESPONSIVIDADE (CELULAR PEQUENO) */
 @media (max-width: 400px) {
     .tuner-container {
         padding: 20px 15px;
